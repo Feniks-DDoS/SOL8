@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="jp">
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +12,30 @@
     <header class="header" data-js-header="">
       <div class="header__inner container">
         <a class="logo header__logo" href="/" title="ホーム" aria-label="ホーム">
-          <img class="logo__image" src="" alt="Logo SOL8" width="110" height="30" loading="lazy">
+          <img class="logo__image" src="/images/logo.svg" alt="Logo SOL8" width="110" height="30" loading="lazy">
         </a>
         <nav class="header__menu" data-js-header-overlay="">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a href="/SOL8/" class="header__menu-link">ホーム</a>
+              <a href="/" class="header__menu-link is-active">ホーム</a>
             </li>
             <li class="header__menu-item">
-              <a href="/SOL8/about.html" class="header__menu-link">コンセプト</a>
+              <a href="/about" class="header__menu-link">コンセプト</a>
             </li>
             <li class="header__menu-item">
-              <a href="/SOL8/firstTime.html" class="header__menu-link">初めての方へ</a>
+              <a href="/firstTime" class="header__menu-link">初めての方へ</a>
             </li>
             <li class="header__menu-item">
-              <a href="/SOL8/menu.html" class="header__menu-link">メニュー</a>
+              <a href="/menu" class="header__menu-link">メニュー</a>
             </li>
             <li class="header__menu-item">
-              <a href="/SOL8/AboutTheSalon.html" class="header__menu-link">サロン案内</a>
+              <a href="/aboutTheSalon" class="header__menu-link">サロン案内</a>
             </li>
             <li class="header__menu-item">
-              <a href="/SOL8/Contact.html" class="header__menu-link">問い合わせ</a>
+              <a href="/contact" class="header__menu-link">問い合わせ</a>
             </li>
             <li class="header__menu-item">
-              <a href="/SOL8/blog.html" class="header__menu-link">ブログ</a>
+              <a href="/blog" class="header__menu-link">ブログ</a>
             </li>
           </ul>
         </nav>
@@ -49,7 +49,83 @@
       </div>
     </header>
     <main class="content">
-      <section class="hero" aria-labelledby="hero-title"></section>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <div class="hero__wrapper-image">
+            <h1 class="visually-hidden" id="hero-title">Massage image</h1>
+            <picture class="hero__images">
+              <source srcset="/src/assets/images/hero/avif/1.avif" type="image/awif">
+              <img class="hero__image" width="1920" height="500" src="/src/assets/images/hero/jpg/1.jpg" alt="Massage process">
+            </picture>
+          </div>
+          <a class="button hero__button" href="#">ご予約はこちら</a>
+        </div>
+      </section>
+      <section class="section section__news" aria-labelledby="新着情報">
+        <div class="section__inner container">
+          <header class="section__header">
+            <h2 class="section__title h3" id="新着情報">新着情報</h2>
+            <div class="section__description">
+              <p>
+                <a class="button section__news-button" href="#">全部を見る</a>
+              </p>
+            </div>
+          </header>
+          <div class="section__body">
+            <div class="news">
+              <div class="news__wrapper">
+                <ul class="news__card-list">
+                  <li class="news__card-item">
+                    <a href="#" class="news__card">
+                      <header class="news__card-header">
+                        <picture class="news__card-images">
+                          <source srcset="/src/assets/images/hero/avif/1.avif" type="image/avif">
+                          <img width="473" height="348" loading="lazy" class="news__card-image" src="/src/assets/images/hero/jpg/1.jpg">
+                        </picture>
+                      </header>
+                      <div class="news__card-body">
+                        <time class="news__card-date">2029.02.18</time>
+                        <p class="news__card-info">Lorem ipsum dolor sit amet consectetur adipisicing squam magni e optio sePerspiciatis enim exercitationem non accusantium quos, blanditiis ut laboriosam, eius modi saepecimus voluptatibus, minus quam quisquam, expedita amet iusto velit asperiores saepe voluptate fugiat aperiam natus unde hic.</p>
+                        <a href="#" class="news__card-link">もっと見る</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="news__card-item">
+                    <a href="#" class="news__card">
+                      <header class="news__card-header">
+                        <picture class="news__card-images">
+                          <source srcset="/src/assets/images/hero/avif/1.avif" type="image/avif">
+                          <img width="473" height="348" loading="lazy" class="news__card-image" src="/src/assets/images/hero/jpg/1.jpg">
+                        </picture>
+                      </header>
+                      <div class="news__card-body">
+                        <time class="news__card-date">2029.02.18</time>
+                        <p class="news__card-info">Lorem ipsum dolor sit amet consectdiandae Harum suscipit, t expedita asperiores sunt temporibus saepe! Reprehenderit ducimus voluptatibus, minus quam quisquam, expedita amet iusto velit asperiores saepe voluptate fugiat aperiam natus unde hic.</p>
+                        <a href="#" class="news__card-link">もっと見る</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="news__card-item">
+                    <a href="#" class="news__card">
+                      <header class="news__card-header">
+                        <picture class="news__card-images">
+                          <source srcset="/src/assets/images/hero/avif/1.avif" type="image/avif">
+                          <img width="473" height="348" loading="lazy" class="news__card-image" src="/src/assets/images/hero/jpg/1.jpg">
+                        </picture>
+                      </header>
+                      <div class="news__card-body">
+                        <time class="news__card-date">2029.02.18</time>
+                        <p class="news__card-info">Lorem ipsum dolor sit amet consectdiandae Harum suscipit, t expedita asperiores sunt temporibus saepe! Reprehenderit ducimus voluptatibus, minus quam quisquam, expedita amet iusto velit asperiores saepe voluptate fugiat aperiam natus unde hic.</p>
+                        <a href="#" class="news__card-link">もっと見る</a>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__inner container">FOOTER</div>
