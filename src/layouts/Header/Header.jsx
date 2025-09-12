@@ -13,27 +13,27 @@ export default (props) => {
     },
     {
       label: 'コンセプト',
-      href: '/about',
+      href: '/about.html',
     },
     {
       label: '初めての方へ',
-      href: '/firstTime',
+      href: '/firstTime.html',
     },
     {
       label: 'メニュー',
-      href: '/menu',
+      href: '/menu.html',
     },
     {
       label: 'サロン案内',
-      href: '/AboutTheSalon.',
+      href: '/AboutTheSalon.html',
     },
     {
       label: '問い合わせ',
-      href: '/Contact',
+      href: '/Contact.html',
     },
     {
       label: 'ブログ',
-      href: '/blog',
+      href: '/blog.html',
     },
   ]
 
