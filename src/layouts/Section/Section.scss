@@ -18,13 +18,17 @@
     }
   }
 
+  &__title {
+    letter-spacing: 8px;
+  }
+
   &__inner {
     display: grid;
     row-gap: 30px;
   }
 
   &__news {
-    background-color: var(--color-light-gold);
+    background-color: var(--color-light-1);
 
     &-button {
       padding: 15px 30px;

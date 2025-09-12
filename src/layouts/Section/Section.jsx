@@ -11,7 +11,7 @@ export default (props) => {
     >
       <div className="section__inner container">
       <header className="section__header">
-        <h2 className="section__title h3" id={titleId}>
+        <h2 className="section__title" id={titleId}>
           {title}
         </h2>
         {description && (

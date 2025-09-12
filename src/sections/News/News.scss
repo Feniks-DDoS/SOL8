@@ -36,9 +36,8 @@
         &-link {
             position: relative;
             max-width: max-content;
-            justify-self: end;
             font-weight: 600;
-            @include fluid-text(20, 18);
+            @include fluid-text(20, 16);
 
             &::after {
                 @include abs-center;
@@ -55,7 +54,6 @@
 
             @include hover {
                 &::after {
-                    stroke: var(--color-accent-2);
                     left: 120%;
                 }
             }
@@ -64,7 +62,11 @@
         &-info {
             @include fluid-text(16, 14);
             font-weight: 500;
-            min-height: 155px;
+              display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;  
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             @include mobile {
                 min-height: 100px;

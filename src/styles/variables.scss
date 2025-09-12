@@ -1,27 +1,18 @@
 :root {
-  --color-light: #ffffff;
-  --color-light-1: #E2E9ED;
-  --color-light-2: #F9F1E5;
+  --color-light: #FAF9F6;
+  --color-light-1: #F8F5F0;
+
   --color-black: #000000;
 
   --color-gray: #808080;
-  --color-gray-1: #C0BFBB;
-  --color-gray-2: #A69B8D;
-  --color-gray-3: #775F4A;
+  --color-dark-gray: #2F2F2F;
 
-  --color-accent: #F2DBDA;
-  --color-accent-1: #C38A85;
-  --color-accent-2: #743A39;
-  
-  --color-gold: #EFE0B7;
-  --color-gold-2: #EEDBBB;
-  --color-gold-3: #F9F1D7;
-  --color-gold-4: #AB885D;
-  --color-light-gold: #FCFAF1;
-  --color-light-gold-1: #F3EBDC;
+  --color-accent: #8FB996;
+  --color-accent-1: #B56551;
 
+  --color-midl: #E6CCB2;
 
-  --border: var(--border-width-s) solid var(--color-accent-1);
+  --border: var(--border-width-s) solid var(--color-midl);
 
   --border-width-m: 3px;
   --border-width-s: 1px;
@@ -30,7 +21,8 @@
   --border-radius: 8px;
   --border-radius-xs: 6px;
 
-  --font-family-base: 'Noto Sans JP';
+  --font-family-base: 'Noto Sans JP', sans-serif;
+  --font-family-serif: 'Noto Serif JP', serif;
   --container-width: #{$container-desktop-width}px;
   --container-padding-x: 16px;
 

@@ -1,6 +1,6 @@
 .header {
   padding-block: 30px;
-  background-color: var(--color-light-gold);
+  background-color: var(--color-light-1);
 
   @include mobile {
     padding-block: 15px;
@@ -18,7 +18,7 @@
         @include tablet {
             position: fixed;
             inset: 0;
-            background-color: var(--color-light-gold);
+            background-color: var(--color-light-1);
             display: flex;
             align-items: center;
             justify-content: center;

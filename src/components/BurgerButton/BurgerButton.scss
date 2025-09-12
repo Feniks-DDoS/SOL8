@@ -8,7 +8,7 @@
   border-radius: var(--border-radius-xs);
 
   @include hover {
-    background-color: var(--color-accent-2);
+    background-color: var(--color-accent-1);
     border-color: transparent;
   }
 
@@ -36,7 +36,7 @@
       stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
-    stroke: var(--color-gold-4);
+    stroke: var(--color-midl);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 60 207;

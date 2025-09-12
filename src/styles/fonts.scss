@@ -1,14 +1,57 @@
 @font-face {
   font-family: 'Noto Serif JP';
-  src: url('../assets/fonts/NotoSerifJP.woff2') format('truetype-variations');
-  font-weight: 400 900;
+  src: url('../assets/fonts/NotoSerifJP-Regular.woff2') format('woff2');
+  font-weight: 400 ;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('../assets/fonts/NotoSerifJP-Medium.woff2') format('woff2');
+  font-weight: 500 ;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('../assets/fonts/NotoSerifJP-SemiBold.woff2') format('woff2');
+  font-weight: 600 ;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('../assets/fonts/NotoSerifJP-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../assets/fonts/NotoSansJP-Regular.woff2') format('woff2');
+  font-weight: 400 ;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Noto Sans JP';
-  src: url('../assets/fonts/NotoSansJP.woff2') format('truetype-variations');
-  font-weight: 400 900;
+  src: url('../assets/fonts/NotoSansJP-Medium.woff2') format('woff2');
+  font-weight: 500 ;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../assets/fonts/NotoSansJP-SemiBold.woff2') format('woff2');
+  font-weight: 600 ;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../assets/fonts/NotoSansJP-Bold.woff2') format('woff2');
+  font-weight: 700 ;
   font-style: normal;
   font-display: swap;
 }

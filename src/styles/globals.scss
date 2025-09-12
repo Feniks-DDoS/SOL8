@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   font-weight: 400;
   font-family: var(--font-family-base), sans-serif;
-  color: var(--color-black);
+  color: var(--color-dark-gray);
   background-color: var(--color-light);
 }
 
@@ -25,12 +25,12 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    font-family: 'Noto Serif JP';
+    font-family: var(--font-family-serif);
 }
 
 h1,
 .h1 {
-  @include fluid-text(58, 28);
+  @include fluid-text(58, 32);
 
   font-weight: 700;
 }
