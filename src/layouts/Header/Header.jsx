@@ -5,35 +5,36 @@ import BurgerButton from '@/components/BurgerButton'
 
 export default (props) => {
   const { url } = props
+  const BASE = '/SOL8/'
 
   const menuItems = [
     {
       label: 'ホーム',
-      href: '/',
+      href: `${BASE}`,
     },
     {
       label: 'コンセプト',
-      href: '/about.html',
+      href: `${BASE}/about.html`,
     },
     {
       label: '初めての方へ',
-      href: '/firstTime.html',
+      href: `${BASE}/firstTime.html`,
     },
     {
       label: 'メニュー',
-      href: '/menu.html',
+      href: `${BASE}/menu.html`,
     },
     {
       label: 'サロン案内',
-      href: '/AboutTheSalon.html',
+      href: `${BASE}/AboutTheSalon.html`,
     },
     {
       label: '問い合わせ',
-      href: '/Contact.html',
+      href: `${BASE}/Contact.html`,
     },
     {
       label: 'ブログ',
-      href: '/blog.html',
+      href: `${BASE}/blog.html`,
     },
   ]
 
