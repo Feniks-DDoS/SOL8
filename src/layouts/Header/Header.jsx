@@ -1,66 +1,67 @@
+import Logo from '@/components/Logo'
 import './Header.scss'
 import clsx from 'clsx'
-import Logo from '@/components/Logo'
-import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
-import Icon from '@/components/Icon'
 
 export default (props) => {
   const { url } = props
 
   const menuItems = [
     {
-      label: 'Home',
+      label: 'ホーム',
       href: '/',
     },
     {
-      label: 'About',
+      label: 'コンセプト',
       href: '/about',
+    },
+    {
+      label: '初めての方へ',
+      href: '/firstTime',
+    },
+    {
+      label: 'メニュー',
+      href: '/menu',
+    },
+    {
+      label: 'サロン案内',
+      href: '/AboutTheSalon.',
+    },
+    {
+      label: '問い合わせ',
+      href: '/Contact',
+    },
+    {
+      label: 'ブログ',
+      href: '/blog',
     },
   ]
 
   return (
-    <header className="header" data-js-overlay-menu="">
+    <header className='header' data-js-header="">
       <div className="header__inner container">
-        <Logo className="header__logo" loading="eager" />
-        <dialog
-          className="header__overlay-menu-dialog"
-          data-js-overlay-menu-dialog=""
-        >
-          <nav className="header__menu">
-            <ul className="header__menu-list">
-              {menuItems.map(({ label, href }, index) => (
-                <li className="header__menu-item" key={index}>
-                  <a
-                    className={clsx(
-                      'header__menu-link',
-                      href === url && 'is-active'
-                    )}
-                    href={href}
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="header__actions">
-            <Button className="header__button">
-              <span>Search</span>
-              <Icon name="search" />
-            </Button>
-            <Button className="header__button">
-              <span>Notifications</span>
-              <Icon name="notification" />
-            </Button>
-          </div>
-        </dialog>
-        <BurgerButton
-          className="header__burger-button visible-tablet"
+         <Logo className='header__logo'/>
+         <nav className="header__menu" data-js-header-overlay="">
+          <ul className="header__menu-list">
+            {menuItems.map(({label , href}) => (
+              <li className="header__menu-item">
+                <a 
+                href={href} 
+                className={clsx(
+                "header__menu-link",
+                href === url && "is-active"  
+                  )}>{label}
+                </a>
+              </li>
+            ))}
+          </ul>
+         </nav>
+         <BurgerButton
+          className="header__button visible-tablet"
           extraAttrs={{
-            'data-js-overlay-menu-burger-button': '',
+            "data-js-header-burger-button": '',
           }}
-        />
+          />
       </div>
     </header>
   )

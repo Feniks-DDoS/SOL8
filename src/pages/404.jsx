@@ -1,14 +1,14 @@
 import Button from '@/components/Button'
 
 export const metadata = {
-  title: 'Not found',
+  title: '見つかりません',
 }
 
 export default () => {
   return (
     <>
-      <h1>Page not found</h1>
-      <Button href="/">Home</Button>
+      <h1>ページが見つかりません</h1>
+      <Button href="/">ホーム</Button>
     </>
   )
 }

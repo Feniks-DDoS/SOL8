@@ -10,6 +10,8 @@
   "type": "module",
   "scripts": {
     "start": "minista",
+    "predeploy": "npm run build && echo.> dist/.nojekyll",
+    "deploy": "gh-pages -d dist --dotfiles",
     "build": "minista build",
     "preview": "minista preview",
     "lint:js": "eslint src --ext .js,.jsx",

@@ -1,84 +1,90 @@
 .header {
-  padding-block: 20px;
-  background-color: var(--color-gray);
+  padding-block: 30px;
+  background-color: var(--color-light-gold);
 
-  &__inner {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    column-gap: 16px;
-
-    @include tablet {
-      display: flex;
-      justify-content: space-between;
-    }
+  @include mobile {
+    padding-block: 15px;
   }
 
-  &__overlay-menu-dialog {
-    position: fixed;
-    inset: 0;
-    flex-direction: column-reverse;
-    justify-content: start;
-    row-gap: 16px;
-    width: 100%;
-    height: 100%;
-    padding: var(--container-padding-x);
-    background-color: var(--color-gray);
-    border: none;
-
-    @include tablet-above {
-      display: contents;
-    }
-
-    @include tablet {
-      &[open] {
+    &__inner {
         display: flex;
-      }
-    }
-  }
-
-  &__menu {
-    @include tablet {
-      overflow-y: auto;
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      border-radius: 0;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 16px;
     }
 
-    &-list {
-      display: flex;
-      align-items: center;
-      column-gap: 6px;
+    &__menu {
 
-      @include tablet {
-        flex-direction: column;
-        row-gap: 16px;
-        margin-block: auto;
-      }
+        @include tablet {
+            position: fixed;
+            inset: 0;
+            background-color: var(--color-light-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-duration);
+
+            &:not(.is-active) {
+                @include hide;
+            }
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
+
+            @include tablet {
+                justify-content: start;
+                flex-direction: column;
+                row-gap: 30px;
+            }
+        }
+
+        &-link {
+            position: relative;
+
+            &.is-active {
+                color: var(--color-accent-1);
+                pointer-events: none;
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 0%;
+                background-color: var(--color-accent-2);
+                transition: var(--transition-duration);
+                height: 2px;
+                border-radius: var(--border-radius-xs);
+            }
+
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::before {
+                content: "";
+                @include abs-center;
+                width: 100%;
+                height: 44px;
+            }
+        }
     }
 
-    &-link {
-      padding: 14px 20px;
-      color: var(--color-white);
 
-      &.is-active {
-        text-decoration: underline;
-      }
+    &__button {
+        @include tablet {
+            z-index: 100;
+        }
     }
-  }
-
-  &__actions {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-
-    @include tablet-above {
-      justify-content: end;
-    }
-  }
-
-  &__burger-button {
-    position: relative;
-  }
 }

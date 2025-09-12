@@ -1,7 +1,7 @@
 import About from '@/sections/About'
 
 export const metadata = {
-  title: 'About',
+  title: 'コンセプト',
 }
 
 export default () => {

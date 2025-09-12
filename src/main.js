@@ -1,5 +1,3 @@
-import OverlayMenu from '@/modules/OverlayMenu'
-import InputMaskCollection from '@/modules/InputMaskCollection'
+import OverlayMenu from '@/modules/OverlayMenu.js'
 
-new OverlayMenu()
-new InputMaskCollection()
+new OverlayMenu()   

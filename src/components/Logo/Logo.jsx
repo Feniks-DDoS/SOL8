@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export default (props) => {
   const { className, loading = 'lazy' } = props
 
-  const title = 'Home'
+  const title = 'ホーム'
 
   return (
     <a
@@ -15,10 +15,10 @@ export default (props) => {
     >
       <img
         className="logo__image"
-        src="/images/logo.svg"
-        alt=""
-        width={200}
-        height={68}
+        src=""
+        alt="Logo SOL8"
+        width={110}
+        height={30}
         loading={loading}
       />
     </a>

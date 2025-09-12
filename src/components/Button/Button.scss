@@ -4,12 +4,12 @@
   column-gap: 0.3em;
   padding: 8px 12px;
   color: var(--color-black);
-  background-color: var(--color-white);
+  background-color: var(--color-light-gold-1);
   border: var(--border);
-  border-radius: var(--border-radius-m);
+  border-radius: var(--border-radius-xs);
 
   @include hover {
-    color: var(--color-white);
-    background-color: var(--color-accent);
+    opacity: 0.8;
+    color: var(--color-accent-1);
   }
 }

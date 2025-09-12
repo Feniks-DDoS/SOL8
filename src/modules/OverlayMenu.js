@@ -1,8 +1,8 @@
 class OverlayMenu {
   selectors = {
-    root: '[data-js-overlay-menu]',
-    dialog: '[data-js-overlay-menu-dialog]',
-    burgerButton: '[data-js-overlay-menu-burger-button]',
+    root: '[data-js-header]',
+    overlay: '[data-js-header-overlay]',
+    burgerButton: '[data-js-header-burger-button]',
   }
 
   stateClasses = {
@@ -15,7 +15,7 @@ class OverlayMenu {
     if (!this.rootElement) {
       return
     }
-    this.dialogElement = this.rootElement.querySelector(this.selectors.dialog)
+    this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
     this.burgerButtonElement = this.rootElement.querySelector(
       this.selectors.burgerButton
     )
@@ -24,7 +24,7 @@ class OverlayMenu {
 
   onBurgerButtonClick = () => {
     this.burgerButtonElement.classList.toggle(this.stateClasses.isActive)
-    this.dialogElement.open = !this.dialogElement.open
+    this.overlayElement.classList.toggle(this.stateClasses.isActive)
     document.documentElement.classList.toggle(this.stateClasses.isLock)
   }
 
