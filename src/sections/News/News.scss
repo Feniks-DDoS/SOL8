@@ -1,0 +1,98 @@
+.news {
+
+    &__card {
+        display: grid;
+        row-gap: 10px;
+
+        &-list {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3 ,1fr);
+            gap: 15px;
+
+            @include tablet {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            @include mobile {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-header {
+            overflow: hidden;
+            border-radius: var(--border-radius);
+
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        &-link {
+            position: relative;
+            max-width: max-content;
+            justify-self: end;
+            font-weight: 600;
+            @include fluid-text(20, 18);
+
+            &::after {
+                @include abs-center;
+                left: 115%;
+                content: "";
+                background: url('/src/assets/icons/arrow-right.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 20px;
+                height: 20px;       
+                transition: var(--transition-duration);     
+            }
+
+            @include hover {
+                &::after {
+                    stroke: var(--color-accent-2);
+                    left: 120%;
+                }
+            }
+        }
+
+        &-info {
+            @include fluid-text(16, 14);
+            font-weight: 500;
+            min-height: 155px;
+
+            @include mobile {
+                min-height: 100px;
+            }
+        }
+
+        &-date {
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+        &-item {
+            align-self: start;
+            max-width: 473px;
+            max-height: 100%;
+            max-width: 100%;
+
+            @include hover {
+                .news__card-image {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        &-image {
+            width: 100%;
+            border-radius: var(--border-radius);
+            transition: var(--transition-duration);
+        }
+    }
+}

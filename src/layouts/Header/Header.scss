@@ -48,30 +48,7 @@
             &.is-active {
                 color: var(--color-accent-1);
                 pointer-events: none;
-                &::after {
-                    width: 100%;
-                }
             }
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 0%;
-                background-color: var(--color-accent-2);
-                transition: var(--transition-duration);
-                height: 2px;
-                border-radius: var(--border-radius-xs);
-            }
-
-            @include hover {
-                &::after {
-                    width: 100%;
-                }
-            }
-
             &::before {
                 content: "";
                 @include abs-center;

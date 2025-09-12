@@ -6,9 +6,10 @@ export default (props) => {
 
   return (
     <section
-      className={clsx('section', 'container', className)}
+      className={clsx('section',  className)}
       aria-labelledby={titleId}
     >
+      <div className="section__inner container">
       <header className="section__header">
         <h2 className="section__title h3" id={titleId}>
           {title}
@@ -20,6 +21,7 @@ export default (props) => {
         )}
       </header>
       <div className="section__body">{children}</div>
+      </div>
     </section>
   )
 }

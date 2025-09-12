@@ -8,11 +8,31 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
+    border-bottom: var(--border);
+    padding-bottom: 15px;
 
     @include mobile {
       flex-direction: column;
       align-items: start;
       row-gap: 20px;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    row-gap: 30px;
+  }
+
+  &__news {
+    background-color: var(--color-light-gold);
+
+    &-button {
+      padding: 15px 30px;
+      background-color: transparent;
+
+      @include mobile {
+        padding: 10px 20px;
+      }
     }
   }
 }

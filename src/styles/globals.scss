@@ -9,9 +9,23 @@ body {
 
   display: flex;
   flex-direction: column;
+  font-weight: 400;
   font-family: var(--font-family-base), sans-serif;
   color: var(--color-black);
   background-color: var(--color-light);
+}
+
+section {
+  overflow-x: hidden
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: 'Noto Serif JP';
 }
 
 h1,

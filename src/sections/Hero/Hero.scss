@@ -1,3 +1,41 @@
 .hero {
-  padding-block: 50px;
+
+  padding-bottom: 50px;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    @include tablet {
+      gap: 30px;
+    }
+  }
+
+  &__images {
+    display: block;
+    width: 100dvw;
+    height: 500px;
+
+    @include tablet {
+      height: 300px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__button {
+    @include fluid-text(24, 18);
+    padding: 20px 120px;
+    font-weight: 500;
+    background-color: transparent;
+
+    @include tablet {
+      padding: 15px 70px;
+    }
+  }
 }

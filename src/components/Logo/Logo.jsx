@@ -15,7 +15,7 @@ export default (props) => {
     >
       <img
         className="logo__image"
-        src=""
+        src="/images/logo.svg"
         alt="Logo SOL8"
         width={110}
         height={30}

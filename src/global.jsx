@@ -10,7 +10,7 @@ export default (props) => {
 
   return (
     <>
-      <Head htmlAttributes={{ lang: 'jp' }}>
+      <Head htmlAttributes={{ lang: 'ja' }}>
         <title>SOL8 | {title}</title>
         <script src="/src/main.js" type="module" />
         <link rel="manifest" href={manifest} />

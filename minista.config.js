@@ -1,9 +1,9 @@
 import { defineConfig } from 'minista'
 import path from 'path'
 
-/**
- * @see https://minista.qranoko.jp/docs/config-file
- */
+// /**
+//  * @see https://minista.qranoko.jp/docs/config-file
+//  */
 export default defineConfig({
   // Корень проекта (обычно не меняется)
   root: '',
