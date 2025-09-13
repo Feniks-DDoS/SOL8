@@ -16,7 +16,7 @@
   &__images {
     display: block;
     width: 100dvw;
-    height: 500px;
+    height: 90dvh;
 
     @include tablet {
       height: 300px;

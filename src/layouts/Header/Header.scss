@@ -44,6 +44,11 @@
 
         &-link {
             position: relative;
+            color: var(--color-dark-gray);
+
+            @include hover {
+                color: var(--color-accent-1);
+            }
 
             &.is-active {
                 color: var(--color-accent-1);

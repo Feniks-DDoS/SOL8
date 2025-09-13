@@ -10,6 +10,9 @@
   @include hover {
     background-color: var(--color-accent-1);
     border-color: transparent;
+    .burger-button__line {
+      stroke: var(--color-accent);
+    }
   }
 
   &.is-active {
@@ -36,7 +39,7 @@
       stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
-    stroke: var(--color-midl);
+    stroke: var(--color-accent-1);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 60 207;

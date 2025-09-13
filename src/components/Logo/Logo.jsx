@@ -19,7 +19,6 @@ export default (props) => {
         alt="Logo SOL8"
         width={110}
         height={30}
-        loading={loading}
       />
     </a>
   )

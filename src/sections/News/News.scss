@@ -1,4 +1,4 @@
-.news {
+.news {    
 
     &__card {
         display: grid;
@@ -39,6 +39,11 @@
             max-width: max-content;
             font-weight: 600;
             @include fluid-text(20, 16);
+            color: var(--color-dark-gray);
+
+            @include hover {
+                color: var(--color-accent-1);
+            }
 
             &::after {
                 @include abs-center;
