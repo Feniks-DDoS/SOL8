@@ -1,19 +1,10 @@
 .burger-button {
-  @include flex-center(true);
   @include square(44px);
 
   padding: 0;
   background-color: transparent;
-  border: var(--border);
-  border-radius: var(--border-radius-xs);
-
-  @include hover {
-    background-color: var(--color-accent-1);
-    border-color: transparent;
-    .burger-button__line {
-      stroke: var(--color-accent);
-    }
-  }
+  border: none;
+  position: relative;
 
   &.is-active {
     .burger-button__line {
@@ -34,12 +25,20 @@
     }
   }
 
+  &__title {
+    position: absolute;
+    bottom: -9px;
+    left: 2px;
+    color: var(--color-main);
+    font-family: var(--font-family-en);
+  }
+
   &__line {
     transition:
       stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
-    stroke: var(--color-accent-1);
+    stroke: var(--color-main);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 60 207;

@@ -3,20 +3,18 @@ html {
     overflow: hidden;
   }
 
-  &::selection {
-        background-color: var(--color-accent-1);
-        color: var(--color-accent);
-  }
+  
 }
 
 body {
-  @include fluid-text(18, 14);
+  @include fluid-text(16, 14);
 
   display: flex;
   flex-direction: column;
-  font-weight: 400;
-  font-family: var(--font-family-base), sans-serif;
-  color: var(--color-gray);
+  font-feature-settings: "palt";
+  font-weight: 500;
+  font-family: var(--font-family-base);
+  color: var(--color-body);
   background-color: var(--color-light);
 }
 
@@ -31,8 +29,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    font-family: var(--font-family-serif);
-    color: var(--color-dark-gray)
+    font-family: var(--font-family-en);
 }
 
 h1,
@@ -44,14 +41,14 @@ h1,
 
 h2,
 .h2 {
-  @include fluid-text(48, 38);
+  @include fluid-text(52, 38);
 
   font-weight: 700;
 }
 
 h3,
 .h3 {
-  @include fluid-text(38, 28);
+  @include fluid-text(34, 28);
 
   font-weight: 700;
 }

@@ -2,13 +2,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: 0.3em;
-  padding: 15px 70px;
-  color: var(--color-dark-gray);
-  background-color: var(--color-accent);
-  border: var(--border);
-  border-radius: var(--border-radius-xs);
-
-  @include hover {
-    background-color: var(--color-accent-1);
-  }
+  color: var(--color-main);
+  max-width: 280px;
+  transition: var(--transition-duration);
 }

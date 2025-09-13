@@ -1,28 +1,26 @@
 :root {
-  --color-light: #F9F1E5;
-  --color-light-1: #E6C7A8;
+  
+  --color-light: #fff;
+  --color-dark: #000;
 
-  --color-black: #000000;
+  --color-gray: #333;
+  
+  --color-dark-blue: #101560;
+  --color-txt-sub: #171c60;
 
-  --color-gray: #5C4B44;
-  --color-dark-gray: #743A39;
+  --color-main: #9d894a;
+  --color-body: #171923;
 
-  --color-accent: #F2DBDA;
-  --color-accent-1: #C38A85;
+  --bg-border: #dcd4c1;
+  --bg-sub: #f8f4e9;
+  --bg-off-light: #f7f4ea;
 
-  --color-midl: #E6CCB2;
+  --border: 1px solid var(--color-main);
 
-  --border: var(--border-width-s) solid var(--color-accent-1);
+  --font-family-en: "Cormorant", sans-serif;
+  --font-family-base: "Noto Sans JP", sans-serif;
 
-  --border-width-m: 3px;
-  --border-width-s: 1px;
 
-  --border-radius-m: 10px;
-  --border-radius: 8px;
-  --border-radius-xs: 6px;
-
-  --font-family-base: 'Noto Sans JP', sans-serif;
-  --font-family-serif: 'Noto Serif JP', serif;
   --container-width: #{$container-desktop-width}px;
   --container-padding-x: 16px;
 
