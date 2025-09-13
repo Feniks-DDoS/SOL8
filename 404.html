@@ -6,38 +6,37 @@
     <title>SOL8 | 見つかりません</title>
     <link rel="icon" sizes="16x16" href="/SOL8/assets/images/favicon.svg">
     <link rel="icon" sizes="32x32" href="/SOL8/assets/images/favicon.svg">
-    <link rel="manifest" href="/SOL8/assets/site.webmanifest">
     <script src="/SOL8/assets/main.js" type="module"></script>
     <link rel="stylesheet" href="/SOL8/assets/bundle.css">
   </head>
   <body>
     <header class="header" data-js-header="">
       <div class="header__inner container">
-        <a class="logo header__logo" href="/" title="ホーム" aria-label="ホーム">
-          <img class="logo__image" src="/public/images/logo.svg" alt="Logo SOL8" width="110" height="30">
+        <a class="logo header__logo" href="#" title="ホーム" aria-label="ホーム">
+          <img class="logo__image" src="/SOL8/assets/images/logo.svg" alt="Logo SOL8" width="110" height="30" loading="lazy">
         </a>
         <nav class="header__menu" data-js-header-overlay="">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="/" class="header__menu-link">ホーム</a>
+          <ul class="menu__list header__menu-list">
+            <li class="menu__item header__menu-item">
+              <a href="/" class="menu__link header__menu-link">ホーム</a>
             </li>
-            <li class="header__menu-item">
-              <a href="/about" class="header__menu-link">コンセプト</a>
+            <li class="menu__item header__menu-item">
+              <a href="/about" class="menu__link header__menu-link">コンセプト</a>
             </li>
-            <li class="header__menu-item">
-              <a href="/firstTime" class="header__menu-link">初めての方へ</a>
+            <li class="menu__item header__menu-item">
+              <a href="/firstTime" class="menu__link header__menu-link">初めての方へ</a>
             </li>
-            <li class="header__menu-item">
-              <a href="/menu" class="header__menu-link">メニュー</a>
+            <li class="menu__item header__menu-item">
+              <a href="/menu" class="menu__link header__menu-link">メニュー</a>
             </li>
-            <li class="header__menu-item">
-              <a href="/aboutTheSalon" class="header__menu-link">サロン案内</a>
+            <li class="menu__item header__menu-item">
+              <a href="/aboutTheSalon" class="menu__link header__menu-link">サロン案内</a>
             </li>
-            <li class="header__menu-item">
-              <a href="/contact" class="header__menu-link">問い合わせ</a>
+            <li class="menu__item header__menu-item">
+              <a href="/contact" class="menu__link header__menu-link">問い合わせ</a>
             </li>
-            <li class="header__menu-item">
-              <a href="/blog" class="header__menu-link">ブログ</a>
+            <li class="menu__item header__menu-item">
+              <a href="/blog" class="menu__link header__menu-link">ブログ</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +54,69 @@
       <a class="button" href="/">ホーム</a>
     </main>
     <footer class="footer">
-      <div class="footer__inner container">FOOTER</div>
+      <div class="footer__inner container">
+        <header class="footer__header">
+          <h2 class="footer__title h3">ソシャルメディア</h2>
+          <div class="soc1als footer__soc1als">
+            <div class="soc1als__inner">
+              <ul class="soc1als__list">
+                <li class="soc1als__item">
+                  <a href="#" class="soc1als__link" title="Instagram"><span class="visually-hidden">Instagram</span><span class="icon soc1als__svg">
+                      <svg fill="none" stroke="currentColor">
+                        <use href="/SOL8/assets/images/icons.svg#instagram"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a href="#" class="soc1als__link" title="Line"><span class="visually-hidden">Line</span><span class="icon soc1als__svg">
+                      <svg fill="none" stroke="currentColor">
+                        <use href="/SOL8/assets/images/icons.svg#line"></use>
+                      </svg>
+                    </span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="footer__body">
+          <nav class="footer__menu">
+            <a class="logo footer__logo" href="#" title="ホーム" aria-label="ホーム">
+              <img class="logo__image" src="/SOL8/assets/images/logo.svg" alt="Logo SOL8" width="110" height="30" loading="lazy">
+            </a>
+            <ul class="menu__list footer__menu-list">
+              <li class="menu__item footer__menu-item">
+                <a href="/" class="menu__link footer__menu-link">ホーム</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="/about" class="menu__link footer__menu-link">コンセプト</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="/firstTime" class="menu__link footer__menu-link">初めての方へ</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="/menu" class="menu__link footer__menu-link">メニュー</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="/aboutTheSalon" class="menu__link footer__menu-link">サロン案内</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="/contact" class="menu__link footer__menu-link">問い合わせ</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="/blog" class="menu__link footer__menu-link">ブログ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__extra">
+          <h3 class="footer__extra-title ">場所</h3>
+          <div class="footer__extra-header">
+            <address class="footer__address">Address: 名古屋市中区千代田2-8-17グリーンハイツ鶴舞公園1F</address>
+            <a href="tel:0809392323" class="footer__tel">TEL: 080-9392-3323</a>
+          </div>
+        </div>
+        <p class="footer__copyrihgt">Copyright © 2025 SOL8 All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
