@@ -1,6 +1,7 @@
 import './Hero.scss'
 import Button from '@/components/Button'
-
+import imgSrc from '@/assets/images/hero/jpg/1.jpg'
+import avifSrc from '@/assets/images/hero/avif/1.avif'
 export default () => {
 
   return (
@@ -9,12 +10,12 @@ export default () => {
         <div className="hero__wrapper-image">
           <h1 className="visually-hidden" id='hero-title'>Massage image</h1>
           <picture className='hero__images'>
-            <source srcSet='/src/assets/images/hero/avif/1.avif' type='image/awif'/>
+            <source srcSet={avifSrc} type='image/awif'/>
             <img
             className='hero__image'
             width={1920}
             height={500}
-            src='/src/assets/images/hero/jpg/1.jpg'
+            src={imgSrc}
             alt='Massage process'
             />
           </picture>

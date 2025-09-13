@@ -1,11 +1,14 @@
+import imgSrc from '@/assets/images/hero/jpg/1.jpg'
+import avifSrc from '@/assets/images/hero/avif/1.avif'
+
 export const newsData = [
 
     {
         id: 1,
         body: 'Lorem ipsum dolor sit amet consectetur adipisicing squam magni e optio  sePerspiciatis enim exercitationem non accusantium quos, blanditiis ut laboriosam, eius modi saepecimus voluptatibus, minus quam quisquam, expedita amet iusto velit asperiores saepe voluptate fugiat aperiam natus unde hic.',
-        imgSrc: '/src/assets/images/hero/jpg/1.jpg',
+        imgSrc: imgSrc,
         avifSrc: {
-          srcSet: '/src/assets/images/hero/avif/1.avif',
+          srcSet: avifSrc,
           type: 'image/avif'  
         },
         date: '2029.02.18',
@@ -15,9 +18,9 @@ export const newsData = [
     {
         id: 2,
         body: 'Lorem ipsum dolor sit amet consectdiandae Harum suscipit, t expedita asperiores sunt temporibus saepe! Reprehenderit ducimus voluptatibus, minus quam quisquam, expedita amet iusto velit asperiores saepe voluptate fugiat aperiam natus unde hic.',
-        imgSrc: '/src/assets/images/hero/jpg/1.jpg',
+        imgSrc: imgSrc,
         avifSrc: {
-          srcSet: '/src/assets/images/hero/avif/1.avif',
+          srcSet: avifSrc,
           type: 'image/avif'  
         },
         date: '2029.02.18',
@@ -27,9 +30,9 @@ export const newsData = [
     {
         id: 3,
         body: 'Lorem ipsum dolor sit amet consectdiandae Harum suscipit, t expedita asperiores sunt temporibus saepe! Reprehenderit ducimus voluptatibus, minus quam quisquam, expedita amet iusto velit asperiores saepe voluptate fugiat aperiam natus unde hic.',
-        imgSrc: '/src/assets/images/hero/jpg/1.jpg',
+        imgSrc: imgSrc,
         avifSrc: {
-          srcSet: '/src/assets/images/hero/avif/1.avif',
+          srcSet: avifSrc,
           type: 'image/avif'  
         },
         date: '2029.02.18',
