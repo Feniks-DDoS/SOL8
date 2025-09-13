@@ -10,7 +10,7 @@ export default (props) => {
       aria-labelledby={titleId}
     >
       <div className="section__inner container">
-      <header className="section__header">
+      <header data-js-animation="" className="section__header">
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>

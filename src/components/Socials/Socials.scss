@@ -1,0 +1,23 @@
+.soc1als {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        column-gap: 20px;
+    }
+
+    &__link {
+        width: 55px;
+        height: 55px;
+        
+        @include hover {
+            color: var(--color-accent-1);
+        }
+    }
+
+    &__svg {
+        width: 100%;
+        height: 100%;
+    }
+}

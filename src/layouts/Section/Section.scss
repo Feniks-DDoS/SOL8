@@ -8,8 +8,16 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
-    border-bottom: var(--border);
-    padding-bottom: 15px;
+
+     transition: 0.5s;
+
+      translate: 0% 20%;
+      opacity: 0;
+
+    &.animate {
+      translate: 0% 0%;
+      opacity: 1;
+    }
 
     @include mobile {
       flex-direction: column;

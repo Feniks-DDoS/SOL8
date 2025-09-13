@@ -1,4 +1,92 @@
 .footer {
-  padding-block: 20px;
-  background-color: var(--color-gray);
+  padding-block: 40px;
+  background-color: var(--color-dark-gray);
+  color: var(--color-light);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    @include tablet {
+      gap: 30px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__header,
+  &__body,
+  &__extra {
+    display: grid;
+    width: 100%;
+    gap: 30px;
+    padding-bottom: 15px;
+    border-bottom: var(--border);
+
+  }
+
+  &__soc1als {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  &__title {
+    color: var(--color-accent);
+  }
+
+  &__logo {
+    align-self: center;
+    width: 200px;
+    height: 50px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    &-link {
+      color: var(--color-light);
+
+      @include hover {
+        color: var(--color-accent-1);
+      }   
+    }
+  }
+
+  &__tel {
+    @include hover {
+      color: var(--color-accent-1);
+    }
+  }
+
+  &__extra {
+
+    &-title {
+      text-align: center;
+      color: var(--color-accent);
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
 }

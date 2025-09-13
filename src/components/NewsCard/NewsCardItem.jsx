@@ -1,6 +1,5 @@
 import './NewsCardItem.scss'
 import clsx from 'clsx'
-import Icon from '../Icon'
 
 export default (props) => {
 
@@ -17,7 +16,7 @@ export default (props) => {
 
     return (
         <>
-          <li className={clsx("news__card-item", className)}>
+          <li data-js-animation="" className={clsx("news__card-item", className)}>
             <a href={linkHref} className="news__card">
               <header className="news__card-header">
                 <picture className='news__card-images'>

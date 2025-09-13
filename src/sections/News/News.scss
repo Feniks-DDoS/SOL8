@@ -1,5 +1,4 @@
 .news {    
-
     &__card {
         display: grid;
         row-gap: 10px;
@@ -91,6 +90,15 @@
             max-width: 100%;
             border: var(--border);
             border-radius: var(--border-radius);
+            transition: 0.5s;
+
+            translate: 0% 10%;
+            opacity: 0;
+
+          &.animate {
+            translate: 0% 0%;
+            opacity: 1;
+        }
             
 
             @include hover {

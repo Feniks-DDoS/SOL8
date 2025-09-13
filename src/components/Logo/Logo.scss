@@ -4,4 +4,8 @@
   @include hover {
     filter: drop-shadow(0px 0px 10px var(--color-accent-1));
   }
+
+  &__image {
+    width: 100%;
+  }
 }

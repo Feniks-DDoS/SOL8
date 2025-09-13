@@ -3,7 +3,7 @@ import { Head } from 'minista'
 import Header from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
-import manifest from '@/assets/favicons/site.webmanifest'
+// import manifest from '@/assets/favicons/site.webmanifest'
 import favicon from '/public/images/favicon.svg'
 
 export default (props) => {
@@ -16,7 +16,7 @@ export default (props) => {
         <script src="/src/main.js" type="module" />
         <link rel="icon" sizes='16x16' href={favicon} />
         <link rel="icon" sizes='32x32' href={favicon} />
-        <link rel="manifest" href={manifest} />
+        {/* <link rel="manifest" href={manifest} /> */}
       </Head>
       <Header url={url} />
       <Content>{children}</Content>

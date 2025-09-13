@@ -2,59 +2,23 @@ import Logo from '@/components/Logo'
 import './Header.scss'
 import clsx from 'clsx'
 import BurgerButton from '@/components/BurgerButton'
+import MenuList from '@/components/MenuList'
 
 export default (props) => {
   const { url } = props
 
-  const menuItems = [
-    {
-      label: 'ホーム',
-      href: '/',
-    },
-    {
-      label: 'コンセプト',
-      href: '/about',
-    },
-    {
-      label: '初めての方へ',
-      href: '/firstTime',
-    },
-    {
-      label: 'メニュー',
-      href: '/menu',
-    },
-    {
-      label: 'サロン案内',
-      href: '/aboutTheSalon',
-    },
-    {
-      label: '問い合わせ',
-      href: '/contact',
-    },
-    {
-      label: 'ブログ',
-      href: '/blog',
-    },
-  ]
+
 
   return (
     <header className='header' data-js-header="">
       <div className="header__inner container">
          <Logo className='header__logo'/>
          <nav className="header__menu" data-js-header-overlay="">
-          <ul className="header__menu-list">
-            {menuItems.map(({label , href}) => (
-              <li className="header__menu-item">
-                <a 
-                href={href} 
-                className={clsx(
-                "header__menu-link",
-                href === url && "is-active"  
-                  )}>{label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <MenuList 
+          url={url} 
+          classNameList="header__menu-list"
+          classNameItem="header__menu-item"
+          classNameLink="header__menu-link"  />
          </nav>
          <BurgerButton
           className="header__button visible-tablet"
