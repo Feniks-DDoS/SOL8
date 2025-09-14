@@ -1,15 +1,17 @@
 import avifImage1 from '@/assets/images/hero/avif/1.avif'
 import avifImage2 from '@/assets/images/hero/avif/2.avif'
 import avifImage3 from '@/assets/images/hero/avif/3.avif'
+import avifImage4 from '@/assets/images/hero/avif/4.avif'
 import jpgImage1 from '@/assets/images/hero/jpg/1.jpg'
 import jpgImage2 from '@/assets/images/hero/jpg/2.jpg'
 import jpgImage3 from '@/assets/images/hero/jpg/3.jpg'
+import jpgImage4 from '@/assets/images/hero/jpg/4.jpg'
 
 
 export const sliderData = [
     {
         id: 1,
-        title: 'Title',
+        title: 'Title: 1',
         subtitle: '',
         body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
@@ -24,7 +26,7 @@ export const sliderData = [
     },
     {
         id: 2,
-        title: 'Title',
+        title: 'Title: 2',
         subtitle: '',
         body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
@@ -39,7 +41,7 @@ export const sliderData = [
     },
     {
         id: 3,
-        title: 'Title',
+        title: 'Title: 3',
         subtitle: '',
         body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
@@ -54,15 +56,15 @@ export const sliderData = [
     },    
     {
         id: 4,
-        title: 'Title',
+        title: 'Title: 4',
         subtitle: '',
         body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
-            srcSet: avifImage3,
+            srcSet: avifImage4,
             type: 'image/avif'
         },
         img: {
-            src: jpgImage3,
+            src: jpgImage4,
             alt: 'Massage proccess',
         },
 

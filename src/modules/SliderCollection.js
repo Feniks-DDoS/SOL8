@@ -5,7 +5,7 @@ import 'swiper/css/effect-fade';
 
 const rootSelector  = `[data-js-slider]`
 
-class Slider {
+class Slider {  
 
     selectors = {
         slideImage: `[data-js-slide-image]`,
@@ -36,7 +36,7 @@ class Slider {
             speed: 1000,
             allowTouchMove: false,
             watchSlidesProgress: true,
-            virtualTranslate: true,
+            // virtualTranslate: true,
             
         })
 
