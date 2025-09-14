@@ -1,0 +1,111 @@
+.footer {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    &__header {
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__address {
+        @include mobile {
+            align-self: start;
+        }
+    }
+
+    &__header,
+    &__body {
+        @include mobile {
+            min-width: 100%;
+        }
+    }
+
+    &__soc1als {
+        &-link {
+            color: var(--color-main);
+            position: relative;
+
+            @include hover {
+                opacity: 0.7;
+            }
+
+            &::before {
+                @include abs-center;
+                content: "";
+                height: 44px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__menu {
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        &-item {
+            color: var(--color-main);
+            position: relative;
+            align-self: start;
+
+            @include mobile-above {
+            padding-left: 10px;
+
+            &:not(:last-child) {
+                &::after {
+                    background-color: var(--color-main);
+                    position: absolute;
+                    content: "";
+                    width: 1px;
+                    height: 100%;
+                    margin-left: 10px;
+                }
+            }
+
+            }
+        }
+
+        &-link {
+            letter-spacing: 1.28px;
+            @include hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__extra {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: 10px;
+        background-color:rgb(203, 190, 155);
+        color: var(--color-light);
+        font-family: var(--font-family-en);
+    }
+}
