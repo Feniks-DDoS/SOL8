@@ -40,7 +40,7 @@ export default (props) => {
 
   return (
     <header className='header' data-js-header="">
-      <div className="header__inner container">
+      <div className="header__inner container" data-js-header-inner=""> 
         <nav className="header__menu " >
         <Logo  className="header__logo"/>
           <ul className="header__menu-list hidden-tablet" >

@@ -1,6 +1,3 @@
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import '@/sections/Hero/index.js'
 import OverlayMenu from '@/modules/OverlayMenu.js'
 import SliderCollection from './modules/SliderCollection.js'
 
