@@ -26,6 +26,7 @@ class Slider {
       this.swiper =  new Swiper(this.rootElement, {
             modules: [Autoplay, EffectFade],
             effect: 'fade',
+            direction: 'horizontal',
             fadeEffect: { crossFade: true },
             loop: true,
             autoplay: {
