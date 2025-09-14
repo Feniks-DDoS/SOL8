@@ -29,10 +29,10 @@ class Slider {
             fadeEffect: { crossFade: true },
             loop: true,
             autoplay: {
-                delay: 4400, 
+                delay: 5000, 
                 disableOnInteraction: false,
             },
-            speed: 800,
+            speed: 1000,
             allowTouchMove: false,
             watchSlidesProgress: true,
             virtualTranslate: true,
