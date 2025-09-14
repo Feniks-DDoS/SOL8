@@ -1,6 +1,7 @@
 import  Swiper from "swiper";
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 const rootSelector  = `[data-js-slider]`
 
@@ -26,7 +27,6 @@ class Slider {
       this.swiper =  new Swiper(this.rootElement, {
             modules: [Autoplay, EffectFade],
             effect: 'fade',
-            direction: 'horizontal',
             fadeEffect: { crossFade: true },
             loop: true,
             autoplay: {
