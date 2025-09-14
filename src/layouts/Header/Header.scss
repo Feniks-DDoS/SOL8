@@ -4,17 +4,18 @@
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding-block: 30px;
     background-color: var(--color-light);
 
-    @include mobile {
-        padding-block: 15px;
-    }
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         column-gap: 16px;
+        padding-block: 30px;
+
+        @include mobile {
+        padding-block: 15px;
+    }
     }
 
     &__extra {
@@ -192,15 +193,11 @@
     &__tablet-overlay {        
             position: fixed;
             inset: 0;
-            top: 17%;
+            top: 13%;
             overflow-y: auto;
             padding: 6px;
             background-color: var(--color-light);
             transition: var(--transition-duration);
-
-            @include mobile {
-                top: 13%;
-            }
 
             &:not(.is-active) {
                 @include hide;
