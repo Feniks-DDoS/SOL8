@@ -11,11 +11,7 @@
         align-items: center;
         justify-content: space-between;
         column-gap: 16px;
-        padding-block: 30px;
-
-        @include mobile {
         padding-block: 15px;
-    }
     }
 
     &__extra {

@@ -22,6 +22,12 @@ export default () => {
                     height={795} 
                     className="hero__image" />
                   </picture>
+                  <header className="hero__card-header">
+                    <h1 className="hero__card-title" id='hero-title'>{item.title}</h1>
+                  </header>
+                  <div className="hero__card-body">
+                    <p className='hero__card-info'>{item.body}</p>
+                  </div>
                 </div>
               </li>
             ))}

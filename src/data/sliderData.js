@@ -11,7 +11,7 @@ export const sliderData = [
         id: 1,
         title: 'Title',
         subtitle: '',
-        body: 'body',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage1,
             type: 'image/avif'
@@ -26,7 +26,7 @@ export const sliderData = [
         id: 2,
         title: 'Title',
         subtitle: '',
-        body: 'body',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage2,
             type: 'image/avif'
@@ -41,7 +41,22 @@ export const sliderData = [
         id: 3,
         title: 'Title',
         subtitle: '',
-        body: 'body',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
+        Source: {
+            srcSet: avifImage3,
+            type: 'image/avif'
+        },
+        img: {
+            src: jpgImage3,
+            alt: 'Massage proccess',
+        },
+
+    },    
+    {
+        id: 4,
+        title: 'Title',
+        subtitle: '',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage3,
             type: 'image/avif'
