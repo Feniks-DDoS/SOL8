@@ -16,7 +16,7 @@
           <a class="logo header__logo" href="#" title="ホーム" aria-label="ホーム">
             <img class="logo__image" src="/SOL8/assets/images/logo.svg" alt="Logo SOL8" width="110" height="30" loading="lazy">
           </a>
-          <ul class="header__menu-list" data-js-header-overlay="">
+          <ul class="header__menu-list hidden-tablet">
             <li class="header__menu-item">
               <a href="/" class="header__menu-link">ホーム</a>
             </li>
@@ -39,8 +39,46 @@
               <a href="/blog" class="header__menu-link">ブログ</a>
             </li>
           </ul>
+          <div class="header__tablet-overlay" data-js-header-overlay="">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">ホーム</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/about" class="header__menu-link is-active">コンセプト</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/firstTime" class="header__menu-link">初めての方へ</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/menu" class="header__menu-link">メニュー</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/aboutTheSalon" class="header__menu-link">サロン案内</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/contact" class="header__menu-link">問い合わせ</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/blog" class="header__menu-link">ブログ</a>
+              </li>
+            </ul>
+            <div class="header__actions">
+              <ul class="header__actions-list">
+                <li class="header__actions-item">
+                  <a class="button header__actions-link" href="#"><span class="header__actions-line">当院の公式LINE</span><span class="header__actions-line--2">LINEから簡単予約!</span></a>
+                </li>
+                <li class="header__actions-item">
+                  <a class="button header__actions-link" href="tel080978324"><span class="header__actions-tel">お電話でのお問い合わせ</span><span class="header__actions-tel--2">080-8324-2341</span><span class="header__actions-tel--3">[受付時間] 9:30~18:30</span></a>
+                </li>
+                <li class="header__actions-item">
+                  <a class="button header__actions-link" href="#"><span class="header__actions-span-1">ご予約はこちら</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <div class="header__actions">
+        <div class="header__extra">
           <a class="button header__button" href="#">WEB予約</a>
           <button class="burger-button header__burger-button visible-tablet" type="button" aria-label="Open menu" title="Open menu" data-js-header-burger-button="">
             <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
@@ -56,6 +94,55 @@
       <h1>About page</h1>
       <section></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" aria-labelledby="footer-title">
+      <h2 class="visually-hidden" id="footer-title">Footer</h2>
+      <div class="footer__inner container">
+        <header class="footer__header">
+          <div class="footer__header-inner">
+            <a class="logo footer__logo" href="#" title="ホーム" aria-label="ホーム">
+              <img class="logo__image" src="/SOL8/assets/images/logo.svg" alt="Logo SOL8" width="110" height="30" loading="lazy">
+            </a>
+            <address class="footer__address">〒434-0334 愛知県名古屋市北区上飯田東町５丁目４２番地</address>
+            <div class="footer__soc1als">
+              <a href="#" class="footer__soc1als-link" title="Instagram"><span class="visually-hidden">Instagram</span><span class="icon footer__soc1als-svg">
+                  <svg fill="currentColor" stroke="none">
+                    <use href="/SOL8/assets/images/icons.svg#instagram"></use>
+                  </svg>
+                </span></a>
+            </div>
+          </div>
+        </header>
+        <div class="footer__body">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">ホーム</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/about" class="footer__menu-link">コンセプト</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/firstTime" class="footer__menu-link">初めての方へ</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/menu" class="footer__menu-link">メニュー</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/aboutTheSalon" class="footer__menu-link">サロン案内</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/contact" class="footer__menu-link">問い合わせ</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/blog" class="footer__menu-link">ブログ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__extra">
+        <p class="footer__copyright">Copyright © 2025 SOL8 All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
