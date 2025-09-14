@@ -192,11 +192,15 @@
     &__tablet-overlay {        
             position: fixed;
             inset: 0;
-            top: 20%;
+            top: 17%;
             overflow-y: auto;
             padding: 6px;
             background-color: var(--color-light);
             transition: var(--transition-duration);
+
+            @include mobile {
+                top: 13%;
+            }
 
             &:not(.is-active) {
                 @include hide;
