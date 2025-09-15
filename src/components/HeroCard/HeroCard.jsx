@@ -4,13 +4,14 @@ import { sliderData } from '@/data/sliderData.js'
 export default  () => {
   return (
     <>
-        {sliderData.map((item) => (
-            <li className="hero__slider-item swiper-slide" data-js-slider-slide="">
+        {sliderData.map((item, index) => (
+            <li className="hero__slider-item swiper-slide" data-js-slider-slide="" key={index}>
             <div className="hero__card">
                 <picture className='hero__images'>
                 <source srcSet={item.Source.srcSet} type={item.Source.type}/>
                 <img 
                 data-js-slide-image=""
+                loading={index === 0 ? 'eager' : 'lazy' }
                 src={item.img.src} 
                 alt={item.img.alt}
                 width={463}

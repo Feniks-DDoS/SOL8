@@ -27,8 +27,9 @@ class Slider {
             effect: 'fade',
             fadeEffect: { crossFade: true },
             loop: true,
+            lazy: true,
             autoplay: {
-                delay: 3000, 
+                delay: 5000, 
                 disableOnInteraction: false,
             },
             speed: 2000,

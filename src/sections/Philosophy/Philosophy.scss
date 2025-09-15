@@ -58,7 +58,11 @@
 
         @include mobile {
             letter-spacing: 8px;
-            right: 20%;
+            right: 10%;
+        }
+
+        @include mobile-s {
+            top: 5px;
         }
     }
 
@@ -68,6 +72,7 @@
         justify-content: center;
         position: relative;
         color: var(--color-main);
+        border: 1px solid var(--color-main);
         padding: 15px;
         background-color: var(--bg-sub);
 
@@ -111,6 +116,10 @@
     &__header {
         justify-self: center;
         position: relative;
+
+        @include mobile-s {
+            height: 100%;
+        }
 
         &::before {
             @include abs-x;
@@ -171,6 +180,11 @@
     &__title {
         letter-spacing: 8px;
         line-height: 2;
+
+        @include mobile-s {
+            letter-spacing: 4px;
+            line-height: 1;
+        }
     }
 
     &__description {
@@ -189,5 +203,15 @@
 
     &__image {
         border-radius: 50%;
+
+        @include tablet {            
+        position: relative;
+        z-index: 100;
+        }
+
+        @include mobile {
+        width: 100%;
+        height: 100%;
+        }
     }
 }

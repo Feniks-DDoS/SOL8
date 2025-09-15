@@ -25,10 +25,10 @@
     }
 
     &__menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;  
 
         &-list {
             display: flex;
@@ -153,21 +153,13 @@
                   &::before {
                     @include abs-x;
                     left: 88%;
-                    top: 11%;
+                    top: 32%;
                     content: "";
                     background: url('@/assets/icons/arrow_right.svg');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
                     opacity: 1;
-                    width: 43px;
-                    height: 43px;
-                }
-            }
-
-            @include mobile-s {
-                &::before {
-                    top: 32%;
                     width: 23px;
                     height: 23px;
                 }
@@ -186,8 +178,8 @@
             color: var(--bg-off-light);
         }
 
-        @include mobile-s {
-            padding: 16px 30px;
+        @include tablet {
+            padding: 10px 30px;
         }
     }
 

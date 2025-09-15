@@ -38,18 +38,17 @@ export default () => {
   return (
     <footer className="footer" aria-labelledby='footer-title'>
       <h2 className="visually-hidden" id="footer-title">Footer</h2>
-      <div className="footer__inner container">
+      <div className="footer__inner container">        
         <header className="footer__header">
           <div className="footer__header-inner">
             <Logo className="footer__logo"/>
-            <address className='footer__address'>〒434-0334 愛知県名古屋市北区上飯田東町５丁目４２番地</address>
             <div className="footer__soc1als">
               <a href="#" className='footer__soc1als-link' title='Instagram'>
                 <span className="visually-hidden">Instagram</span>
                 <Icon hasFill name='instagram' className='footer__soc1als-svg'/>
               </a>
-            </div>
-          </div>
+            </div>              
+          </div>            
         </header>
         <div className="footer__body">
           <nav className="footer__menu">
@@ -62,6 +61,7 @@ export default () => {
             </ul>
           </nav>
         </div>
+        <address className='footer__address'>〒434-0334 愛知県名古屋市北区上飯田東町５丁目４２番地</address>           
       </div>
       <div className="footer__extra">
         <p className="footer__copyright">Copyright © 2025 SOL8 All rights reserved.</p>
