@@ -13,7 +13,7 @@ export const sliderData = [
         id: 1,
         title: 'Title: 1',
         subtitle: '',
-        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores obcaecati totam nemo in, vitae ex? Cupiditate exercitationem illum nam eius officiis temporibus, accusantium quisquam accusamus, earum consectetur necessitatibus illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage1,
             type: 'image/avif'
@@ -28,7 +28,7 @@ export const sliderData = [
         id: 2,
         title: 'Title: 2',
         subtitle: '',
-        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores obcaecati totam nemo in, vitae ex? Cupiditate exercitationem illum nam eius officiis temporibus, accusantium quisquam accusamus, earum consectetur necessitatibus illo.',
         Source: {
             srcSet: avifImage2,
             type: 'image/avif'
@@ -43,7 +43,7 @@ export const sliderData = [
         id: 3,
         title: 'Title: 3',
         subtitle: '',
-        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores obcaecati totam nemo in, vitae ex? Cupiditate exercitationem illum nam eius officiis temporibus, accusantium quisquam accusamus, earum consectetur necessitatibus illo.',
         Source: {
             srcSet: avifImage3,
             type: 'image/avif'
@@ -58,7 +58,7 @@ export const sliderData = [
         id: 4,
         title: 'Title: 4',
         subtitle: '',
-        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
+        body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis nostrum cupiditate, soluta autem vero incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores obcaecati totam nemo in, vitae ex? Cupiditate exercitationem illum nam eius officiis temporibus, accusantium quisquam accusamus, earum consectetur necessitatibus illo.',
         Source: {
             srcSet: avifImage4,
             type: 'image/avif'
