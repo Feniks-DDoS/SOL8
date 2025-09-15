@@ -1,0 +1,193 @@
+.philosophy {
+    padding-block: 130px;
+    border-bottom: 1px solid var(--color-main);
+    background-color: transparent;
+    position: relative;
+    z-index: 100;
+
+    @include tablet {
+        padding-block: 60px;
+    }
+
+    &::before {
+        @include abs-x;
+        top: 30%;
+        left: 10%;
+        content: "";
+        background: url('@/assets/icons/philosophyBg.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 1;
+        z-index: -1;
+        width: 700px;
+        height: 700px;
+    }
+
+    &::after {
+        @include abs-x;
+        top: 0%;
+        left: 100%;
+        z-index: -1;
+        content: "";
+        background: url('@/assets/icons/philosophyBg.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        rotate: 180deg;
+        opacity: 0.7;
+        width: 700px;
+        height: 700px;
+    }
+
+    &__bg-title {
+        @include fluid-text(152 , 32);
+        position: absolute;
+        right: 0;
+        top: 32px;
+        user-select: none;
+        transform: scaleX(1.1);
+        letter-spacing: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 10;
+
+        @include mobile {
+            letter-spacing: 8px;
+            right: 20%;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: var(--color-main);
+        padding: 15px;
+        background-color: var(--bg-sub);
+
+        &::after {
+            @include abs-x;
+            left: 76%;
+            content: "";
+            background: url('@/assets/icons/arrow_right.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 1;
+            width: 23px;
+            height: 23px;
+            transition: var(--transition-duration);
+        }
+
+        @include hover {
+            background-color: var(--color-main);
+            color: var(--color-light);
+
+            &::after {
+                left: 88%;
+            }
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        min-height: 655px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__header {
+        justify-self: center;
+        position: relative;
+
+        &::before {
+            @include abs-x;
+            top: -15%;
+            left: 10%;
+            content: "";
+            background: url('@/assets/icons/decorationStar.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 1;
+            z-index: -1;
+            width: 50px;
+            height: 50px;
+            animation-name: fadeIn;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        &::after {
+            @include abs-x;
+            bottom: -14%;
+            left: 100%;
+            content: "";
+            background: url('@/assets/icons/decorationStar.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 1;
+            z-index: -1;
+            width: 50px;
+            height: 50px;
+            animation-name: fadeIn;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 1;
+                scale: 0.9;
+            }
+
+            50% {
+                opacity: 0.6;
+                scale: 1;
+            }
+
+            100% {
+                opacity: 1;
+                scale: 0.9;
+            }
+        }
+    }
+
+    &__title {
+        letter-spacing: 8px;
+        line-height: 2;
+    }
+
+    &__description {
+        letter-spacing: 1.6px;
+    }
+
+    &__body {
+        display: grid;
+        gap: 40px;
+        max-width: 700px;
+
+        @include mobile {
+            gap: 20px;
+        }
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+}

@@ -1,5 +1,5 @@
 import Hero from '@/sections/Hero'
-import News from '@/sections/News'
+import Philosophy from '@/sections/Philosophy'
 
 export const metadata = {
   title: 'ホーム',
@@ -9,7 +9,7 @@ export default () => {
   return (
     <>
       <Hero />
-      <News/>
+      <Philosophy/>
     </>
   )
 }
