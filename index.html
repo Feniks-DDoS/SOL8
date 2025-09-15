@@ -6,6 +6,7 @@
     <title>SOL8 | ホーム</title>
     <link rel="icon" sizes="16x16" href="/SOL8/assets/images/favicon.svg">
     <link rel="icon" sizes="32x32" href="/SOL8/assets/images/favicon.svg">
+    <link rel="preload" as="image" href="/SOL8/assets/1.avif">
     <script src="/SOL8/assets/main.js" type="module"></script>
     <link rel="stylesheet" href="/SOL8/assets/bundle.css">
   </head>
@@ -126,8 +127,8 @@
               <li class="hero__slider-item swiper-slide" data-js-slider-slide="">
                 <div class="hero__card">
                   <picture class="hero__images">
-                    <source srcset="/SOL8/assets/12.avif" type="image/avif">
-                    <img data-js-slide-image="" src="/SOL8/assets/images/12.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
+                    <source srcset="/SOL8/assets/1.avif" type="image/avif">
+                    <img data-js-slide-image="" loading="eager" src="/SOL8/assets/images/12.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
                   </picture>
                   <header class="hero__card-header">
                     <h2 class="hero__card-title h1">Title: 1</h2>
@@ -141,7 +142,7 @@
                 <div class="hero__card">
                   <picture class="hero__images">
                     <source srcset="/SOL8/assets/2.avif" type="image/avif">
-                    <img data-js-slide-image="" src="/SOL8/assets/images/2.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
+                    <img data-js-slide-image="" loading="lazy" src="/SOL8/assets/images/2.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
                   </picture>
                   <header class="hero__card-header">
                     <h2 class="hero__card-title h1">Title: 2</h2>
@@ -155,7 +156,7 @@
                 <div class="hero__card">
                   <picture class="hero__images">
                     <source srcset="/SOL8/assets/3.avif" type="image/avif">
-                    <img data-js-slide-image="" src="/SOL8/assets/images/3.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
+                    <img data-js-slide-image="" loading="lazy" src="/SOL8/assets/images/3.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
                   </picture>
                   <header class="hero__card-header">
                     <h2 class="hero__card-title h1">Title: 3</h2>
@@ -169,7 +170,7 @@
                 <div class="hero__card">
                   <picture class="hero__images">
                     <source srcset="/SOL8/assets/4.avif" type="image/avif">
-                    <img data-js-slide-image="" src="/SOL8/assets/images/4.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
+                    <img data-js-slide-image="" loading="lazy" src="/SOL8/assets/images/4.jpg" alt="Massage proccess" width="463" height="795" class="hero__image">
                   </picture>
                   <header class="hero__card-header">
                     <h2 class="hero__card-title h1">Title: 4</h2>
@@ -187,7 +188,7 @@
         <div class="philosophy__inner container">
           <div class="philosophy__header">
             <picture class="philosophy__images">
-              <source srcset="/SOL8/assets/1.avif" type="image/avif">
+              <source srcset="/SOL8/assets/12.avif" type="image/avif">
               <img src="/SOL8/assets/images/1.jpg" alt="店長写真" loading="lazy" width="577" height="655" class="philosophy__image">
             </picture>
           </div>
@@ -210,7 +211,6 @@
             <a class="logo footer__logo" href="#" title="ホーム" aria-label="ホーム">
               <img class="logo__image" src="/SOL8/assets/images/logo.svg" alt="Logo SOL8" width="110" height="30" loading="lazy">
             </a>
-            <address class="footer__address">〒434-0334 愛知県名古屋市北区上飯田東町５丁目４２番地</address>
             <div class="footer__soc1als">
               <a href="#" class="footer__soc1als-link" title="Instagram"><span class="visually-hidden">Instagram</span><span class="icon footer__soc1als-svg">
                   <svg fill="currentColor" stroke="none">
@@ -247,6 +247,7 @@
             </ul>
           </nav>
         </div>
+        <address class="footer__address">〒434-0334 愛知県名古屋市北区上飯田東町５丁目４２番地</address>
       </div>
       <div class="footer__extra">
         <p class="footer__copyright">Copyright © 2025 SOL8 All rights reserved.</p>
