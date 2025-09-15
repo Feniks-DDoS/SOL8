@@ -193,6 +193,7 @@
 
     &__tablet-overlay {        
             position: fixed;
+            z-index: 1000;
             inset: 0;
             top: 106px;
             height: calc(100% - 106px);

@@ -5,6 +5,7 @@ import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
 // import manifest from '@/assets/favicons/site.webmanifest'
 import favicon from '/public/images/favicon.svg'
+import AsideActions from './components/AsideActions'
 
 export default (props) => {
   const { children, title, url } = props
@@ -19,6 +20,7 @@ export default (props) => {
         {/* <link rel="manifest" href={manifest} /> */}
       </Head>
       <Header url={url} />
+      <AsideActions/>
       <Content>{children}</Content>
       <Footer />
     </>

@@ -15,6 +15,7 @@
         
 
         &-item { 
+            user-select: none;
             &.is-active {
 
                 .hero__image {
