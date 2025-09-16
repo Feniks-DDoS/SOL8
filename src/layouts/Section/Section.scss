@@ -12,6 +12,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+
+    &-bg {      
+        @include fluid-text(152 , 42);
+        position: absolute;
+        right: 0;
+        top: 65px;
+        user-select: none;
+        transform: scaleX(1.1);
+        letter-spacing: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .2), rgba(167, 148, 88, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 1;
+
+        @include tablet {
+          top: 5px;
+        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, 0));
+        }
+
+        @include mobile-s {
+          letter-spacing: 13px;
+        }
+    }
   }
 
 
@@ -71,6 +98,16 @@
           top: 80%;
         }
       }
+
+      @include mobile-s {
+        &::before {
+          left: -3%;
+        }
+
+        &::after {
+          left: 103%;
+        }
+      }
     }
 
     &-description {
@@ -126,6 +163,19 @@
       background-repeat: no-repeat;
       background-size: contain;
       transform: scaleX(-1);
+    }
+
+    
+    @media (width < 350px) {
+        &::before {
+          top: 80%;
+          left: -3%;
+        }
+
+        &::after {
+          top: 80%;
+          left: 103%;
+        }
     }
   }
 

@@ -20,6 +20,10 @@
         pointer-events: none; 
         overflow: hidden;
 
+        @include mobile {
+            height: 85vh;
+        }
+
         
         &-list {
             width: 100%;

@@ -14,6 +14,10 @@
         padding-block: 15px;
         transition: 0.4s;
 
+
+        @include mobile-s {
+            column-gap: 5px;
+        }
         &.is-active {
             padding-bottom: 60px;
         }
@@ -180,6 +184,10 @@
 
         @include tablet {
             padding: 10px 30px;
+        }
+
+        @include mobile-s {
+            padding: 5px 20px;
         }
     }
 

@@ -127,5 +127,9 @@
         @include mobile {
             top: 50px;
         }
+
+        @include mobile-s {
+            top: 5px;
+        }
     }
 }

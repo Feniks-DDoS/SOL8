@@ -56,6 +56,7 @@ export default () => {
                 </ul>
             </div>
         </div>
+        <p className="section__contact-bg">contact</p>
     </Section>
   )
 }

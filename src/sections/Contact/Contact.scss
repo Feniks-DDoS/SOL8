@@ -36,6 +36,10 @@
             width: 328px;
         }
 
+        @media (width < 350px) {
+            width: 290px;
+        }
+
         &:first-child {
             background-color: var(--color-light);
             color: var(--color-main);
@@ -50,7 +54,7 @@
 
             .contact__info {
                 &--1 {
-                    font-size: 18px;
+                    @include fluid-text(18 ,14);
                 }
 
                 &--3 {

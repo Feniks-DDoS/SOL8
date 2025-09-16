@@ -41,7 +41,7 @@
     }
 
     &__bg-title {
-        @include fluid-text(152 , 32);
+        @include fluid-text(152 , 42);
         position: absolute;
         right: 0;
         top: 32px;
@@ -59,10 +59,12 @@
         @include mobile {
             letter-spacing: 8px;
             right: 10%;
+            top: 5px;
         }
 
         @include mobile-s {
-            top: 5px;
+            right: 0%;
+            letter-spacing: 4px;
         }
     }
 
