@@ -1,5 +1,5 @@
-import avifImage1 from "@/assets/images/reason/avif/1.avif"
-import jpgImage1 from "@/assets/images/reason/jpg/1.jpg"
+import avifImage1 from "@/assets/images/reason/avif/1reason.avif"
+import jpgImage1 from "@/assets/images/reason/jpg/1reason.jpg"
 
 export const reasonData = [
     {

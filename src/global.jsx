@@ -6,7 +6,7 @@ import Footer from '@/layouts/Footer'
 // import manifest from '@/assets/favicons/site.webmanifest'
 import favicon from '/public/images/favicon.svg'
 import AsideActions from './components/AsideActions'
-import SliderImage from "@/assets/images/hero/avif/1.avif"
+import SliderImage from "@/assets/images/hero/avif/1hero.avif"
 import Contact from './sections/Contact'
 
 export default (props) => {

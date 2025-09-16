@@ -1,11 +1,11 @@
-import avifImage1 from '@/assets/images/hero/avif/1.avif'
-import avifImage2 from '@/assets/images/hero/avif/2.avif'
-import avifImage3 from '@/assets/images/hero/avif/3.avif'
-import avifImage4 from '@/assets/images/hero/avif/4.avif'
-import jpgImage1 from '@/assets/images/hero/jpg/1.jpg'
-import jpgImage2 from '@/assets/images/hero/jpg/2.jpg'
-import jpgImage3 from '@/assets/images/hero/jpg/3.jpg'
-import jpgImage4 from '@/assets/images/hero/jpg/4.jpg'
+import avifImage1 from '@/assets/images/hero/avif/1hero.avif'
+import avifImage2 from '@/assets/images/hero/avif/2hero.avif'
+import avifImage3 from '@/assets/images/hero/avif/3hero.avif'
+import avifImage4 from '@/assets/images/hero/avif/4hero.avif'
+import jpgImage1 from '@/assets/images/hero/jpg/1hero.jpg'
+import jpgImage2 from '@/assets/images/hero/jpg/2hero.jpg'
+import jpgImage3 from '@/assets/images/hero/jpg/3hero.jpg'
+import jpgImage4 from '@/assets/images/hero/jpg/4hero.jpg'
 
 
 export const sliderData = [

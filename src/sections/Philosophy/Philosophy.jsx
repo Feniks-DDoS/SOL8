@@ -1,6 +1,6 @@
 import './Philosophy.scss'
-import jpgImage from "@/assets/images/philosophy/jpg/1.jpg"
-import avifImage from "@/assets/images/philosophy/avif/1.avif"
+import jpgImage from "@/assets/images/philosophy/jpg/1philosophy.jpg"
+import avifImage from "@/assets/images/philosophy/avif/1philosophy.avif"
 import Button from '@/components/Button'
 
 export default () => {
