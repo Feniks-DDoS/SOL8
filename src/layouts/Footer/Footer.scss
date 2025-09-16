@@ -108,19 +108,19 @@
               @include mobile {
                 width: 100%;
 
-                &::after {
-                @include abs-x;
-                left: 95%;
-                content: "";
-                background: url('@/assets/icons/arrow_right.svg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                opacity: 1;
-                width: 23px;
-                height: 23px;
-                transition: var(--transition-duration);
-                }
+                    &::after {
+                    @include abs-x;
+                    left: 95%;
+                    content: "";
+                    background: url('@/assets/icons/arrow_right.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    opacity: 1;
+                    width: 23px;
+                    height: 23px;
+                    transition: var(--transition-duration);
+                    }
                 }
         }
 
