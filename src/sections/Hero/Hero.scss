@@ -24,6 +24,10 @@
             height: 85vh;
         }
 
+        @include mobile-s {
+            height: 80vh;
+        }
+
         
         &-list {
             width: 100%;
