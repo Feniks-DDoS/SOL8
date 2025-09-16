@@ -18,10 +18,6 @@
         @include mobile-s {
             column-gap: 5px;
         }
-
-        // &.is-active {
-        //     padding-bottom: 60px;
-        // }
     }
 
     &__extra {
@@ -141,7 +137,6 @@
                     }
                 }
             }
-
             
             @include tablet {
                 padding: 20px 32px;
@@ -168,6 +163,10 @@
                     width: 23px;
                     height: 23px;
                 }
+            }
+
+            @include mobile-s {
+                padding: 20px 15px;
             }
         }
     }
@@ -206,6 +205,11 @@
 
             &:not(.is-active) {
                 @include hide;
+            }
+
+            @include mobile-s {
+                top: 70px;
+                height: calc(100% - 70px);
             }
     }
 
