@@ -40,7 +40,7 @@
             &.is-active {
 
                 .hero__image {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                 }
 
                 .hero__card-header {
@@ -93,7 +93,7 @@
         width: 100vw;
         height: 100vh;
         transform: scale(1);
-        transition: transform 5s linear;
+        transition: transform 3s linear;
     }
 
     &__card {

@@ -18,9 +18,10 @@
         @include mobile-s {
             column-gap: 5px;
         }
-        &.is-active {
-            padding-bottom: 60px;
-        }
+
+        // &.is-active {
+        //     padding-bottom: 60px;
+        // }
     }
 
     &__extra {
@@ -195,8 +196,8 @@
             position: fixed;
             z-index: 1000;
             inset: 0;
-            top: 106px;
-            height: calc(100% - 106px);
+            top: 77px;
+            height: calc(100% - 77px);
             overflow-y: auto;
             padding-inline: 6px;
             padding-bottom: 6px;

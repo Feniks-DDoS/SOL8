@@ -29,7 +29,7 @@ class Slider {
             loop: true,
             lazy: true,
             autoplay: {
-                delay: 3000, 
+                delay: 1500, 
                 disableOnInteraction: false,
             },
             speed: 2000,
