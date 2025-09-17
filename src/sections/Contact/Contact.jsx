@@ -26,7 +26,7 @@ export default () => {
         {
             label: 'お問い合わせフォーム',
             icon: 'letter',
-            href: '/contact',
+            href: '/contactForm',
         },
     ]
 

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+    border-top: var(--border);
 
     @include mobile {
         gap: 16px;

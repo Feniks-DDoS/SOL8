@@ -1,0 +1,166 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    position: relative;
+
+    &__errors {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        bottom: -32px;
+        font-weight: 400;
+        color: red;
+        line-height: 1.25;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    &__cell {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        min-width: 886px;
+        padding: 16px;
+        border-bottom: var(--border);
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            min-width: 100%;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 10px;
+            padding-left: 15px;
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 5px;
+        min-width: 299px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1.28px;
+    }
+
+    &__required {
+        color: var(--color-light);
+        background-color: var(--color-pink);
+        font-size: 12px;
+        padding: 2px 5px;
+
+    }
+
+    &__checkbox {
+
+        &-label {            
+            font-weight: 500;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        &-title {
+            transition: var(--transition-duration);
+        }
+
+        &-control {
+        --size: 20px;
+        appearance: none;
+        border: var(--border);
+        border-radius: 4px;
+        margin: 0;
+        background-color: transparent;
+
+        @include square(var(--size));
+        @include flex-center;
+
+        &:not(:checked) {
+            &::after {
+                @include hide;
+            }
+        }
+
+        &:checked + .field__checkbox-title {
+            color: var(--color-pink);
+        }
+
+        &::after {
+            content: "✔";
+            color: var(--color-pink);
+            transition: var(--transition-duration);
+        }
+        }
+    }
+
+    &__control {        
+        padding: 5px 15px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+
+        
+        &:focus-visible {
+            border: 1px solid var(--color-green);
+        }
+
+        &:user-invalid {
+            border: 1px solid red;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+            color: var(--color-gray-2);
+        }
+    }
+
+    &__textarea {
+            resize: none;
+    }
+
+    &__button {
+        border: none;
+        padding: 16px 32px;
+        color: var(--color-light);
+        background-color: #ccc;;
+        font-weight: 400;
+        
+        &:not(:disabled) {
+            @include hover {
+                opacity: 0.7;
+            }
+        }
+        &-span-2 {
+            display: none;
+        }
+
+        &.is-correct {
+            background-color: var(--color-main);
+
+            .field__button-span-2 {
+                display: block;
+            }
+
+            .field__button-span-1 {
+                display: none;
+            }
+        }
+    }
+}

@@ -7,7 +7,6 @@ import Footer from '@/layouts/Footer'
 import favicon from '/public/images/favicon.svg'
 import AsideActions from './components/AsideActions'
 import SliderImage from "@/assets/images/hero/avif/1hero.avif"
-import Contact from './sections/Contact'
 
 export default (props) => {
   const { children, title, url } = props
@@ -25,7 +24,6 @@ export default (props) => {
       <Header url={url} />
       <AsideActions/>
       <Content>{children}</Content>
-      <Contact/>
       <Footer />
     </>
   )

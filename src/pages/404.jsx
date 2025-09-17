@@ -1,4 +1,4 @@
-import Button from '@/components/Button'
+import Error from "@/sections/Error"
 
 export const metadata = {
   title: '見つかりません',
@@ -6,9 +6,6 @@ export const metadata = {
 
 export default () => {
   return (
-    <>
-      <h1>ページが見つかりません</h1>
-      <Button href="/">ホーム</Button>
-    </>
+    <Error/>
   )
 }

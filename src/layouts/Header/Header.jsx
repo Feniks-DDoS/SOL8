@@ -30,7 +30,7 @@ export default (props) => {
     },
     {
       label: '問い合わせ',
-      href: '/contact',
+      href: '/contactForm',
     },
     {
       label: 'ブログ',
@@ -50,7 +50,8 @@ export default (props) => {
                 href={href}                 
                 className={clsx(
                 "header__menu-link",
-                href === url && 'is-active')}>{label}</a>
+                href === url && 'is-active'
+                )}>{label}</a>
               </li>
             ))}
           </ul>
