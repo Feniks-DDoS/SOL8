@@ -15,7 +15,7 @@ export default () => {
     },
     {
       label: '初めての方へ',
-      href: '/firstTime',
+      href: '/first_time',
     },
     {
       label: 'メニュー',
@@ -23,11 +23,11 @@ export default () => {
     },
     {
       label: 'サロン案内',
-      href: '/aboutTheSalon',
+      href: '/about_the_salon',
     },
     {
       label: '問い合わせ',
-      href: '/contact',
+      href: '/contact_form',
     },
     {
       label: 'ブログ',
