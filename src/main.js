@@ -2,8 +2,10 @@ import OverlayMenu from '@/modules/OverlayMenu.js'
 import SliderCollection from './modules/SliderCollection.js'
 import ReservationAsideCollection from './modules/ReservationAside.js'
 import FormValidateCollection from './modules/FormValidate.js'
+import CheckFormCollection from './modules/CheckForm.js'
 
 new OverlayMenu()   
-new SliderCollection
-new ReservationAsideCollection
-new FormValidateCollection
+new SliderCollection()
+new ReservationAsideCollection()
+new FormValidateCollection()
+new CheckFormCollection()

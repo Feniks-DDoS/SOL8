@@ -3,8 +3,12 @@ const rootSelector = `[data-js-contact-form]`
 class FormValidate {
 
     selectors = {
-        root: rootSelector,
-        fieldErrors: `[data-js-form-errors]`
+        fieldErrors: `[data-js-form-errors]`,
+        checkFormBlock: `[data-js-check-form]`,
+    }
+
+    stateClasses = {
+        isCorrect: 'is-correct'
     }
 
     errorMessages = {
@@ -16,8 +20,14 @@ class FormValidate {
 
     constructor(rootElement) {
         this.rootElement = rootElement
+        this.nextStepButtonElement = this.rootElement.querySelector('.field__button')
         this.bindEvents()
         this.inputName()
+    }
+
+    checkFormCompletion(form) {
+        const requiredFields = [...form.elements].filter(el => el.required)
+        return requiredFields.every(el => el.value.trim() !== '')
     }
 
 
@@ -30,7 +40,7 @@ class FormValidate {
     }
 
     inputName() {
-        const userNameControl = this.rootElement.querySelector('#user-Name')
+        const userNameControl = this.rootElement.querySelector('#user-name')
 
         userNameControl.addEventListener('keypress' , (event) => {
             if(/\d/.test(event.key)) {
@@ -50,7 +60,7 @@ class FormValidate {
             }
         })
 
-        const isValid = errorMessages.length === 0
+        const isValid = errorMessages.length === 0       
 
         fieldControlElement.ariaInvalid = !isValid
 
@@ -68,23 +78,6 @@ class FormValidate {
             this.validate(target)
         }
     }
-
-    
-    onChange(event) {
-
-        const { target } = event
-
-        const isRequired = target.required
-        const isToggleType = ['checkbox' , 'radio'].includes(target.type)
-
-        if(isToggleType && isRequired) {
-            this.validate(target)
-        }else if(isRequired && target.value.trim() !== '') {
-            this.validate(target)
-        }
-        
-     }
-
 
     onSubmit(event) {
         const { target } = event
@@ -116,11 +109,23 @@ class FormValidate {
         }
     }
 
+  
+
     bindEvents() {
+        this.rootElement.addEventListener('input', () => {
+        const allFilled = this.checkFormCompletion(this.rootElement)
+
+            if(allFilled) {
+                this.nextStepButtonElement.classList.add(this.stateClasses.isCorrect)
+            }else {
+                this.nextStepButtonElement.classList.remove(this.stateClasses.isCorrect)
+            }            
+            
+        this.nextStepButtonElement.disabled = !allFilled
+        })
         document.addEventListener('blur' , (event) => {
             this.onBlur(event)
         }, true)
-        document.addEventListener('change' , (event) => this.onChange(event))
         document.addEventListener('submit' , (event) => this.onSubmit(event))
     }
 

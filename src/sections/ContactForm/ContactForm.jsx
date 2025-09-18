@@ -1,6 +1,7 @@
 import Field from '@/components/Field'
 import './ContactForm.scss'
 import Button from '@/components/Button'
+import CheckDetails from '@/components/CheckDetails'
 
 
 export default () => {
@@ -35,6 +36,7 @@ export default () => {
             </div>
             <div className="contact-form__extra">
                 <Field/>
+                <CheckDetails/>
             </div>
         </div>
      </section>

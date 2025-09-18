@@ -4,20 +4,38 @@ import Button from '../Button'
 export default () => {
   return (
     <>
-        <form  method="post" data-js-contact-form="" className="field container" noValidate>
+        <form 
+        id="feedback-form" 
+        action="https://formspree.io/f/mldwqror"
+        method="POST" 
+        data-js-contact-form="" 
+        className="field container" 
+        noValidate
+        >
             <div className="field__cell">
                 <h2 className="field__label">相談項目 <span class="field__required">必須</span></h2>
                 <div className="field__cell-wrapper">
                     <label htmlFor="about-salon" className='field__checkbox-label'>                      
-                        <input type="checkbox" id="about-salon" ariaErrormessage="checkbox-errors" className="field__checkbox-control" required/>
-                        <span className="field__checkbox-title">クリニックについて</span>                    
+                        <input 
+                        type="checkbox" 
+                        id="about-salon"  
+                        className="field__checkbox-control" 
+                        required
+                        data-js-form-clinic=""
+                        />
+                        <span className="field__checkbox-title">クリニックについて</span>                     
                     </label>
                     <label htmlFor="about-reservation" className='field__checkbox-label'>                      
-                        <input type="checkbox" id="about-reservation" ariaErrormessage="checkbox-errors" className="field__checkbox-control" required/>
-                        <span className="field__checkbox-title">ご予約について</span>                
-                        <span className="field__errors" id="checkbox-errors" data-js-form-errors=""></span>           
+                        <input 
+                        type="checkbox" 
+                        id="about-reservation"  
+                        className="field__checkbox-control" 
+                        required
+                        data-js-form-reservation=""
+                        />
+                        <span className="field__checkbox-title">ご予約について</span>                      
                     </label>
-                </div>
+                </div>  
             </div>
             <div className="field__cell">
                 <label htmlFor="user-name" className="field__label">お名前 <span class="field__required">必須</span></label>
@@ -26,11 +44,12 @@ export default () => {
                     id="user-name"
                     placeholder="田中"
                     minLength={3}
-                    maxLength={20}
+                    maxLength={30}
                     required
                     type="text"
                     inputMode='text'
                     ariaErrormessage="name-errors" 
+                    data-js-form-name=""
                     />
                     <span className="field__errors" id="name-errors" data-js-form-errors=""></span>
             </div>
@@ -47,9 +66,10 @@ export default () => {
                         メールアドレスを正しくご入力ください: 
                         例: abc@mail.com"
                     minLength={3}
-                    maxLength={20}
+                    maxLength={40}
                     required
                     ariaErrormessage="email-errors" 
+                    data-js-form-email=""
                     />
                     <span className="field__errors" id="email-errors" data-js-form-errors=""></span>
             </div>
@@ -61,6 +81,7 @@ export default () => {
                     type="tel"    
                     inputMode='tel'
                     placeholder='08094342343'
+                    data-js-form-tel=""
                     />
             </div>
             <div className="field__cell">
@@ -71,10 +92,11 @@ export default () => {
                     type="text"    
                     inputMode='text'
                     placeholder='※治療内容と金額について相談したい など'
+                    data-js-form-textarea=""
                     />
             </div>
             <div className="field__action">
-                <Button className="field__button" disabled="true" type="submit">
+                <Button className="field__button" type="button">
                     <span className="field__button-span-1">入力が完了していません</span>
                     <span className="field__button-span-2">入力内容を確認する</span>
                 </Button>
