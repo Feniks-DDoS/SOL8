@@ -10,12 +10,12 @@ export default () => {
                 <div className="field__cell-wrapper">
                     <label htmlFor="about-salon" className='field__checkbox-label'>                      
                         <input type="checkbox" id="about-salon" ariaErrormessage="checkbox-errors" className="field__checkbox-control" required/>
-                        <span className="field__checkbox-title">クリニックについて</span>                       
+                        <span className="field__checkbox-title">クリニックについて</span>                    
                     </label>
                     <label htmlFor="about-reservation" className='field__checkbox-label'>                      
                         <input type="checkbox" id="about-reservation" ariaErrormessage="checkbox-errors" className="field__checkbox-control" required/>
-                        <span className="field__checkbox-title">ご予約について</span>
-                        <span className="field__errors" id="checkbox-errors" data-js-form-errors=""></span>                         
+                        <span className="field__checkbox-title">ご予約について</span>                
+                        <span className="field__errors" id="checkbox-errors" data-js-form-errors=""></span>           
                     </label>
                 </div>
             </div>
@@ -25,8 +25,8 @@ export default () => {
                     className="field__control"
                     id="user-name"
                     placeholder="田中"
-                    minlength="3"
-                    maxlength="20"
+                    minLength={3}
+                    maxLength={20}
                     required
                     type="text"
                     inputMode='text'
@@ -39,15 +39,15 @@ export default () => {
                     <input 
                     className="field__control"
                     id="user-email"
-                    placeholder="test@gmail.com"
+                    placeholder="SOL8@gmail.com"
                     pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                     type="email"    
                     inputMode='email'
                     title="
                         メールアドレスを正しくご入力ください: 
                         例: abc@mail.com"
-                    minlength="3"
-                    maxlength="20"
+                    minLength={3}
+                    maxLength={20}
                     required
                     ariaErrormessage="email-errors" 
                     />
@@ -60,6 +60,7 @@ export default () => {
                     id="user-tel"
                     type="tel"    
                     inputMode='tel'
+                    placeholder='08094342343'
                     />
             </div>
             <div className="field__cell">
