@@ -25,14 +25,21 @@ export default (props) => {
         <link rel="icon" sizes='512x512' href={icon512} />
         <link rel="preload" as="image" href={SliderImage} />
         <link rel="manifest" href={manifest} />
-        <meta name="description" content="SOL8 — 名古屋のマッサージサロン。今すぐ予約できます。"/>
-        <meta name="keywords" content="マッサージ, サロン, SOL8, 日本式マッサージ, 予約"/>
-        <meta name="author" content="SOL8"/>
-        <meta property="og:title" content="SOL8 — マッサージサロン"/>
-        <meta property="og:description" content="SOL8 — 名古屋のマッサージサロンでセッションを予約できます"/>
+        <meta name="title" content="SOL8 — 名古屋のマッサージサロン"/>
+        <meta name="description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
+        <meta name="keywords" content="マッサージ, 名古屋, サロン, SOL8, 日本式マッサージ, 予約"/>
+
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://www.sol8spa.com/"/>
-        <meta property="og:image" content="https://www.sol8spa.com/images/og-image.jpg"/>
+        <meta property="og:title" content="SOL8 — 名古屋のマッサージサロン"/>
+        <meta property="og:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
+        <meta property="og:image" content="https://www.sol8spa.com/1hero.avif"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:url" content="https://www.sol8spa.com/"/>
+        <meta name="twitter:title" content="SOL8 — 名古屋のマッサージサロン"/>
+        <meta name="twitter:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
+        <meta name="twitter:image" content="https://www.sol8spa.com/1hero.avif"/>
       </Head>
       <Header url={url} />
       <AsideActions/>
