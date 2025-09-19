@@ -201,7 +201,7 @@
             padding-inline: 6px;
             padding-bottom: 6px;
             background-color: var(--color-light);
-            transition: 0.4s;
+            transition: var(--transition-duration);
 
             &:not(.is-active) {
                 @include hide;
