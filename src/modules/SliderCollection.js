@@ -11,7 +11,7 @@ class Slider {
     }
 
     stateClasses = {
-        isActive: 'is-active'
+        isActive: 'is-active',
     }
 
     constructor(rootElement) {

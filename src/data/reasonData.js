@@ -8,7 +8,7 @@ export const reasonData = [
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage1,
-            type: 'image/avif'
+            type: 'image/avif',
         },
         img: {
             src: jpgImage1,
@@ -21,7 +21,7 @@ export const reasonData = [
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage1,
-            type: 'image/avif'
+            type: 'image/avif',
         },
         img: {
             src: jpgImage1,
@@ -34,7 +34,7 @@ export const reasonData = [
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing incidunt consequatur deleniti similique iusto nesciunt, vitae repellendus facilis ad porro enim eum illum molestias!',
         Source: {
             srcSet: avifImage1,
-            type: 'image/avif'
+            type: 'image/avif',
         },
         img: {
             src: jpgImage1,

@@ -5,17 +5,17 @@ import clsx from "clsx"
 export default (props) => {
 
     const {
-        className
+        className,
     } = props
 
     const socialsItem = [
         {
             label: 'Instagram',
-            icon: 'instagram'
+            icon: 'instagram',
         },
         {
             label: 'Line',
-            icon: 'line'
+            icon: 'line',
         },
     ]
 

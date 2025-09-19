@@ -40,9 +40,9 @@ class FormValidate {
 
     manageError(fieldControlElement , errorMessages) {
         const parent = fieldControlElement.parentElement
-        if (!parent) return
+        if (!parent) {return}
         const fieldControlError = parent.querySelector(this.selectors.fieldErrors) 
-        if (!fieldControlError) return
+        if (!fieldControlError) {return}
 
         fieldControlError.innerHTML = errorMessages
         .map((message) => `<span class="field__erorrs">${message}</span>`)
@@ -110,7 +110,7 @@ class FormValidate {
         event.preventDefault() 
         const { target } = event
         const isFormElement = target.closest(this.selectors.root)
-        if(!isFormElement) return
+        if(!isFormElement) {return}
 
        const { isFormValid, firstInvalid } = this.validateForm()
         if (!isFormValid) {
@@ -126,10 +126,10 @@ class FormValidate {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
             })
 
-            if (!response.ok) throw new Error('送信中にエラーが発生しました');
+            if (!response.ok) {throw new Error('送信中にエラーが発生しました');}
 
             const result = await response.json()
             console.log('サーバーの応答:', result);
@@ -163,7 +163,7 @@ class FormValidate {
         const valid = this.validate(el)
         if (!valid) {
             isFormValid = false
-            if (!firstInvalid) firstInvalid = el
+            if (!firstInvalid) {firstInvalid = el}
         }
     })
 

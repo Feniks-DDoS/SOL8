@@ -96,7 +96,7 @@ export default (props) => {
           <BurgerButton 
           className="header__burger-button visible-tablet"
           extraAttrs={{
-            'data-js-header-burger-button': ''
+            'data-js-header-burger-button': '',
           }}
           />
         </div>

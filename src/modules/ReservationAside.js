@@ -3,11 +3,11 @@ const rootSelector = `[data-js-reservation-aside]`
 class ReservationAside {
 
     stateClasses = {
-        isActive: 'is-active'
+        isActive: 'is-active',
     }
 
     scroll = {
-        scrollTrigger: 50
+        scrollTrigger: 50,
     }
 
     constructor(rootElement) {

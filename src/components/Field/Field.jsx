@@ -13,7 +13,7 @@ export default () => {
         noValidate
         >
             <div className="field__cell">
-                <h2 className="field__label">相談項目 <span class="field__required">必須</span></h2>
+                <h2 className="field__label">相談項目 <span className="field__required">必須</span></h2>
                 <div className="field__cell-wrapper">
                     <label htmlFor="about-salon" className='field__checkbox-label'>                      
                         <input 
@@ -40,12 +40,12 @@ export default () => {
                 </div>  
             </div>
             <div className="field__cell">
-                <label htmlFor="user-name" className="field__label">お名前 <span class="field__required">必須</span></label>
+                <label htmlFor="user-name" className="field__label">お名前 <span className="field__required">必須</span></label>
                     <input 
                     className="field__control"
                     id="user-name"
                     name='name'
-                    autocomplete="name"
+                    autoComplete="name"
                     placeholder="田中"
                     minLength={2}
                     maxLength={30}
@@ -58,12 +58,12 @@ export default () => {
                     <span className="field__errors" id="name-errors" data-js-form-errors=""></span>
             </div>
             <div className="field__cell">
-                <label htmlFor="user-email" className="field__label">メールアドレス <span class="field__required">必須</span></label>
+                <label htmlFor="user-email" className="field__label">メールアドレス <span className="field__required">必須</span></label>
                     <input 
                     className="field__control"
                     id="user-email"
                     name='email'
-                    autocomplete="email"
+                    autoComplete="email"
                     placeholder="SOL8@gmail.com"
                     pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                     type="email"    
@@ -85,7 +85,7 @@ export default () => {
                     className="field__control"
                     id="user-tel"
                     type="tel" 
-                    autocomplete="tel"
+                    autoComplete="tel"
                     name='tel'
                     inputMode='tel'
                     placeholder='08094342343'
