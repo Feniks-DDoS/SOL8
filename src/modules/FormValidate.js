@@ -23,9 +23,10 @@ class FormValidate {
         this.rootElement = rootElement
         this.nextStepButtonElement = this.rootElement.querySelector('.field__button')
         this.checkFormBlockElement = document.querySelector(this.selectors.checkFormBlock)
-        this.formControlElement = this.rootElement.querySelector('.field__control')
+        this.formControlElements = this.rootElement.querySelectorAll('.field__control')
+        this.checkboxControlElements = this.rootElement.querySelectorAll('.field__checkbox-control')
         this.bindEvents()
-        this.inputName()
+        this.inputName()  
     }
 
     checkFormCompletion(form) {
@@ -135,18 +136,23 @@ class FormValidate {
             this.showMessage('送信が完了しました！', 'success'); 
 
             this.checkFormBlockElement.style.display = 'none'
-            this.rootElement.style.display = 'flex'
-            this.formControlElement.value = ''
-
+            this.rootElement.style.display = 'flex'           
         } catch (error) {            
             this.showMessage('エラーが発生しました。もう一度お試しください。', 'error');
 
-        }
-
-       
-
+        }      
+        this.resetForm()
     }
 
+    resetForm() {
+        this.formControlElements.forEach((el) => {
+            el.value = ""
+            el.style.borderColor = '#ccc'
+        }) 
+        this.checkboxControlElements.forEach((el) => {
+            el.checked = ""
+        })
+    }
   
     validateForm() {
     const requiredFields = [...this.rootElement.elements].filter(el => el.required)

@@ -45,8 +45,9 @@ export default () => {
                     className="field__control"
                     id="user-name"
                     name='name'
+                    autocomplete="name"
                     placeholder="田中"
-                    minLength={3}
+                    minLength={2}
                     maxLength={30}
                     required
                     type="text"
@@ -62,6 +63,7 @@ export default () => {
                     className="field__control"
                     id="user-email"
                     name='email'
+                    autocomplete="email"
                     placeholder="SOL8@gmail.com"
                     pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                     type="email"    
@@ -69,7 +71,7 @@ export default () => {
                     title="
                         メールアドレスを正しくご入力ください: 
                         例: abc@mail.com"
-                    minLength={3}
+                    minLength={2}
                     maxLength={40}
                     required
                     ariaErrormessage="email-errors" 
@@ -82,7 +84,8 @@ export default () => {
                     <input 
                     className="field__control"
                     id="user-tel"
-                    type="tel"    
+                    type="tel" 
+                    autocomplete="tel"
                     name='tel'
                     inputMode='tel'
                     placeholder='08094342343'
@@ -96,6 +99,7 @@ export default () => {
                     id="user-text"
                     type="text"    
                     name='description'
+                    minLength={2}
                     inputMode='text'
                     placeholder='※治療内容と金額について相談したい など'
                     data-js-form-textarea=""
