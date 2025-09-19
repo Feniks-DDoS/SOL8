@@ -5,6 +5,8 @@ import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
 import manifest from '@/assets/favicons/site.webmanifest'
 import favicon from '/public/images/favicon.svg'
+import icon192 from '@/assets/favicons/android-chrome-192x192.png'
+import icon512 from '@/assets/favicons/android-chrome-512x512.png'
 import AsideActions from './components/AsideActions'
 import SliderImage from "@/assets/images/hero/avif/1hero.avif"
 import FormMessage from './components/FormMeassge'
