@@ -5,7 +5,7 @@ export default () => {
   return (
     <>
         <form 
-        id="feedback-form" 
+        id="feedbackForm" 
         action="https://formspree.io/f/mldwqror"
         method="POST" 
         data-js-contact-form="" 
@@ -21,6 +21,7 @@ export default () => {
                         id="about-salon"  
                         className="field__checkbox-control" 
                         required
+                        name='aboutSalon'
                         data-js-form-clinic=""
                         />
                         <span className="field__checkbox-title">クリニックについて</span>                     
@@ -30,6 +31,7 @@ export default () => {
                         type="checkbox" 
                         id="about-reservation"  
                         className="field__checkbox-control" 
+                        name='aboutReservation'
                         required
                         data-js-form-reservation=""
                         />
@@ -42,6 +44,7 @@ export default () => {
                     <input 
                     className="field__control"
                     id="user-name"
+                    name='name'
                     placeholder="田中"
                     minLength={3}
                     maxLength={30}
@@ -58,6 +61,7 @@ export default () => {
                     <input 
                     className="field__control"
                     id="user-email"
+                    name='email'
                     placeholder="SOL8@gmail.com"
                     pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                     type="email"    
@@ -79,6 +83,7 @@ export default () => {
                     className="field__control"
                     id="user-tel"
                     type="tel"    
+                    name='tel'
                     inputMode='tel'
                     placeholder='08094342343'
                     data-js-form-tel=""
@@ -90,6 +95,7 @@ export default () => {
                     className="field__control field__textarea"
                     id="user-text"
                     type="text"    
+                    name='description'
                     inputMode='text'
                     placeholder='※治療内容と金額について相談したい など'
                     data-js-form-textarea=""

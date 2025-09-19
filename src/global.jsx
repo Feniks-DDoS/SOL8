@@ -7,6 +7,7 @@ import Footer from '@/layouts/Footer'
 import favicon from '/public/images/favicon.svg'
 import AsideActions from './components/AsideActions'
 import SliderImage from "@/assets/images/hero/avif/1hero.avif"
+import FormMessage from './components/FormMeassge'
 
 export default (props) => {
   const { children, title, url } = props
@@ -25,6 +26,7 @@ export default (props) => {
       <AsideActions/>
       <Content>{children}</Content>
       <Footer />
+      <FormMessage/>
     </>
   )
 }

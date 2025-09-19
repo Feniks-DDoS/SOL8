@@ -57,6 +57,16 @@
         gap: 10px;
     }
 
+    &__info {
+        &-span {
+            font-family: var(--font-family-en);
+            color: var(--color-main);
+            font-weight: 500;
+            @include fluid-text(22 , 16);
+            padding-right: 5px;
+        }
+    }
+
     &__actions {
         &-list {
             display: grid;

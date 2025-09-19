@@ -57,7 +57,6 @@ class CheckForm {
         this.formElement.style.display = "none"
         this.rootElement.style.display = "block"
     }
-
     returnFixForm = () => {
         this.formElement.style.display = "flex"
         this.rootElement.style.display = "none"

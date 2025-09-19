@@ -17,8 +17,8 @@ export default () => {
             </header>
             <div className="contact-form__body">
                 <div className="contact-form__info container">
-                    <p className='contact-form__info-1'>SOL8にご興味を持っていただきありがとうございます。</p>
-                    <p className='contact-form__info-2'>下記フォームまたはお電話、公式LINEにて、お気軽にお問い合わせください。</p>
+                    <p className='contact-form__info-1'><span className='contact-form__info-span' >SOL8</span>にご興味を持っていただきありがとうございます。</p>
+                    <p className='contact-form__info-2'>下記フォーム、公式LINEにて、お気軽にお問い合わせください。</p>
                 </div>
                 <div className="contact-form__actions container">
                     <ul className="contact-form__actions-list">

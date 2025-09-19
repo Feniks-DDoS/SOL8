@@ -31,7 +31,7 @@ export default () => {
                 <p className='check-form__info-title'>以上の内容で送信します。内容をご確認の上、「送信する」ボタンを押してください。</p>
             </div>
             <div className="check-form__actions">
-                <button form="feedback-form" type="submit" className="check-form__confirm">送信する</button>
+                <button form="feedbackForm" type="submit" className="check-form__confirm">送信する</button>
                 <button type="button" className="check-form__back">内容を編集する</button>
             </div>
         </div>
