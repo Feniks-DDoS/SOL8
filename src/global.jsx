@@ -25,6 +25,14 @@ export default (props) => {
         <link rel="icon" sizes='512x512' href={icon512} />
         <link rel="preload" as="image" href={SliderImage} />
         <link rel="manifest" href={manifest} />
+        <meta name="description" content="SOL8 — 名古屋のマッサージサロン。今すぐ予約できます。"/>
+        <meta name="keywords" content="マッサージ, サロン, SOL8, 日本式マッサージ, 予約"/>
+        <meta name="author" content="SOL8"/>
+        <meta property="og:title" content="SOL8 — マッサージサロン"/>
+        <meta property="og:description" content="SOL8 — 名古屋のマッサージサロンでセッションを予約できます"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.sol8spa.com/"/>
+        <meta property="og:image" content="https://www.sol8spa.com/images/og-image.jpg"/>
       </Head>
       <Header url={url} />
       <AsideActions/>
