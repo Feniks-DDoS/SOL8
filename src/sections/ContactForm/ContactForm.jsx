@@ -11,8 +11,7 @@ export default () => {
         <div className="contact-form__inner">
             <header className="contact-form__header">
                 <div className="contact-form__header-inner container">
-                    <h1 className="contact-form__title" id='contact-form-title'>お問い合わせ</h1>
-                    <p className='contact-form__subtitle'>contact</p>
+                    <h1 className="contact-form__title" id='contact-form-title'>contact</h1>
                 </div>
             </header>
             <div className="contact-form__body">

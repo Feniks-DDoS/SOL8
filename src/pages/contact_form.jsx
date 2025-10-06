@@ -2,7 +2,7 @@ import ContactForm from "@/sections/ContactForm"
 
 
 export const metadata = {
-  title: '問い合わせ',
+  title: 'Contact',
 }
 
 export default () => {

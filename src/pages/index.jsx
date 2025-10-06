@@ -1,17 +1,15 @@
-import Hero from '@/sections/Hero'
-import Philosophy from '@/sections/Philosophy'
 import Reason from '@/sections/Reason'
 import Contact from '@/sections/Contact'
+import About from '@/sections/About'
 
 export const metadata = {
-  title: 'ホーム',
+  title: 'Main',
 }
 
 export default () => {
   return (
     <>
-      <Hero />
-      <Philosophy/>
+      <About/>
       <Reason/>
       <Contact/>
     </>

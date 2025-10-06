@@ -26,18 +26,10 @@
     }
 
     &__title {
-        font-size: 40px;
-        font-weight: 400;
-    }
-
-    &__subtitle {
         color: var(--color-main);
         text-transform: uppercase;
         font-family: var(--font-family-en);
         letter-spacing: 1.28px;
-        padding-top: 11px;
-        font-size: 24px;
-        font-weight: 700;
     }
 
     &__body {

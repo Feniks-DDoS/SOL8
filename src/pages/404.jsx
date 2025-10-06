@@ -1,7 +1,7 @@
 import Error from "@/sections/Error"
 
 export const metadata = {
-  title: '見つかりません',
+  title: 'Error page',
 }
 
 export default () => {

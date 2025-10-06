@@ -5,6 +5,7 @@
     top: 0;
     z-index: 1000;
     background-color: var(--color-light);
+    border-bottom: 1px solid var(--bg-border);
 
     &__inner {
         display: flex;
@@ -103,6 +104,8 @@
 
         &-link {
             position: relative;
+            font-family: var(--font-family-en);
+            @include fluid-text(21, 16);
 
             &::after {
                 @include abs-center;

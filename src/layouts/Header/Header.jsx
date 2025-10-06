@@ -9,32 +9,28 @@ export default (props) => {
 
   const menuItems = [
     {
-      label: 'ホーム',
+      label: 'Main',
       href: '/',
     },
     {
-      label: 'コンセプト',
+      label: 'About',
       href: '/about',
     },
     {
-      label: '初めての方へ',
-      href: '/first_time',
-    },
-    {
-      label: 'メニュー',
-      href: '/menu',
-    },
-    {
-      label: 'サロン案内',
+      label: 'Salon',
       href: '/about_the_salon',
     },
     {
-      label: '問い合わせ',
-      href: '/contact_form',
+      label: 'Menu',
+      href: '/menu',
     },
     {
-      label: 'ブログ',
+      label: 'News',
       href: '/blog',
+    },
+    {
+      label: 'Contact',
+      href: '/contact_form',
     },
     ]
 
