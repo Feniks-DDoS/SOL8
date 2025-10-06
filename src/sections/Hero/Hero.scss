@@ -1,0 +1,90 @@
+.hero {
+
+    &__inner {  
+        background-image: image-set(
+            url('@/assets/images/hero/avif/hero1.avif') type('image/avif'),
+            url('@/assets/images/hero/jpg/hero1.jpg') type('image/jpeg'),
+        );
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        position: relative;
+        color: var(--color-light);
+        min-height: 100vh;
+
+        &::before {
+            position: absolute;
+            content: "";
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0 ,0 ,0 ,0.3);
+            z-index: 1;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 42px;
+        background-color: var(--color-light);
+        color: var(--color-dark);
+        @include fluid-text(20, 18);
+        letter-spacing: 0.32px;
+
+        @include hover {
+            background-color: var(--color-main);
+            color: var(--color-light);
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        min-height: 100%;
+        z-index: 100;
+        font-family: var(--font-family-en);
+        
+        animation-name: fadeIn;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+
+    &__subtitle {
+        @include fluid-text(22, 18);
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__svg {
+        width: 90px;
+        height: 90px;
+
+        
+        animation-name: rotateShape;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    
+    @keyframes rotateShape {
+    from {  transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+}

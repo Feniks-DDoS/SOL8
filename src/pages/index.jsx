@@ -2,6 +2,7 @@ import Reason from '@/sections/Reason'
 import Contact from '@/sections/Contact'
 import About from '@/sections/About'
 import Menu from '@/sections/Menu'
+import Hero from '@/sections/Hero'
 
 export const metadata = {
   title: 'Main',
@@ -26,6 +27,7 @@ export default () => {
 
   return (
     <>
+      <Hero/>
       <About titleAbout='About' info={infoSection}/>
       <Reason/>
       <Menu/>

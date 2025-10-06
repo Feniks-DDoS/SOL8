@@ -9,7 +9,7 @@ export default (props) => {
 
   const menuItems = [
     {
-      label: 'Main',
+      label: 'Home',
       href: '/',
     },
     {
