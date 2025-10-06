@@ -20,8 +20,8 @@
             padding-left: 60px;
         }
 
-        @include mobile-s {
-            padding-left: 30px;
+        @include mobile {
+            padding-left: 0px;
         }
     }
 
@@ -36,6 +36,8 @@
         font-family: var(--font-family-en);
         letter-spacing: 1.28px;
         padding-top: 11px;
+        font-size: 24px;
+        font-weight: 700;
     }
 
     &__body {

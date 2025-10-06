@@ -106,6 +106,6 @@ export default defineConfig({
 
   pages: [
     { path: "/", file: "/src/pages/index.jsx" },
-    { path: "/contact__form", file: "/src/pages/contact__form.jsx" },
+    { path: "/contact_form", file: "/src/pages/contact_form.jsx" },
   ]
 })

@@ -20,13 +20,38 @@ export default () => {
                 </picture>
             </div>
             <div className="philosophy__body">
-                <h2 className="philosophy__title" id='philosophy-title'>Your title text</h2>
+                <header className="philosophy__body-header">
+                <h2 className="philosophy__title" id='philosophy-title'>コンセプト</h2>
+                <p className="philosophy__subtitle">Consept</p>
+                </header>
                 <div className="philosophy__description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam doloremque quo nulla vitae necessitatibus aut accusamus! Minima, odio. Quisquam perferendis soluta, esse amet nihil eaque reprehenderit est laboriosam odit illum?</p>
+                    <p> <span className='philosophy__description-span'>Mini retreat studio</span><br />   
+
+                        名古屋市にいながら、まるで海外リトリートに来たような特別な体験を。
+
+                        当サロンでは、フランス式のブッカル小顔デザインや、２００年以上の歴史を持ち、世界のオイルマッサージの原点スウェーディッシュリンパケア始め
+
+                        痩身・ボディメイクまで、すべてオールハンドで丁寧に施術いたします。<br />
+
+                        <span className='philosophy__description-span'>touch</span>  は、言葉を超えたコミュニケーション。
+
+                        ひとつのタッチに、安心、解放、癒し、
+
+                        すべての想いが込められています。
+
+                        手のひらが肌に触れた瞬間、
+
+                        体と心の境界がゆるみ、
+
+                        あなたの中に眠っていた美しさが目を覚めますのです。
+
+                        １日３名様までの完全予約制、
+
+                        女性専用のプライベート空間で、安心しておくつろぎいただきます。
+                    </p>
                 </div>
                 <Button href="/about" className="philosophy__link">コンセプト</Button>
             </div>
-            <p className="philosophy__bg-title">philosophy</p>
         </div>
     </section>
   )

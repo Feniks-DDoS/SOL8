@@ -40,34 +40,6 @@
         height: 700px;
     }
 
-    &__bg-title {
-        @include fluid-text(152 , 42);
-        position: absolute;
-        right: 0;
-        top: 32px;
-        user-select: none;
-        transform: scaleX(1.1);
-        letter-spacing: 22px;
-        line-height: 1.2;
-        font-weight: 600;
-        text-transform: uppercase;
-        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, 0));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        z-index: 10;
-
-        @include mobile {
-            letter-spacing: 8px;
-            right: 10%;
-            top: 5px;
-        }
-
-        @include mobile-s {
-            right: 0%;
-            letter-spacing: 4px;
-        }
-    }
-
     &__link {
         display: flex;
         align-items: center;
@@ -182,6 +154,7 @@
     &__title {
         letter-spacing: 8px;
         line-height: 2;
+        font-weight: 400;
 
         @include mobile-s {
             letter-spacing: 4px;
@@ -189,14 +162,26 @@
         }
     }
 
+    &__subtitle {
+        color: var(--color-main);
+        font-family: var(--font-family-en);
+        @include fluid-text(25, 18);
+    }
+
     &__description {
         letter-spacing: 1.6px;
+
+        &-span {
+            font-family: var(--font-family-en);
+            color: var(--color-main);
+            @include fluid-text(25, 18);
+        }
     }
 
     &__body {
         display: grid;
         gap: 40px;
-        max-width: 700px;
+        max-width: 650px;
 
         @include mobile {
             gap: 20px;
