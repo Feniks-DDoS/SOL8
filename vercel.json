@@ -1,5 +1,7 @@
 {
   "rewrites": [
-    { "source": "/contact_form", "destination": "/contact_form.html" }
+    { "source": "/contact_form", "destination": "/contact_form.html" },
+    { "source": "/menu", "destination": "/menu.html" },
+    { "source": "/about", "destination": "/about.html" }
   ]
 }
