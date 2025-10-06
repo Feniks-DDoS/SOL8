@@ -1,0 +1,55 @@
+.menu {
+
+    &__item {
+        min-height: 100%;
+
+        @include laptop-above {
+        &:first-child,
+        &:nth-child(3n) {
+            border-right: 1px solid var(--bg-border);
+            padding-right: 12px;
+        }
+        }
+        
+        &-title {
+            font-weight: 400;
+
+            &-span {
+                color: var(--color-main);
+                font-family: var(--font-family-en);
+            }
+        }
+    }
+
+    &__card {
+        min-height: 100%;
+
+        &-description {
+            display: grid;
+            gap: 10px;
+        }
+
+        &-body {
+            @include laptop-above {
+            min-height: 195px;
+            }
+            border-block: 1px solid var(--bg-border);
+            padding-block: 10px;
+
+            &.visible {
+                display: block;
+            }
+
+            &.hide {
+                display: none;
+            }
+        }
+
+        &-title {
+        display: flex;
+        gap: 16px;
+        font-size: 18px;
+            font-family: var(--font-family-base);
+        }
+    }
+}

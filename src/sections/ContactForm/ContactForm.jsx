@@ -2,6 +2,7 @@ import Field from '@/components/Field'
 import './ContactForm.scss'
 import Button from '@/components/Button'
 import CheckDetails from '@/components/CheckDetails'
+import SectionsHeader from '@/components/SectionsHeader'
 
 
 export default () => {
@@ -9,11 +10,7 @@ export default () => {
     <>
      <section className="contact-form__section" aria-labelledby='contact-form-title'>
         <div className="contact-form__inner">
-            <header className="contact-form__header">
-                <div className="contact-form__header-inner container">
-                    <h1 className="contact-form__title" id='contact-form-title'>contact</h1>
-                </div>
-            </header>
+            <SectionsHeader title="contact"/>
             <div className="contact-form__body">
                 <div className="contact-form__info container">
                     <p className='contact-form__info-1'><span className='contact-form__info-span' >SOL8</span>にご興味を持っていただきありがとうございます。</p>

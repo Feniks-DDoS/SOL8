@@ -1,9 +1,6 @@
 .about {
-    padding-block: 100px;
+    padding-block: 80px;
     border-bottom: 1px solid var(--color-main);
-    background-color: transparent;
-    position: relative;
-    z-index: 100;
 
     @include laptop {
         padding-block: 60px;
