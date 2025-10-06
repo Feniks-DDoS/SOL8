@@ -6,16 +6,17 @@ import { menuItemPremiumData } from "@/data/menuItemPremiumData"
 export default () => {
   return (
     <>
-    <section className="menu__section" aria-labelledby="menu-title">
+    <section className="menu menu__section" aria-labelledby="menu-title">
         <div className="menu__inner container">
             <div className="menu__header">
-                <h2 className="menu__title h3" id="menu-title">Menu</h2>
+                <h2 className="menu__title h3" id="menu-title">SOL8 Treatment Menu</h2>
             </div>
             <div className="menu__body">
                 <ul className="menu__list">
                     <MenuItem/>
                 </ul>
-                <h3 className="menu__premium-list-title">プレミアムボディ＆ <br className="menu__premium-br" /> フェイシャル </h3>
+                <h3 className="menu__premium-list-title">プレミアムボディ＆ <br className="menu__premium-br" /> フェイシャル 
+                <span className="menu__premium-list-title-span">Premium Body & Facial</span></h3>
                 <ul className="menu__premium-list">
                     {menuItemPremiumData.map((item) => (
                         <li className="menu__premium-item">
@@ -39,6 +40,7 @@ export default () => {
                 </ul>
             </div>
         </div>
+         <p className="menu__bg">SOL8 <br />Treatment <br />Menu</p>
     </section>
     </>
   )

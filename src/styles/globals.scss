@@ -3,6 +3,12 @@ html {
     overflow: hidden;
   }
 
+  
+    &::selection {
+        background-color: var(--color-main);
+        color: var(--color-light);
+    }
+
    /* Общая ширина/высота скроллбара */
         &::-webkit-scrollbar {
         width: 10px; /* для вертикального скролла */

@@ -32,6 +32,7 @@ export default (props) => {
                 </div>
               </div>
           </div>
+          <p className="about__bg">About</p>
       </section>
   )
 }

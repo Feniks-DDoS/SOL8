@@ -118,11 +118,11 @@
                 @include abs-center;
                 content: "";
                 background: url('@/assets/icons/spa.svg');
-                background-position: center;
+                background-position: bottom;
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 20px;
-                height: 20px;
+                width: 32px;
+                height: 32px;
                 pointer-events: none;
                 opacity: 0;
                 transition: 0.3s;

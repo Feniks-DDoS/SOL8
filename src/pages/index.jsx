@@ -5,7 +5,7 @@ import Menu from '@/sections/Menu'
 import Hero from '@/sections/Hero'
 
 export const metadata = {
-  title: 'Main',
+  title: 'Home',
 }
 
 export default () => {
@@ -16,7 +16,7 @@ export default () => {
       まるで海外リトリートに訪れたような、<br />
       深い癒しと静けさに包まれる時間を。<br />
 
-      Touch”は、<br />
+      ”<span className='about__description-span'>Touch</span>”は、
       言葉を超えたコミュニケーション。<br />
       ひとつのタッチに、<br />
       安心・解放・癒しの想いを込めて。<br />
