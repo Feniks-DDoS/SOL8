@@ -15,7 +15,7 @@ export default () => {
                 <ul className="menu__list">
                     <MenuItem/>
                 </ul>
-                <h3 className="menu__premium-list-title">プレミアムボディ＆フェイシャル </h3>
+                <h3 className="menu__premium-list-title">プレミアムボディ＆ <br className="menu__premium-br" /> フェイシャル </h3>
                 <ul className="menu__premium-list">
                     {menuItemPremiumData.map((item) => (
                         <li className="menu__premium-item">
