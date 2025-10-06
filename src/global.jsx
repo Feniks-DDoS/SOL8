@@ -31,13 +31,13 @@ export default (props) => {
         <meta property="og:url" content="https://www.sol8spa.com/"/>
         <meta property="og:title" content="SOL8 — 名古屋のマッサージサロン"/>
         <meta property="og:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
-        <meta property="og:image" content={SliderImage}/>
+        <meta property="og:image" content={icon512}/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:url" content="https://www.sol8spa.com/"/>
         <meta name="twitter:title" content="SOL8 — 名古屋のマッサージサロン"/>
         <meta name="twitter:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
-        <meta name="twitter:image" content={SliderImage}/>
+        <meta name="twitter:image" content={icon512}/>
       </Head>
       <Header url={url} />
       <AsideActions/>
