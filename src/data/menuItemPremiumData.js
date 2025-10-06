@@ -1,7 +1,7 @@
 export const menuItemPremiumData = [
     {
         id: 1,
-        titleJa: 'フェイシャル＋ボディ ',
+        titleJa: 'フェイシャル&ボディ ',
         titleEn: 'Body Balance Therapy',
         price: '15,000',
         time: '120',
@@ -10,7 +10,7 @@ export const menuItemPremiumData = [
     },   
     {
         id: 2,
-        titleJa: 'フェイシャル＋ボディ ',
+        titleJa: 'フェイシャル&ボディ ',
         titleEn: ' Biologique Recherche',
         price: '25,000',
         time: '150',

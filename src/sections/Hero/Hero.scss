@@ -53,12 +53,14 @@
         animation-name: fadeIn;
         animation-timing-function: linear;
         animation-duration: 1s;
+        animation-delay: 0.5s;
         animation-iteration-count: 1;
         animation-fill-mode: both;
     }
 
     &__subtitle {
         @include fluid-text(22, 18);
+        text-shadow: 6px -2px 13px var(--color-dark);
     }
 
     &__header {

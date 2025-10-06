@@ -9,6 +9,7 @@ import icon192 from '/public/favicons/android-chrome-192x192.png'
 import icon512 from '/public/favicons/android-chrome-512x512.png'
 import AsideActions from './components/AsideActions'
 import FormMessage from './components/FormMeassge'
+import PreviewImage from "/public/images/preview.png"
 
 export default (props) => {
   const { children, title, url } = props
@@ -16,7 +17,7 @@ export default (props) => {
   return (
     <>
       <Head htmlAttributes={{ lang: 'ja' }}>
-        <title>SOL8 | {title}</title>
+        <title>SOL 8 | {title}</title>
         <script src="/src/main.js" type="module" />
         <link rel="icon" sizes='16x16' href={favicon} />
         <link rel="icon" sizes='32x32' href={favicon} />
@@ -31,13 +32,13 @@ export default (props) => {
         <meta property="og:url" content="https://www.sol8spa.com/"/>
         <meta property="og:title" content="SOL8 — 名古屋のマッサージサロン"/>
         <meta property="og:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
-        <meta property="og:image" content={icon512}/>
+        <meta property="og:image" content={PreviewImage}/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:url" content="https://www.sol8spa.com/"/>
         <meta name="twitter:title" content="SOL8 — 名古屋のマッサージサロン"/>
         <meta name="twitter:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
-        <meta name="twitter:image" content={icon512}/>
+        <meta name="twitter:image" content={PreviewImage}/>
       </Head>
       <Header url={url} />
       <AsideActions/>

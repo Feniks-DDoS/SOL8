@@ -32,6 +32,7 @@
     }
 
     &__images {
+        user-select: none;
         position: relative;        
         border-radius: 0 2.5rem;
 
@@ -113,6 +114,7 @@
         top: 100px;
         text-transform: uppercase;
         left: 0px;
+        user-select: none;
         transform: scaleX(1.1);
         transform-origin: left;
         letter-spacing: .15em;

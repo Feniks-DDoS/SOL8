@@ -12,12 +12,11 @@
         line-height: 1.2;
         font-weight: 600;
         text-transform: uppercase;
-        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, .1));
+        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .2), rgba(167, 148, 88, 0));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         z-index: -1;
-        direction: rtl; 
-        unicode-bidi: bidi-override;
+        text-align: end;
 
         @include mobile {
             top: 63px;
