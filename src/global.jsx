@@ -43,7 +43,7 @@ export default (props) => {
       <Header url={url} />
       <AsideActions/>
       <Content>{children}</Content>
-      <Footer />
+      <Footer url={url} />
       <FormMessage/>
     </>
   )

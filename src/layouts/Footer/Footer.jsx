@@ -1,8 +1,11 @@
 import Logo from '@/components/Logo'
 import './Footer.scss'
 import Icon from '@/components/Icon' 
+import clsx from 'clsx'
 
-export default () => {
+export default (props) => {
+
+  const { url } = props
 
    const menuItems = [
     {
@@ -51,7 +54,7 @@ export default () => {
             <ul className="footer__menu-list">
               {menuItems.map(({label , href}) => (
                 <li className="footer__menu-item">
-                  <a href={href} className="footer__menu-link">{label}</a>
+                  <a href={href} className={clsx("footer__menu-link", url === href ? 'is-active' : '')}>{label}</a>
                 </li>
               ))}
             </ul>

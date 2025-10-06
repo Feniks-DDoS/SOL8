@@ -126,10 +126,40 @@
         }
 
         &-link {
+            @include fluid-text(21, 18);
+            font-family: var(--font-family-en);
             letter-spacing: 1.28px;
             min-width: 100%;
+            position: relative;          
+
+            @include mobile-above {
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2%;
+                width: 0;
+                background-color: var(--color-main);
+                transition: 0.4s;
+            }
+
+                &.is-active {
+                    pointer-events: none;
+                &::before {
+                    width: 100%;
+                }
+            }
+            }
+            
+        
+
             @include hover {
                 opacity: 0.7;
+                &::before {
+                    width: 100%;
+                }
             }
         }
     }
