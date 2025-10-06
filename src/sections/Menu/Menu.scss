@@ -1,7 +1,8 @@
 .menu {
     position: relative;
 
-      &__bg {
+      &__bg {        
+    font-family: var(--font-family-lora);
         @include fluid-text(152 , 42);
         position: absolute;
         right: 5%;

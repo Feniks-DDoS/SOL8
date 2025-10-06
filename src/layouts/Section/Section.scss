@@ -15,6 +15,7 @@
     position: relative;
 
     &-bg {      
+       font-family: var(--font-family-lora);
         @include fluid-text(152 , 42);
         position: absolute;
         right: 0;
@@ -114,7 +115,7 @@
       color: var(--color-main);
       text-transform: uppercase;
       font-weight: 700;
-      font-family: var(--font-family-en);
+      font-family: var(--font-family-lora);
       letter-spacing: 3px;
     }
   }

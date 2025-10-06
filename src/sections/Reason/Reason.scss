@@ -108,7 +108,8 @@
         }
     }
 
-    &__bg-title {
+    &__bg-title {        
+        font-family: var(--font-family-lora);
         @include fluid-text(170 , 70);
         position: absolute;
         top: 100px;
