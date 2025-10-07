@@ -1,0 +1,127 @@
+.access {
+    background: #beaf87;;
+    color: var(--color-light);
+    position: relative;
+
+    &::before {
+        @include abs-center;
+        content: "";
+        top: 10px;
+        background: url('@/assets/images/access/access1.png');
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: contain;
+        width: 100%;
+        height: 30px;
+    }
+
+    &::after {
+        @include abs-y;
+        right: 0;
+        content: "";
+        height: 100%;
+        width: 52%;
+        z-index: 1;
+    }
+
+    &__bg { 
+        font-family: var(--font-family-lora);
+        @include fluid-text(170 , 70);
+        position: absolute;
+        top: 50px;
+        text-transform: uppercase;
+        left: 0px;
+        user-select: none;
+        transform: scaleX(1.1);
+        transform-origin: left;
+        letter-spacing: .15em;
+        line-height: 1.2;
+        font-weight: 600;
+        background-image: linear-gradient(to bottom, #efe9d6, rgba(239, 233, 214, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+        z-index: 1;        
+
+        @include laptop {
+            top: 0px;            
+        }
+    }
+
+    &__inner {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        grid-template-columns: repeat(2, 1fr);
+        z-index: 10;
+        padding-top: 220px;
+        padding-bottom: 60px;
+
+        @include laptop {
+            grid-template-columns: 1fr;
+            gap: 32px;
+            padding-top: 60px;
+        }
+    }
+
+    &__extra {
+        @include laptop-above {
+        grid-column: 2 / 3 ;
+        grid-row: -1 / 1;
+        justify-self: end;
+        }
+        align-self: center;
+        justify-self: center;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    &__map {
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 10px;
+        border: 2px solid var(--color-main);
+    }
+
+    &__header {
+        display: grid;
+        row-gap: 40px;
+        letter-spacing: 1.28px;
+        padding-inline: 16px;
+
+        &-header {
+            display: grid;
+            row-gap: 14px;
+        }
+       
+    }
+
+    &__tag {
+        max-width: max-content;
+        padding: 1.9px 19px;
+        background-color: var(--color-light);
+        color: var(--color-main)
+    }
+
+    &__title {
+        @include fluid-text(26, 24);
+        font-weight: 700;
+        letter-spacing: 5px;
+        line-height: 39px;
+        padding-bottom: 26px;
+        padding-left: 15px;
+        position: relative;
+
+        &::before {
+            @include abs-center;
+            content: "";
+            width: 30px;
+            height: 1px;
+            left: -1%;
+            top: 30%;
+            background-color: var(--color-light);
+        }
+    }
+}
+

@@ -3,6 +3,7 @@ import Contact from '@/sections/Contact'
 import About from '@/sections/About'
 import Menu from '@/sections/Menu'
 import Hero from '@/sections/Hero'
+import Access from '@/sections/Access'
 
 export const metadata = {
   title: 'Home',
@@ -32,6 +33,7 @@ export default () => {
       <Reason/>
       <Menu/>
       <Contact/>
+      <Access/>
     </>
   )
 }

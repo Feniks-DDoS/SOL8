@@ -18,7 +18,7 @@ export default (props) => {
     },
     {
       label: 'Salon',
-      href: '/about_the_salon',
+      href: '/salon',
     },
     {
       label: 'Menu',

@@ -1,5 +1,6 @@
 import SectionsHeader from "@/components/SectionsHeader"
 import About from "@/sections/About"
+import Access from "@/sections/Access"
 import Contact from "@/sections/Contact"
 
 
@@ -28,6 +29,7 @@ export default () => {
     <SectionsHeader title="About" />
     <About titleAbout='About Liliya Sato' info={infoSection}/>
     <Contact/>
+    <Access/>
     </>
   )
 }

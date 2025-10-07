@@ -1,18 +1,14 @@
 import SectionsHeader from "@/components/SectionsHeader"
 import Access from "@/sections/Access"
-import Contact from "@/sections/Contact"
-import Menu from "@/sections/Menu"
 
 export const metadata = {
-  title: 'Menu',
+  title: 'Salon',
 }
 
 export default () => {
   return (
     <>
-    <SectionsHeader title="Menu"/>
-    <Menu/>
-    <Contact/>
+    <SectionsHeader title="Salon"/>
     <Access/>
     </>
   )

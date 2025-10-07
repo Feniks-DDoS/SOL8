@@ -109,5 +109,6 @@ export default defineConfig({
     { path: "/contact_form", file: "/src/pages/contact_form.jsx" },
     { path: "/menu", file: "/src/pages/menu.jsx" },
     { path: "/about", file: "/src/pages/about.jsx" },
+    { path: "/salon", file: "/src/pages/salon.jsx" },
   ]
 })
