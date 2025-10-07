@@ -53,10 +53,10 @@
 
     &__info {
         &-span {
-            font-family: var(--font-family-en);
+            font-family: var(--font-family-lora);
             color: var(--color-main);
             font-weight: 500;
-            @include fluid-text(22 , 16);
+            @include fluid-text(20 , 16);
             padding-right: 5px;
         }
     }

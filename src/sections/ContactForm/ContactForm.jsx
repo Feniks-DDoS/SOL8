@@ -13,7 +13,7 @@ export default () => {
             <SectionsHeader title="contact"/>
             <div className="contact-form__body">
                 <div className="contact-form__info container">
-                    <p className='contact-form__info-1'><span className='contact-form__info-span' >SOL8</span>にご興味を持っていただきありがとうございます。</p>
+                    <p className='contact-form__info-1'><span className='contact-form__info-span' >SOL 8</span>にご興味を持っていただきありがとうございます。</p>
                     <p className='contact-form__info-2'>下記フォーム、公式LINEにて、お気軽にお問い合わせください。</p>
                 </div>
                 <div className="contact-form__actions container">
