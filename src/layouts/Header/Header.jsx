@@ -56,6 +56,7 @@ export default (props) => {
             {menuItems.map(({label, href}) => (
               <li className="header__menu-item">
                 <a 
+                data-js-overlay-link=""
                 href={href}                 
                 className={clsx(
                 "header__menu-link",

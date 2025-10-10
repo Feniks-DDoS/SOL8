@@ -1,8 +1,11 @@
+import MatchMedia from "@/constants/MatchMedia"
+
 class OverlayMenu {
   selectors = {
     root: '[data-js-header]',
     overlay: '[data-js-header-overlay]',
     burgerButton: '[data-js-header-burger-button]',
+    overlayLink: `[data-js-overlay-link]`
   }
 
   stateClasses = {
@@ -16,10 +19,21 @@ class OverlayMenu {
       return
     }
     this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
+    this.overlayLinkElement = this.rootElement.querySelectorAll(this.selectors.overlayLink)
     this.burgerButtonElement = this.rootElement.querySelector(
       this.selectors.burgerButton
     )
     this.bindEvents()
+  }
+
+  tabletAbove() {
+     if(!MatchMedia.tablet.matches) {
+      this.burgerButtonElement.classList.remove(this.stateClasses.isActive)
+      this.overlayElement.classList.remove(this.stateClasses.isActive)
+      document.documentElement.classList.remove(this.stateClasses.isLock)
+    } else {
+      return
+    }
   }
 
   onBurgerButtonClick = () => {
@@ -29,7 +43,11 @@ class OverlayMenu {
   }
 
   bindEvents() {
+    MatchMedia.tablet.addEventListener('change', this.tabletAbove.bind(this))
     this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
+    this.overlayLinkElement.forEach((item) => {
+      item.addEventListener('click' , this.onBurgerButtonClick)
+    })
   }
 }
 
