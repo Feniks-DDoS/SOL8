@@ -1,6 +1,7 @@
 import "./MenuItem.scss"
 import { menuItemData } from "@/data/menuItemData"
 import clsx from "clsx"
+import Button from "../Button"
 
 export default () => {
   return (
@@ -20,6 +21,7 @@ export default () => {
                         <p className="menu__card-description-info">{item.descriptionEn.descriptionEnShort}
                         </p>
                     </div>
+                    <Button href={item.href.linkShort} className="menu__card-link">ご予約に</Button>
                 </div>
                 <div className={clsx("menu__card-body" , item.time.timeLong ? 'visible' : 'hide')}>
                     <h4 className="menu__card-title">
@@ -31,7 +33,8 @@ export default () => {
                         </p>
                         <p className="menu__card-description-info">{item.descriptionEn.descriptionEnLong}
                         </p>
-                    </div>
+                    </div>                    
+                    <Button href={item.href.linkLong} className="menu__card-link">ご予約に</Button>
                 </div>
             </div>
         </li>

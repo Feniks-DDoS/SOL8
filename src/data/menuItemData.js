@@ -19,6 +19,10 @@ export const menuItemData = [
             descriptionEnShort: 'Realigns the body structure, stimulates circulation and lymph flow, and balances digestive health.',
             descriptionEnLong: 'Includes head relaxation techniques for total balance and deep release of chronic tension and fatigue.'
         }, 
+        href: {
+            linkShort: '#',
+            linkLong: '#',
+        },
     },    
     {
         id: 2,
@@ -40,6 +44,10 @@ export const menuItemData = [
             descriptionEnShort: 'A refined Swedish oil treatment to ease muscle tension, stimulate lymph flow, and restore inner balance.',
             descriptionEnLong: 'A luxurious full-body Swedish massage to reset the mind and body through deep relaxation and detox.'
         }, 
+        href: {
+            linkShort: '#',
+            linkLong: '#',
+        },
     },
     {
         id: 3,
@@ -57,6 +65,10 @@ export const menuItemData = [
         descriptionEn: {
             descriptionEnShort: 'A European facial sculpting method to refine facial contours and enhance natural radiance.',
         }, 
+        href: {
+            linkShort: '#',
+            linkLong: '#',
+        },
     },
     {
         id: 4,
@@ -74,5 +86,9 @@ export const menuItemData = [
         descriptionEn: {
             descriptionEnShort: 'A deep detoxifying lymphatic massage that targets cellulite and reshapes your body silhouette.',
         }, 
+        href: {
+            linkShort: '#',
+            linkLong: '#',
+        },
     },
 ]

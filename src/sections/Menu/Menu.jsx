@@ -2,6 +2,7 @@ import MenuItem from "@/components/MenuItem"
 import "./Menu.scss"
 import Icon from "@/components/Icon"
 import { menuItemPremiumData } from "@/data/menuItemPremiumData"
+import Button from "@/components/Button"
 
 
 export default () => {
@@ -38,7 +39,8 @@ export default () => {
                                         <p className="menu__premium-description-info">{item.descriptionEn}
                                         </p>
                                     </div>
-                                </div>                            
+                                </div> 
+                                <Button href={item.href} className="menu__premium-link">ご予約に</Button>                           
                             </div>
                         </li>
                     ))}
