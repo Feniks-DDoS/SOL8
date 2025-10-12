@@ -1,0 +1,45 @@
+.about-slider {
+    position: relative;
+
+    &__bg {
+        @include abs-center;
+        top: -10%;
+        translate: -50% 50%;
+         @include fluid-text(152 , 62);
+        user-select: none;
+        transform: scaleX(1.1);
+        letter-spacing: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -1;        
+        font-family: var(--font-family-lora);
+
+        @include mobile {
+            top: -5%;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        color: var(--color-main);
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        font-weight: 400;
+    }
+   
+
+    &__inner {
+        padding-block: 120px;
+
+        @include laptop {
+        padding-block: 60px;
+        }   
+
+    }
+}

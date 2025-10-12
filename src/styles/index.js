@@ -3,5 +3,8 @@ import './fonts.scss'
 import './variables.scss'
 import './utils.scss'
 import './globals.scss'
-import 'swiper/css'
-import 'swiper/css/effect-fade'
+import './slider.scss'
+import 'swiper/css';
+import "swiper/css/effect-fade";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';

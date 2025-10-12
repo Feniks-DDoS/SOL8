@@ -1,0 +1,73 @@
+.pay-method {
+    border-top: 1px solid var(--color-main);
+
+    &__inner {
+        padding-block: 120px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+
+        @include laptop {
+            padding-block: 60px;
+        }
+    }
+
+    &__body {
+        display: grid;
+        gap: 12px;
+    }
+
+    &__info {
+        letter-spacing: 1.6px;
+
+        span {
+            font-family: var(--font-family-lora);
+            color: var(--color-main);
+        }
+    }
+    &__title {
+        position: relative;
+        font-weight: 500;
+        color: var(--color-main);
+
+    &::before {
+      @include abs-x;
+      content: "";
+      top: 34%;
+      left: 13%;
+      width: 89px;
+      height: 50px;
+      background: url('@/assets/icons/reasonTitleDecor.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: scaleX(-1);
+
+    }
+
+    &::after {
+      @include abs-x;
+      content: "";
+      top: 34%;
+      left: 84%;
+      width: 89px;
+      height: 50px;
+      background: url('@/assets/icons/reasonTitleDecor.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @include mobile-s {
+        &::before {
+            left: 9%;
+        }
+
+        &::after {
+            left: 88%;
+        }
+    }
+    }
+}
