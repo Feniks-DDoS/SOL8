@@ -55,6 +55,11 @@
             background: var(--bg-sub);
             width: 13px;
             height: 13px;
+
+            @include mobile {
+                width: 10px;
+                height: 10px;
+            }
         }
     }
 }
