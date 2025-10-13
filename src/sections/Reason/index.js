@@ -1,3 +1,1 @@
-import Reason from "./Reason"
-
-export default Reason
+export { default } from "./Reason"

@@ -1,3 +1,1 @@
-import AsideActions from "./AsideActions";
-
-export default AsideActions
+export { default } from "./AsideActions";

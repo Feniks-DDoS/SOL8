@@ -22,7 +22,11 @@
         z-index: 1;        
 
         @include tablet {
-            top: 3%;
+            top: 2%;
+        }
+
+        @include mobile-s {
+            top: 1%;
         }
     }     
 

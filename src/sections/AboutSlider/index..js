@@ -1,3 +1,1 @@
-import AboutSlider from "./AboutSlider"
-
-export default AboutSlider
+export { default } from "./AboutSlider"

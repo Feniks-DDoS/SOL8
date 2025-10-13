@@ -1,3 +1,1 @@
-import SalonReason from './SalonReason'
-
-export default SalonReason
+export { default } from './SalonReason'

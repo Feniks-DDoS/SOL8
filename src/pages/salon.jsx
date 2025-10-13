@@ -1,7 +1,7 @@
+import RelatedPage from "@/components/RelatedPage"
 import SectionsHeader from "@/components/SectionsHeader"
 import Access from "@/sections/Access"
 import Contact from "@/sections/Contact"
-import Reason from "@/sections/Reason"
 import SalonReason from "@/sections/SalonReason"
 
 export const metadata = {
@@ -13,6 +13,7 @@ export default () => {
     <>
     <SectionsHeader title="Salon"/>
     <SalonReason/>
+    <RelatedPage/>
     <Contact/>
     <Access/>
     </>

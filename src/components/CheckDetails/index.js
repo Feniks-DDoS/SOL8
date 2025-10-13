@@ -1,3 +1,1 @@
-import CheckDetails from "./CheckDetails"
-
-export default CheckDetails
+export { default } from "./CheckDetails"

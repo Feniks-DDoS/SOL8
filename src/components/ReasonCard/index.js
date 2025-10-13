@@ -1,3 +1,2 @@
-import ReasonCard from "./ReasonCard"
+export { default } from "./ReasonCard"
 
-export default ReasonCard

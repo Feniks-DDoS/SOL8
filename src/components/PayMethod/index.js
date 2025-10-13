@@ -1,3 +1,1 @@
-import PayMethod from './PayMethod'
-
-export default PayMethod
+export { default } from './PayMethod'
