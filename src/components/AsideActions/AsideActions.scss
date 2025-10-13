@@ -10,7 +10,6 @@
             transform: translateY(0%);
         }
 
-
     @include mobile-above {
         right: 0;
         bottom: 0;
@@ -24,6 +23,9 @@
             transform: translateX(0%);
         }
 
+        &:has(.reservation__link:focus-visible) {
+            transform: translateX(0%);
+        }
     }
 
     &__list {

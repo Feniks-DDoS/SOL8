@@ -14,14 +14,8 @@ class ReservationAside {
         this.rootElement = rootElement
 
         this.scrollTrigger = this.scroll.scrollTrigger || 50
-        this.init()
+        this.bindEvents()
     }
-
-    init() {
-        window.addEventListener('scroll', () => this.handleScroll());
-    }
-
- 
 
     handleScroll() {
 
@@ -30,6 +24,11 @@ class ReservationAside {
         } else {
             this.rootElement.classList.remove(this.stateClasses.isActive);
         }
+    }
+
+   
+    bindEvents() {
+        window.addEventListener('scroll', () => this.handleScroll());
     }
 }
 

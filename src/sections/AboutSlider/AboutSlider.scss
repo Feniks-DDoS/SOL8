@@ -24,13 +24,42 @@
     }
 
     &__header {
-        text-align: center;
         color: var(--color-main);
         padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__title {
         font-weight: 400;
+        position: relative;
+        text-align: center;
+        max-width: max-content;
+
+          &::before {
+            @include abs-center;
+            content: "";
+            background: url('@/assets/icons/decorationReasonTitle.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 89px;
+            height: 4px;
+            left: -45%;
+        }
+        &::after {
+            @include abs-center;
+            content: "";
+            rotate: -180deg;
+            background: url('@/assets/icons/decorationReasonTitle.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 89px;
+            height: 4px;
+            left: 145%;
+        }
     }
    
 

@@ -29,7 +29,7 @@ export default () => {
             <ul className="reservation__list">
                 {reservationItem.map(({ label , icon , href}) => (
                     <li className="reservation__item">
-                        <Button href={href} className="reservation__link">
+                        <Button href={href} className="reservation__link" >
                             <span className="visually-hidden">{label}</span>
                             <Icon className="reservation__icon" name={icon}/>
                             <span className="reservation__title">{label}</span>

@@ -106,7 +106,7 @@ export default () => {
                     />
             </div>
             <div className="field__action">
-                <Button className="field__button" type="button">
+                <Button disabled='true' className="field__button" type="button">
                     <span className="field__button-span-1">入力が完了していません</span>
                     <span className="field__button-span-2">入力内容を確認する</span>
                 </Button>
