@@ -4,7 +4,6 @@
 
     &__bg {
         @include abs-center;
-        transform: -50% 50%;
         top: 4%;
         font-family: var(--font-family-lora);
         @include fluid-text(170 , 70);

@@ -17,10 +17,9 @@
 
     &-bg {      
        font-family: var(--font-family-lora);
-        @include fluid-text(152 , 42);
-        position: absolute;
-        right: 0;
-        top: 65px;
+        @include fluid-text(152 , 92);
+        @include abs-center;
+        top: 13%;
         user-select: none;
         transform: scaleX(1.1);
         letter-spacing: 22px;
@@ -33,7 +32,6 @@
         z-index: 1;
 
         @include tablet {
-          top: 5px;
         background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, 0));
         }
 

@@ -47,7 +47,7 @@ export default () => {
                 </ul>
             </div>
         </div>
-         <p className="menu__bg">SOL 8 <br />Treatment <br />Menu</p>
+         <p className="menu__bg">SOL 8 Treatment Menu</p>
     </section>
     </>
   )
