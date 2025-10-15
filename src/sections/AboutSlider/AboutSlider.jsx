@@ -1,6 +1,5 @@
 import './AboutSlider.scss'
-import SliderImageAvif from '@/assets/images/hero/avif/hero1.avif'
-import SliderImageJpg from '@/assets/images/hero/jpg/hero1.jpg'
+import { aboutSliderData } from '@/data/aboutSlider'
 
 export default () => {
   return (
@@ -12,30 +11,14 @@ export default () => {
             </header>
             <div class="swiper slider" data-js-slider="">
                 <ul class="swiper-wrapper slider__wrapper">
-                    <li class="swiper-slide slider__slide">
-                        <picture className='slider__images'>
-                            <source srcSet={SliderImageAvif} type='image/avif'/>
-                            <img className='slider__image' src={SliderImageJpg} alt="salon-image" width={880} height={586} loading='lazy'/>
-                        </picture>
-                    </li>
-                    <li class="swiper-slide slider__slide">
-                        <picture className='slider__images'>
-                            <source srcSet={SliderImageAvif} type='image/avif'/>
-                            <img className='slider__image' src={SliderImageJpg} alt="salon-image" width={880} height={586} loading='lazy'/>
-                        </picture>
-                    </li>
-                    <li class="swiper-slide slider__slide">
-                        <picture className='slider__images'>
-                            <source srcSet={SliderImageAvif} type='image/avif'/>
-                            <img className='slider__image' src={SliderImageJpg} alt="salon-image" width={880} height={586} loading='lazy'/>
-                        </picture>
-                    </li>
-                    <li class="swiper-slide slider__slide">
-                        <picture className='slider__images'>
-                            <source srcSet={SliderImageAvif} type='image/avif'/>
-                            <img className='slider__image' src={SliderImageJpg} alt="salon-image" width={880} height={586} loading='lazy'/>
-                        </picture>
-                    </li>
+                    {aboutSliderData.map((item) => (                        
+                        <li class="swiper-slide slider__slide">
+                            <picture className='slider__images'>
+                                <source srcSet={item.Source.srcSet} type={item.Source.type}/>
+                                <img className='slider__image' src={item.img.src} alt={item.img.alt} width={880} height={586} loading='lazy'/>
+                            </picture>
+                        </li>
+                    ))}
                 </ul>
                 <div class="swiper-pagination slider__pagination"></div>
 

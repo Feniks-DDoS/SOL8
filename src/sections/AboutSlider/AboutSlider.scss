@@ -36,6 +36,7 @@
         position: relative;
         text-align: center;
         max-width: max-content;
+        letter-spacing: 5px;
 
           &::before {
             @include abs-center;
@@ -59,6 +60,10 @@
             width: 89px;
             height: 4px;
             left: 145%;
+        }
+
+        @include mobile-s {
+            letter-spacing: 2px;
         }
     }
    

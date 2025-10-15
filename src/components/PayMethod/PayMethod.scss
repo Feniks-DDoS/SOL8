@@ -31,6 +31,7 @@
         position: relative;
         font-weight: 500;
         color: var(--color-main);
+        letter-spacing: 5px;
 
     &::before {
       @include abs-x;
@@ -61,6 +62,7 @@
     }
 
     @include mobile-s {
+        letter-spacing: 2px;
         &::before {
             left: 9%;
         }
