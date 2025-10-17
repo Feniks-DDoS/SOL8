@@ -20,7 +20,7 @@ export default () => {
                     </picture>
                 </div>
                 <div className="reason__card-body">
-                    <h3 className="reason__card-title">{item.title}</h3>
+                    <h3 className="reason__card-title h4">{item.title}</h3>
                     <div className="reason__card-description">
                         <p>{item.body}</p>
                     </div>

@@ -1,0 +1,70 @@
+.header-aside {
+    &__inner {
+        padding-block: 16px;
+        border-block: 1px solid var(--color-main);
+
+        @include mobile {
+            padding-block: 8px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 16px;
+    }
+
+    &__svg {
+        max-width: 25px;
+        color: var(--color-main);
+    }
+
+    &__link {
+        font-family: var(--font-family-lora);
+        color: var(--color-main);
+        position: relative;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 3%;
+            width: 0%;
+            background: var(--color-main);
+            transition: var(--transition-duration);
+        }
+
+        @include hover {
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &.is-active {
+            pointer-events: none;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:not(:last-child) {
+            &::after {
+                content: ">";
+                color: var(--color-main);
+                margin-left: 16px;
+                max-width: 10px;
+            }
+        }
+    }
+}

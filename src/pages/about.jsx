@@ -4,6 +4,7 @@ import About from "@/sections/About"
 import AboutSlider from "@/sections/AboutSlider/AboutSlider"
 import Access from "@/sections/Access"
 import Contact from "@/sections/Contact"
+import HeaderAside from "@/components/HeaderAside"
 
 
 export const metadata = {
@@ -33,6 +34,7 @@ export default () => {
   return (
     <>
     <SectionsHeader title="About" />
+    <HeaderAside isActive={true} HeaderAsideTitle="About" HeaderAsideHref="/about"/>
     <About titleAbout='About ' info={infoSection}/>
     <AboutSlider/>
     <PayMethod/>

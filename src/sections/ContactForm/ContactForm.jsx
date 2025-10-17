@@ -3,6 +3,7 @@ import './ContactForm.scss'
 import Button from '@/components/Button'
 import CheckDetails from '@/components/CheckDetails'
 import SectionsHeader from '@/components/SectionsHeader'
+import HeaderAside from '@/components/HeaderAside'
 
 
 export default () => {
@@ -11,6 +12,7 @@ export default () => {
      <section className="contact-form__section" aria-labelledby='contact-form-title'>
         <div className="contact-form__inner">
             <SectionsHeader title="contact"/>
+            <HeaderAside isActive={true} HeaderAsideTitle="Contact" HeaderAsideHref="/contact_form"/>
             <div className="contact-form__body">
                 <div className="contact-form__info container">
                     <p className='contact-form__info-1'><span className='contact-form__info-span' >SOL 8</span>にご興味を持っていただきありがとうございます。</p>
