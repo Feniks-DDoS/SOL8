@@ -26,7 +26,7 @@ export default (props) => {
     },
     {
       label: 'News',
-      href: '/blog',
+      href: '/news',
     },
     {
       label: 'Contact',

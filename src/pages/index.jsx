@@ -4,6 +4,7 @@ import About from '@/sections/About'
 import Menu from '@/sections/Menu'
 import Hero from '@/sections/Hero'
 import Access from '@/sections/Access'
+import News from '@/sections/News'
 
 export const metadata = {
   title: 'Home',
@@ -32,6 +33,7 @@ export default () => {
       <About titleAbout='About' info={infoSection}/>
       <Reason/>
       <Menu/>
+      <News/>
       <Contact/>
       <Access/>
     </>

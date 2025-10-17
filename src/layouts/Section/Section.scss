@@ -44,11 +44,16 @@
 
   &__reason {
     position: relative;
+    padding-block: 120px;
     background: linear-gradient(
       to bottom,
       #fff8ee 0%,
       #fcf0f0 100%
     );
+
+    @include laptop {
+      padding-block: 60px;
+    }
 
     &-br {
       @include mobile-above {

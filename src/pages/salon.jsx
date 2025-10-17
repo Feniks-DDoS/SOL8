@@ -13,7 +13,7 @@ export default () => {
     <>
     <SectionsHeader title="Salon"/>
     <SalonReason/>
-    <RelatedPage/>
+    <RelatedPage relatedTitle="News" relatedHref="/news"/>
     <Contact/>
     <Access/>
     </>

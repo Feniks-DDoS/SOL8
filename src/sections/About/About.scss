@@ -1,7 +1,11 @@
 .about {
-    padding-block: 80px;
+    padding-block: 120px;
     border-bottom: 1px solid var(--bg-border);
     position: relative;
+
+    @include laptop {
+        padding-block: 60px;
+    }
 
     &__bg {
         @include fluid-text(152 , 42);

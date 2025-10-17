@@ -1,0 +1,133 @@
+.news {
+    background: var(--bg-off-light);
+    border-top: 1px solid var(--color-main);
+
+    &__inner {
+        padding-block: 120px;
+        display: grid;
+        gap: 52px;
+
+        @include laptop {
+            padding-block: 60px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-main);
+        border: 1px solid var(--color-main);
+        padding: 15px;
+        background-color: var(--color-light);
+        position: relative;
+        min-width: 280px;
+
+        @include hover {
+            background: var(--bg-sub);
+        }
+    }
+
+
+    &__title {
+        font-family: var(--font-family-lora);
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        max-width: max-content;
+        letter-spacing: 5px;
+        color: var(--color-main);
+        letter-spacing: 10px;
+
+          &::before {
+            @include abs-center;
+            content: "";
+            background: url('@/assets/icons/decorationReasonTitle.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 89px;
+            height: 4px;
+            left: -45%;
+        }
+        &::after {
+            @include abs-center;
+            content: "";
+            rotate: -180deg;
+            background: url('@/assets/icons/decorationReasonTitle.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 89px;
+            height: 4px;
+            left: 145%;
+        }
+
+        @include mobile-s {
+            letter-spacing: 2px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        @include tablet {
+            max-width: 600px;
+            justify-self: center;
+        }
+    }
+
+    &__card {
+        display: grid;
+        gap: 16px;
+
+        @include hover {
+            .news__card-image {
+                transform: scale(1.1);
+            }
+        }
+
+        &-header {
+            overflow: hidden;
+        }        
+
+        &-image {
+            width: 100%;
+            transition: 0.2s;
+            user-select: none;
+        }
+
+        &-time {
+            @include fluid-text(20 ,16);
+            color: var(--color-main);
+            letter-spacing: 1.28px;
+            font-family: var(--font-family-en);
+        }
+
+        &-description {
+            color: #a1a1a1;
+        }
+    }
+}

@@ -110,5 +110,6 @@ export default defineConfig({
     { path: "/menu", file: "/src/pages/menu.jsx" },
     { path: "/about", file: "/src/pages/about.jsx" },
     { path: "/salon", file: "/src/pages/salon.jsx" },
+    { path: "/news", file: "/src/pages/news.jsx" },
   ]
 })

@@ -1,20 +1,20 @@
 import './RelatedPage.scss'
 import Icon from '../Icon'
 
-export default () => {
+export default ({relatedTitle , relatedHref}) => {
 
     const relatedPage = [
         {
             label: 'About',
-            href: './about',
+            href: '/about',
         },
         {
             label: 'Menu',
-            href: './menu',
+            href: '/menu',
         },
         {
-            label: 'News',
-            href: './news',
+            label: relatedTitle,
+            href: relatedHref,
         },
     ]
 
