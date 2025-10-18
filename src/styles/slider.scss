@@ -50,6 +50,8 @@
     }
 
     &__pagination {
+        background: var(--color-main);
+        bottom: 0 !important;
         span {
             color: var(--color-main);
             background: var(--bg-sub);

@@ -10,7 +10,7 @@ export default () => {
             </header>
             <div className="pay-method__body">
                 <p className="pay-method__info">お支払いには、現金とクレジットカードをご利用いただけます。</p>
-                <p className="pay-method__info">ご利用いただけるクレジットカード : <span>VISA</span> / <span>Mastercard</span>  / <span>JCB</span></p>
+                <p className="pay-method__info">ご利用いただけるクレジットカード : <span>VISA</span> / <span>Mastercard</span>  / <span>JCB</span>。</p>
             </div>
         </div>
     </section>

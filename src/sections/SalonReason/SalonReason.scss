@@ -1,6 +1,7 @@
 .reason-all {
     position: relative;
     background: var(--bg-off-light);
+    border-bottom: var(--border);
 
     &__bg {
         @include abs-center;

@@ -70,6 +70,7 @@
         background-color: var(--color-light);
         position: relative;
         min-width: 280px;
+        letter-spacing: 2.5px;
 
         &::after {
             @include abs-x;

@@ -99,6 +99,7 @@
             padding: 6px 32px;
             align-self: end;
             max-width: max-content;
+            font-weight: 400;
 
             @include hover {
                 background: var(--color-main);

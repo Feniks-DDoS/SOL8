@@ -33,7 +33,7 @@
     }
 
     &__body {
-        border-block: var(--border);
+        border-bottom: var(--border);
         padding-block: 80px;
         display: flex;
         flex-direction: column;
@@ -52,6 +52,7 @@
     }
 
     &__info {
+        letter-spacing: 2px;
         &-span {
             font-family: var(--font-family-lora);
             color: var(--color-main);

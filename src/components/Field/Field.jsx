@@ -24,7 +24,7 @@ export default () => {
                         name='aboutSalon'
                         data-js-form-clinic=""
                         />
-                        <span className="field__checkbox-title">クリニックについて</span>                     
+                        <span className="field__checkbox-title">サロンについて</span>                     
                     </label>
                     <label htmlFor="about-reservation" className='field__checkbox-label'>                      
                         <input 
