@@ -21,7 +21,7 @@ export default () => {
                 </div>
             </div>
             <div className="access__extra">
-                <iframe className='access__map' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5900.2950424858145!2d136.93606026612815!3d35.20599241993586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sjp!4v1759843192883!5m2!1suk!2sjp" height={450} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className='access__map' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5900.2950424858145!2d136.93606026612815!3d35.20599241993586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sjp!4v1759843192883!5m2!1suk!2sjp" height={450} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <p className="access__bg">Access</p>

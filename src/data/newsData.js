@@ -9,7 +9,7 @@ export const newsData = [
         time: '2025.01.01',
         Source: {
             srcSet: avifImage1,
-            type: 'image/avif'
+            type: 'image/avif',
         },
         img: {
             src: jpgImage1,
@@ -23,7 +23,7 @@ export const newsData = [
         time: '2025.01.01',
         Source: {
             srcSet: avifImage1,
-            type: 'image/avif'
+            type: 'image/avif',
         },
         img: {
             src: jpgImage1,
@@ -37,7 +37,7 @@ export const newsData = [
         time: '2025.01.01',
         Source: {
             srcSet: avifImage1,
-            type: 'image/avif'
+            type: 'image/avif',
         },
         img: {
             src: jpgImage1,

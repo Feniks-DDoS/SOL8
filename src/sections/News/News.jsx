@@ -25,7 +25,7 @@ export default () => {
                     </picture>
                   </div>
                   <div className="news__card-body">
-                    <time className='news__card-time' datetime={item.time}>{item.time}</time>
+                    <time className='news__card-time' dateTime={item.time}>{item.time}</time>
                     <h3 className="news__card-title h4">{item.title}</h3>
                     <div className="news__card-description">
                       <p>{item.body}</p>

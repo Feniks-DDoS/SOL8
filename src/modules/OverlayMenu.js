@@ -5,7 +5,7 @@ class OverlayMenu {
     root: '[data-js-header]',
     overlay: '[data-js-header-overlay]',
     burgerButton: '[data-js-header-burger-button]',
-    overlayLink: `[data-js-overlay-link]`
+    overlayLink: `[data-js-overlay-link]`,
   }
 
   stateClasses = {

@@ -24,7 +24,7 @@ class AboutSlider {
             },              
             pagination: {
                 el: '.swiper-pagination',
-                clickable: 'true'
+                clickable: 'true',
             },
         })
     }

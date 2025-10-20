@@ -4,19 +4,13 @@ import clsx from "clsx"
 
 export default (props) => {
 
-    const {
-        className,
-    } = props
+    const { className } = props
 
     const socialsItem = [
         {
             label: 'Instagram',
             icon: 'instagram',
-        },
-        {
-            label: 'Line',
-            icon: 'line',
-        },
+        }
     ]
 
   return (

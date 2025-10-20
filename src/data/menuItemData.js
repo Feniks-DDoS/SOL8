@@ -13,11 +13,11 @@ export const menuItemData = [
         },
         descriptionJa: {
             descriptionJaShort: '骨格の歪みを整え、血流やリンパの流れを促進。姿勢改善に加え、お腹の調子を整えるバランス整体。',
-            descriptionJaLong: '60 分の内容に加え、ドライヘットスパを組み合わせ、全身の緊張を深く解きほぐします。慢性的なコリや疲れにも効果的。'
+            descriptionJaLong: '60 分の内容に加え、ドライヘットスパを組み合わせ、全身の緊張を深く解きほぐします。慢性的なコリや疲れにも効果的。',
         },                       
         descriptionEn: {
             descriptionEnShort: 'Realigns the body structure, stimulates circulation and lymph flow, and balances digestive health.',
-            descriptionEnLong: 'Includes head relaxation techniques for total balance and deep release of chronic tension and fatigue.'
+            descriptionEnLong: 'Includes head relaxation techniques for total balance and deep release of chronic tension and fatigue.',
         }, 
         href: {
             linkShort: '#',
@@ -40,11 +40,11 @@ export const menuItemData = [
         },
         descriptionJa: {
             descriptionJaShort: '上質なオイルで筋肉の緊張をほぐし、リンパの流れを促進。心身のバランスを整えるトリートメント 初回限定 ¥9,000 （通常 ¥11,000)',
-            descriptionJaLong: 'スウェディッシュ 全身 100 分サロン自慢の贅沢な全身ケア。深いリラクゼーションとデトックス効果で、心身をリセット。初回限定 ¥11,000 （通常 ¥13,000)。'
+            descriptionJaLong: 'スウェディッシュ 全身 100 分サロン自慢の贅沢な全身ケア。深いリラクゼーションとデトックス効果で、心身をリセット。初回限定 ¥11,000 （通常 ¥13,000)。',
         },                       
         descriptionEn: {
             descriptionEnShort: 'A refined Swedish oil treatment to ease muscle tension, stimulate lymph flow, and restore inner balance.',
-            descriptionEnLong: 'A luxurious full-body Swedish massage to reset the mind and body through deep relaxation and detox.'
+            descriptionEnLong: 'A luxurious full-body Swedish massage to reset the mind and body through deep relaxation and detox.',
         }, 
         href: {
             linkShort: '#',
