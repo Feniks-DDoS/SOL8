@@ -10,7 +10,7 @@ export default () => {
                 <div className="accordion tile">
                     <details className="accordion__details" id="menu" open={item.isOpen}>
                         <summary className="accordion__summary">                            
-                            <h3 className="accordion__item-title"><span role="term" ariaDetails={item.ariaDetails} className="accordion__item-title-span">{item.titleJa} / <br className="visible-mobile"/> {item.titleEn}</span></h3>                          
+                            <h3 className="accordion__item-title"><span role="term" ariaDetails={item.ariaDetails} className="accordion__item-title-span">{item.titleJa} <span className="hidden-mobile">/</span> <br className="visible-mobile"/> {item.titleEn}</span></h3>                          
                         </summary>
                     </details>
                     <div className="accordion__content" id={item.ariaDetails} role="definition">

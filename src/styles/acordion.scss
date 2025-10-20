@@ -12,11 +12,11 @@
                 &::before,
                 &::after {
                     background-color: var(--color-main);
-                    transform: rotate(133deg) ;
+                    transform: rotate(497deg) ;
                 }
 
                 &::after {
-                  transform: rotate(226deg) ;
+                  transform: rotate(585deg) ;
                 }
             }   
 
@@ -64,13 +64,16 @@
         &::after {
             @include abs-y;
             content: "";
-            right: 0;
+            right: 90px;
             width: 16px;
-            height: 2px;
+            height: 1px;
             background-color: var(--color-main);
             border-radius: 1rem;
             transition: var(--transition-duration);
 
+            @include mobile {
+                right: 0px;
+            }
         }
 
         &::after {
@@ -79,6 +82,10 @@
 
         @include mobile {
             padding-right: 10px;
+        }
+
+        @include tablet {
+            font-size: 23px;
         }
     } 
 
@@ -131,6 +138,10 @@
             @include tablet {
                 padding: 6px 80px;
             }
+
+            @include mobile-s {
+                max-width: 100% !important; 
+            }
         }
 
         &-body {
@@ -182,6 +193,10 @@
 
             @include tablet {
                 padding: 6px 80px;
+            }
+
+            @include mobile-s {
+                max-width: 100%;
             }
         }
 
