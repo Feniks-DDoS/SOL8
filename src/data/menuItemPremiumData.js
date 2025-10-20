@@ -8,6 +8,7 @@ export const menuItemPremiumData = [
         descriptionJa: '（内容: ¥20,000 相当） 全身をトータルで整える贅沢なコース。',           
         descriptionEn: 'Facial & Body combination course (120min) — equivalent to ¥20,000 value.',
         href: '#',
+        ariaDetails: 'menu-premium-1',
     },   
     {
         id: 2,
@@ -18,6 +19,7 @@ export const menuItemPremiumData = [
         descriptionJa: '（内容:¥45,000 相当) フランス発ラグジュアリーブランド〈Biologique Recherche〉を使用した全身トリートメント。',           
         descriptionEn: 'Luxury Biologique Recherche Facial & Body treatment (150min) — equivalent to ¥45,000 value.',
         href: '#',
+        ariaDetails: 'menu-premium-2',
     }, 
     {
         id: 3,
@@ -28,5 +30,6 @@ export const menuItemPremiumData = [
         descriptionJa: '（内容: ¥45,000 相当）このコースは選ばれたサロンのみで受けられます。日本では〈ハイアットリージェンシー東京〉〈ペニンシュラ上海〉のみが施術可能',           
         descriptionEn: 'An exclusive Biologique Recherche facial (100min) available only at select salons — Hyatt Regency Tokyo,  The Peninsula Shanghai.',
         href: '#',
+        ariaDetails: 'menu-premium-3',
     },
 ]

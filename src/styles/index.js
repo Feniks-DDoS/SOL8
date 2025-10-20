@@ -4,7 +4,8 @@ import './variables.scss'
 import './utils.scss'
 import './globals.scss'
 import './slider.scss'
-import 'swiper/css';
-import "swiper/css/effect-fade";
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import './acordion.scss'
+import 'swiper/css'
+import "swiper/css/effect-fade"
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'

@@ -23,6 +23,8 @@ export const menuItemData = [
             linkShort: '#',
             linkLong: '#',
         },
+        ariaDetails: 'menu-1',
+        isOpen: true,
     },    
     {
         id: 2,
@@ -48,6 +50,7 @@ export const menuItemData = [
             linkShort: '#',
             linkLong: '#',
         },
+        ariaDetails: 'menu-2',
     },
     {
         id: 3,
@@ -69,6 +72,7 @@ export const menuItemData = [
             linkShort: '#',
             linkLong: '#',
         },
+        ariaDetails: 'menu-3',
     },
     {
         id: 4,
@@ -90,5 +94,6 @@ export const menuItemData = [
             linkShort: '#',
             linkLong: '#',
         },
+        ariaDetails: 'menu-4',
     },
 ]

@@ -14,37 +14,49 @@ export default () => {
                 <h2 className="menu__title " id="menu-title">SOL 8 Treatment Menu</h2>
             </div>
             <div className="menu__body">
-                <ul className="menu__list">
+                    <div className="accordion accordion__group">
                     <MenuItem/>
-                </ul>
+                    </div>
                 <div className="menu__premium-header">
                     <Icon hasFill name="spa" className="menu__premium-title-svg"/>
                     <h3 className="menu__premium-list-title">プレミアムボディ & <br className="menu__premium-br" /> フェイシャル 
                     <span className="menu__premium-list-title-span">Premium Body & Facial</span>
                     </h3>                                   
                 </div> 
-                <ul className="menu__premium-list">
-                    {menuItemPremiumData.map((item) => (
-                        <li className="menu__premium-item">
-                            <div className="menu__premium-card">
-                                <h3 className="menu__premium-item-title">{item.titleJa} / <span className="menu__premium-item-title-span">{item.titleEn}</span></h3>
-                                <div className="menu__premium-body">
-                                    <h4 className="menu__premium-title">
-                                        <span className="menu__premium-time">{item.time}分</span>/
-                                        <span className="menu__premium-price">¥{item.price}</span>
-                                    </h4>
-                                    <div className="menu__premium-description">
-                                        <p className="menu__premium-description-info">{item.descriptionJa}    
-                                        </p>
-                                        <p className="menu__premium-description-info">{item.descriptionEn}
-                                        </p>
+                <div className="accordion accordion__group">
+                {menuItemPremiumData.map((item) => (
+                        <div className="accordion tile">
+                            <details className="accordion__details" id="menu">
+                                <summary className="accordion__summary">                            
+                                                    <h3 className="accordion__item-title"><span className="accordion__item-title-span">{item.titleJa} / <br className="visible-mobile"/> {item.titleEn}</span></h3>                         
+                                </summary>
+                            </details>
+                            <div className="accordion__content" id={item.ariaDetails} role="definition">
+                                <div className="accordion__content-inner">
+                                    <div className="accordion__content-body">  
+                                            <div className="accordion__premium-item">
+                                                <div className="accordion__premium-card">
+                                                    <div className="accordion__premium-body">
+                                                        <h4 className="accordion__card-title">
+                                                            <span className="accordion__card-time">{item.time}分</span>/
+                                                            <span className="accordion__card-price">¥{item.price}</span>
+                                                        </h4>
+                                                        <div className="accordion__card-description">
+                                                            <p className="accordion__card-description-info">{item.descriptionJa}    
+                                                            </p>
+                                                            <p className="accordion__card-description-info">{item.descriptionEn}
+                                                            </p>
+                                                        </div>
+                                                    </div> 
+                                                    <Button href={item.href} className="accordion__card-link">ご予約に</Button>                           
+                                                </div>
+                                            </div>
                                     </div>
-                                </div> 
-                                <Button href={item.href} className="menu__premium-link">ご予約に</Button>                           
+                                </div>
                             </div>
-                        </li>
-                    ))}
-                </ul>
+                        </div>  
+                    ))}      
+                </div>        
             </div>
         </div>
          <p className="menu__bg">SOL 8 Treatment Menu</p>

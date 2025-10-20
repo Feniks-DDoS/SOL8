@@ -84,7 +84,6 @@
     }
 
     &__premium {
-
         &-header {
             text-align: center;
 
@@ -92,48 +91,14 @@
             padding-block: 32px;
             }
         }
-
-        &-link {
-            background: var(--bg-sub);
-            color: var(--color-main);
-            padding: 6px 32px;
-            align-self: end;
-            max-width: max-content;
-            font-weight: 400;
-
-            @include hover {
-                background: var(--color-main);
-                color: var(--color-light);
-            }
-
-            @include tablet {
-                padding: 6px 80px;
-            }
-        }
-
+        
         &-br {
             display: none;
             @include mobile-s {
                 display: initial;
             }
         }
-
-        &-list {
-            display: grid;
-            row-gap: 43px;
-            padding: 32px;
-
-            @include tablet {
-                padding: 0px;
-                row-gap: 23px;
-            }
-        }
-
-        &-item {
-            padding-block: 12px;
-            border-bottom: 1px solid var(--bg-border);
-        }
-
+        
         &-list-title {
             display: flex;
             flex-direction: column;
@@ -148,26 +113,7 @@
                 font-family: var(--font-family-en);
             }
         }
-
-        &-item-title {
-            font-weight: 400;
-            border-bottom: 1px solid var(--bg-border);
-
-            &-span {
-                color: var(--color-main);
-                font-family: var(--font-family-en);
-            }
-        }
-
-        &-description {
-            display: grid;
-            row-gap: 10px;
-        }
-
-        &-body {
-            padding-block: 10px;
-        }
-
+        
         &-title {
             color: var(--color-main);
             display: flex;
@@ -183,6 +129,17 @@
                 width: 100px;
             }
         }
+        }
+    }
+
+    &__body {
+        min-width: 100%;
+        display: grid;
+        gap: 52px;
+        padding-right: 112px;
+
+        @include tablet {
+            padding-inline: 0px;
         }
     }
 }

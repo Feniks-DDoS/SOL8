@@ -1,0 +1,232 @@
+.accordion {
+
+    &__group {
+    display: grid;
+    gap: 32px;
+    }
+    
+    &__details {
+        &[open] {
+            .accordion__item-title {
+                color: var(--color-main);
+                &::before,
+                &::after {
+                    background-color: var(--color-main);
+                    transform: rotate(133deg) ;
+                }
+
+                &::after {
+                  transform: rotate(226deg) ;
+                }
+            }   
+
+            & + .accordion__content {
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+    
+
+    &__summary {
+        list-style: none;
+        &::-webkit-details-marker {
+              display: none;
+        }
+    }
+    
+    &__content {
+
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: 0.3s;
+
+        &-inner {
+            overflow: hidden;
+        }
+
+        &-body {
+        --offsetTop: #{fluid(24 ,16)};
+
+        margin-top: var(--offsetTop);
+        padding-top: var(--offsetTop);
+        border-top: var(--border);
+        }
+
+    }
+    
+    &__item-title {
+        cursor: pointer;
+        position: relative;
+        padding-right: 50px;
+        transition: var(--transition-duration);
+
+        &::before,
+        &::after {
+            @include abs-y;
+            content: "";
+            right: 0;
+            width: 16px;
+            height: 2px;
+            background-color: var(--color-main);
+            border-radius: 1rem;
+            transition: var(--transition-duration);
+
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+
+        @include mobile {
+            padding-right: 10px;
+        }
+    } 
+
+    &__item {
+        min-height: 100%;
+
+        @include laptop-above {
+        &:first-child,
+        &:nth-child(3n) {
+            border-right: 1px solid var(--bg-border);
+            padding-right: 12px;
+        }
+        }
+        
+        &-title {
+            font-weight: 400;
+            transition: var(--transition-duration);
+
+            &-span {
+                font-family: var(--font-family-en);
+            }
+
+            @include hover {
+                color: var(--color-main);
+            }
+        }
+    }
+
+    &__card {        
+        min-height: 100%;
+
+        &-description {
+            display: grid;
+            gap: 10px;
+        }
+
+        &-link {
+            background: var(--bg-sub);
+            color: var(--color-main);
+            padding: 6px 32px;
+            align-self: end;
+            font-weight: 400;
+            justify-content: center;
+
+            @include hover {
+                background: var(--color-main);
+                color: var(--color-light);
+            }
+
+            @include tablet {
+                padding: 6px 80px;
+            }
+        }
+
+        &-body {
+            border-bottom: var(--border);
+            display: grid;
+            padding-block: 10px;
+
+            &.visible {
+                display: grid;
+            }
+
+            &.hide {
+                display: none;
+            }
+
+            
+            @include laptop-above {
+            min-height: 200px;            
+            }
+
+            @include tablet {
+                gap: 10px;
+            }
+        }
+
+        &-title {
+        display: flex;
+        gap: 16px;
+        font-size: 18px;
+        font-family: var(--font-family-base);
+        color: var(--color-main);
+        }
+    }
+
+    &__premium {        
+
+        &-link {
+            background: var(--bg-sub);
+            color: var(--color-main);
+            padding: 6px 32px;
+            align-self: end;
+            max-width: max-content;
+            font-weight: 400;
+
+            @include hover {
+                background: var(--color-main);
+                color: var(--color-light);
+            }
+
+            @include tablet {
+                padding: 6px 80px;
+            }
+        }
+
+
+        &-list {
+            display: grid;
+            row-gap: 43px;
+            padding: 32px;
+
+            @include tablet {
+                padding: 0px;
+                row-gap: 23px;
+            }
+        }
+
+        &-item {
+            padding-block: 12px;
+            border-bottom: var(--border);
+        }
+
+        &-card {
+            display: grid;
+            gap: 16px;
+        }
+
+        &-item-title {
+            font-weight: 400;
+
+            &-span {
+                color: var(--color-main);
+                font-family: var(--font-family-en);
+            }
+        }
+
+        &-description {
+            display: grid;
+            row-gap: 10px;
+        }
+
+        &-body {
+            display: grid;
+            gap: 16px;
+            padding-block: 10px;
+        }
+
+    }
+   
+}
