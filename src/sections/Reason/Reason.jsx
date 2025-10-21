@@ -7,7 +7,7 @@ export default () => {
     <section className="section section__reason" aria-labelledby='reason-title'>
         <div className="section__inner container">
             <header className="section__header">
-                <h2 className="section__reason-title" id='reason-title'>当院が <br className='section__reason-br'/>選ばれる理由</h2>
+                <h2 className="section__reason-title" id='reason-title'>当サロン <br className='section__reason-br'/>トリートメント紹介</h2>
                 <div className="section__reason-description">Reason</div>
             </header>
             <div className="reason">

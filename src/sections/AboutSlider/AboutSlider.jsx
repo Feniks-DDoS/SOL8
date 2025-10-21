@@ -9,7 +9,7 @@ export default () => {
             <header className="about-slider__header">
                 <h2 className="about-slider__title h3" id='about-slider-title'>サロン紹介 </h2>
             </header>
-            <div className="swiper slider" data-js-slider="">
+            <div className="swiper slider" data-js-about-slider="">
                 <ul className="swiper-wrapper slider__wrapper">
                     {aboutSliderData.map((item) => (                        
                         <li className="swiper-slide slider__slide">

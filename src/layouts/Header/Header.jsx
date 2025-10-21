@@ -3,6 +3,7 @@ import './Header.scss'
 import clsx from 'clsx'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
+import headerLogo from "/public/images/headerLogo.svg"
 
 export default (props) => {
   const { url } = props
@@ -38,7 +39,7 @@ export default (props) => {
     <header className='header' data-js-header="">
       <div className="header__inner container" data-js-header-inner=""> 
         <nav className="header__menu " >
-        <Logo  className="header__logo"/>
+        <Logo name={headerLogo} className="header__logo"/>
           <ul className="header__menu-list hidden-tablet" >
             {menuItems.map(({label, href}) => (
               <li className="header__menu-item">

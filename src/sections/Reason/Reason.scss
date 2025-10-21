@@ -102,11 +102,14 @@
         gap: 32px;
 
         @include tablet {
-            grid-template-columns: repeat(2 ,1fr);
-        }
-
-        @include mobile {
             grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        @include tablet {
+            max-width: 600px;
+            justify-self: center;
         }
     }
 

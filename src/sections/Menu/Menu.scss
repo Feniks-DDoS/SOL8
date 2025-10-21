@@ -1,144 +1,47 @@
 .menu {
-    position: relative;
-
-      &__bg {        
-        font-family: var(--font-family-lora);
-        @include fluid-text(122 , 82);
-        @include abs-center;
-        top: 9%;
-        left: 35%;
-        user-select: none;
-        transform: scaleX(1.1);
-        letter-spacing: 22px;
-        line-height: 1.2;
-        font-weight: 600;
-        text-transform: uppercase;
-        background-image: linear-gradient(to bottom, rgba(167, 148, 88, .1), rgba(167, 148, 88, 0));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        z-index: -1;
-
-        @include tablet {
-            left: 50%;
-            top: 6%;
-            letter-spacing: 11px;
-        }
-    }
+    background: #beaf87;
 
     &__inner {
         padding-block: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        gap: 32px;
 
         @include laptop {
             padding-block: 60px;
         }
-
-        @include tablet {
-            padding-block: 30px;
-            gap: 16px;
-        }
     }
 
-    &__header {
-        min-width: 100%;
+    &__title {
+        font-family: var(--font-family-lora);
+        @include fluid-text(90 , 35);
+        background-image: linear-gradient(to bottom, #efe9d6, rgba(239, 233, 214, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-
-     &__title {
-        letter-spacing: 8px;
-        line-height: 2;
-        font-weight: 400;
-        border-bottom: 1px solid var(--color-gray-2);
-        min-width: 100%;
-        padding-bottom: 32px;
-        color: var(--color-main);
-
-        @include mobile {
-            padding-bottom: 10px;
-        }
-
-        @include mobile-s {
-            letter-spacing: 4px;
-            line-height: 1.5;
-        }       
-    }
-
     &__list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        row-gap: 42px;
-        padding: 32px;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 32px;
 
-        @include tablet {
-            padding: 0px;
-            row-gap: 20px;
-        }
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
 
-        @include laptop {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    &__premium {
-        &-header {
-            text-align: center;
-
-            @include tablet {
-            padding-block: 32px;
-            }
-        }
-        
-        &-br {
-            display: none;
-            @include mobile-s {
-                display: initial;
-            }
-        }
-        
-        &-list-title {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            font-weight: 400;
-            min-width: 100%;            
-            padding-block: 16px;
-            border-bottom: 1px solid var(--color-gray-2);
-
-            &-span {
-                color: var(--color-main);
-                font-family: var(--font-family-en);
-            }
-        }
-        
-        &-title {
-            color: var(--color-main);
-            display: flex;
+        @include mobile-s {
             gap: 16px;
-            font-size: 18px;
-            font-family: var(--font-family-base);
-
-            &-svg {
-            color: var(--color-main);
-            width: 120px;
-
-            @include mobile-s {
-                width: 100px;
-            }
-        }
         }
     }
 
-    &__body {
-        min-width: 100%;
-        display: grid;
-        gap: 52px;
+    &__item {
+        max-width: 600px;
+        justify-self: center;
+    }
 
-        @include tablet {
-            padding-inline: 0px;
+    &__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 23px;
+
+        @include mobile-s {
+            border-radius: 0px;
         }
     }
 }

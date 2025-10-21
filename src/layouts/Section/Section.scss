@@ -64,6 +64,7 @@
     &-title {
       font-weight: 400;
       position: relative;
+      @include fluid-text(52, 32);
 
       &::before {
       @include abs-x;

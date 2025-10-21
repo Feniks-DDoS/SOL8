@@ -1,71 +1,82 @@
 .hero {
+    font-family: var(--font-family-base);
 
     &__inner {  
-        background-image: image-set(
-            url('@/assets/images/hero/avif/hero1.avif') type('image/avif'),
-            url('@/assets/images/hero/jpg/hero1.jpg') type('image/jpeg'),
-        );
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
-        display: flex;
-        position: relative;
         color: var(--color-light);
-        min-height: 100vh;
+    }
 
-        &::before {
-            position: absolute;
-            content: "";
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0 ,0 ,0 ,0.3);
-            z-index: 1;
+    &__slider {
+        display: flex;
+        max-width: 100vw;
+        width: 100%;
+        height: 100vh;
+        inset: 0;
+
+    &-wrapper {
+        box-sizing: content-box;
+    }
+
+    &-slide {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;       
+
+        &-header {           
+            position: relative;  
+            z-index: 20;
+            animation-name: fadeIn;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
         }
     }
 
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 16px 42px;
-        background-color: var(--color-light);
-        color: var(--color-dark);
-        @include fluid-text(20, 18);
-        letter-spacing: 0.32px;
+    &-button-prev,
+    &-button-next{        
+        background: transparent;
+        border-radius: 50%;
+        border: none;
 
-        @include hover {
-            background-color: var(--color-main);
-            color: var(--color-light);
+        @include tablet {        
+            width: 32px !important; 
+            height: 32px !important;
+            top: 40% !important;
+        }
+
+        @include mobile-s {
+            top: 20% !important;
+        }
+
+
+        svg{
+        color: var(--color-light);
         }
     }
+ }
+ 
+    &__images {   
+        inset: 0;
+        position: absolute;
+        z-index: -1;
+    }
 
-    &__body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        min-height: 100%;
-        z-index: 100;
-        font-family: var(--font-family-en);
-        
-        animation-name: fadeIn;
-        animation-timing-function: linear;
-        animation-duration: 1s;
-        animation-delay: 0.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: both;
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title {
+        @include fluid-text(58 , 35);
+        font-weight: 400;
     }
 
     &__subtitle {
         @include fluid-text(22, 18);
-        text-shadow: 6px -2px 13px var(--color-dark);
     }
 
-    &__header {
-        text-align: center;
-    }
 
     &__svg {
         width: 90px;

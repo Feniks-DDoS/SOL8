@@ -2,6 +2,7 @@ import Logo from '@/components/Logo'
 import './Footer.scss'
 import Icon from '@/components/Icon' 
 import clsx from 'clsx'
+import footerLogo from "/public/images/footerLogo.svg"
 
 export default (props) => {
 
@@ -40,7 +41,7 @@ export default (props) => {
       <div className="footer__inner container">        
         <header className="footer__header">
           <div className="footer__header-inner">
-            <Logo className="footer__logo"/>
+            <Logo name={footerLogo} className="footer__logo"/>
             <div className="footer__soc1als">
               <a href="#" className='footer__soc1als-link' title='Instagram'>
                 <span className="visually-hidden">Instagram</span>

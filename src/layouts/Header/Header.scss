@@ -25,6 +25,14 @@
         column-gap: 20px;
     }
 
+    &__logo {
+        min-width: 150px;
+
+        @include mobile-s {
+            min-width: 100px;
+        }
+    }
+
     &__menu {
         display: flex;
         align-items: center;

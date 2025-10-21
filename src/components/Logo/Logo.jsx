@@ -1,14 +1,14 @@
 import './Logo.scss'
 import clsx from 'clsx'
-import logo from "/public/images/logo.svg"
 
 export default (props) => {
   const { 
     className, 
     loading = 'lazy',
+    name
   } = props
 
-  const title = 'ホーム'
+  const title = 'Home'
 
   return (
     <a
@@ -19,9 +19,9 @@ export default (props) => {
     >
       <img
         className="logo__image"
-        src={logo}
+        src={name}
         alt="Logo SOL8"
-        width={110}
+        width={150}
         height={30}
         loading={loading}
       />
