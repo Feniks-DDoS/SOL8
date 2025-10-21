@@ -35,7 +35,7 @@ export default () => {
     <>
     <SectionsHeader title="About" />
     <HeaderAside isActive={true} HeaderAsideTitle="About" HeaderAsideHref="/about"/>
-    <About titleAbout='About ' info={infoSection}/>
+    <About titleAbout='About' info={infoSection}/>
     <AboutSlider/>
     <PayMethod/>
     <Contact/>

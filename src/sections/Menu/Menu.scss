@@ -5,13 +5,17 @@
         padding-block: 120px;
 
         @include laptop {
-            padding-block: 60px;
+            padding-top: 60px;
+            padding-bottom: 0px;
         }
     }
 
     &__title {
+        padding-bottom: 32px;
+        letter-spacing: 6px;
+        text-align: center;
         font-family: var(--font-family-lora);
-        @include fluid-text(90 , 35);
+        @include fluid-text(52 , 35);
         background-image: linear-gradient(to bottom, #efe9d6, rgba(239, 233, 214, 0));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -19,10 +23,12 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
+        padding-inline: 16px;
         gap: 32px;
 
       @include mobile {
         grid-template-columns: 1fr;
+        padding-inline: 0px;
       }
 
         @include mobile-s {
@@ -40,11 +46,12 @@
     }
 
     &__image {
+        user-select: none;
         width: 100%;
         height: 100%;
         border-radius: 23px;
 
-        @include mobile-s {
+        @include mobile {
             border-radius: 0px;
         }
     }

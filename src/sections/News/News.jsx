@@ -11,7 +11,7 @@ export default () => {
      <section className="news news__section" aria-labelledby='news-title'>
        <div className="news__inner container">
         <header className="news__header">
-          <h2 className="news__title" id='news-title'>News</h2>
+          <h2 className="news__title" id='news-title'>NEWS</h2>
         </header>
         <div className="news__body">
           <ul className="news__list">

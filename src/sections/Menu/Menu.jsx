@@ -9,9 +9,9 @@ export default () => {
   return (
     <>
     <section className="menu menu__section" aria-labelledby="menu-title">
-        <div className="menu__inner container">
-            <div className="menu__header ">
-                <h2 className="menu__title" id="menu-title">SOL 8 Treatment Menu</h2>
+        <div className="menu__inner ">
+            <div className="menu__header container">
+                <h2 className="menu__title" id="menu-title"> MENU</h2>
             </div>
             <div className="menu__body">       
               <ul className="menu__list">
