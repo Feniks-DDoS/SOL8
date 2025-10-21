@@ -25,19 +25,19 @@ export default (props) => {
         <link rel="icon" sizes='512x512' href={icon512} />
         <link rel="manifest" href={manifest} />
         <meta name="title" content="SOL8 — 名古屋のマッサージサロン"/>
-        <meta name="description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
+        <meta name="description" content="名古屋にいながら、まるで海外リトリートに訪れたような、深い癒しと静けさに包まれる時間を。”Touch”は、 言葉を超えたコミュニケーション。ひとつのタッチに、安心・解放・癒しの想いを込めて。肌に触れた瞬間、心と体の境界がほどけていく。"/>
         <meta name="keywords" content="マッサージ, 名古屋, サロン, SOL8, 日本式マッサージ, 予約"/>
 
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://www.sol8spa.com/"/>
         <meta property="og:title" content="SOL8 — 名古屋のマッサージサロン"/>
-        <meta property="og:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
+        <meta property="og:description" content="名古屋にいながら、まるで海外リトリートに訪れたような、深い癒しと静けさに包まれる時間を。”Touch”は、 言葉を超えたコミュニケーション。ひとつのタッチに、安心・解放・癒しの想いを込めて。肌に触れた瞬間、心と体の境界がほどけていく。"/>
         <meta property="og:image" content={PreviewImage}/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:url" content="https://www.sol8spa.com/"/>
         <meta name="twitter:title" content="SOL8 — 名古屋のマッサージサロン"/>
-        <meta name="twitter:description" content="SOL8は名古屋の高級マッサージサロンです。リラックスと癒しの時間をご予約ください。日本式マッサージで心身をリフレッシュ。"/>
+        <meta name="twitter:description" content="名古屋にいながら、まるで海外リトリートに訪れたような、深い癒しと静けさに包まれる時間を。”Touch”は、 言葉を超えたコミュニケーション。ひとつのタッチに、安心・解放・癒しの想いを込めて。肌に触れた瞬間、心と体の境界がほどけていく。"/>
         <meta name="twitter:image" content={PreviewImage}/>
       </Head>
       <Header url={url} />

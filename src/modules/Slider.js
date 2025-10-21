@@ -50,7 +50,7 @@ class HeroSlider {
 
   init() {
     new Swiper(this.rootElement, {
-      modules: [Navigation, EffectFade],
+      modules: [Navigation, Pagination, EffectFade],
       effect: 'fade',
       fadeEffect: { crossFade: true },
       loop: true,
@@ -58,6 +58,10 @@ class HeroSlider {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
   }
