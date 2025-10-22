@@ -8,14 +8,14 @@ export default (props) => {
     name
   } = props
 
-  const title = 'Home'
+  const DataTitle = 'Home'
 
   return (
     <a
       className={clsx('logo', className)}
       href="/"
-      title={title}
-      aria-label={title}
+      data-title={DataTitle}
+      aria-label={DataTitle}
     >
       <img
         className="logo__image"

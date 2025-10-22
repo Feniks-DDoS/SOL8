@@ -60,42 +60,6 @@
 
     }
 
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--color-main);
-        border: 1px solid var(--color-main);
-        padding: 15px;
-        background-color: var(--color-light);
-        position: relative;
-        min-width: 280px;
-        letter-spacing: 2.5px;
-
-        &::after {
-            @include abs-x;
-            left: 76%;
-            content: "";
-            background: url('@/assets/icons/arrow_right.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            opacity: 1;
-            width: 23px;
-            height: 23px;
-            transition: var(--transition-duration);
-        }
-
-        @include hover {
-            background-color: var(--bg-sub);
-
-            &::after {
-                left: 80%;
-            }
-        }
-        
-    }
-
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

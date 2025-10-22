@@ -24,7 +24,7 @@ export default ({HeaderAsideTitle , HeaderAsideHref , isActive}) => {
             <ul className="header-aside__list container">
                 {HeaderAsideData.map((item) => (
                     <li className="header-aside__item">
-                        <a href={item.href} title={item.title} className={clsx("header-aside__link",item.isActive && 'is-active')}>{item.label}</a>
+                        <a href={item.href} data-title={item.title} className={clsx("header-aside__link",item.isActive && 'is-active')}>{item.label}</a>
                     </li>
                 ))}
             </ul>

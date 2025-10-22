@@ -43,7 +43,7 @@ export default (props) => {
           <div className="footer__header-inner">
             <Logo name={footerLogo} className="footer__logo"/>
             <div className="footer__soc1als">
-              <a href="#" className='footer__soc1als-link' title='Instagram'>
+              <a href="#" className='footer__soc1als-link' data-title='Instagram'>
                 <span className="visually-hidden">Instagram</span>
                 <Icon hasFill name='instagram' className='footer__soc1als-svg'/>
               </a>

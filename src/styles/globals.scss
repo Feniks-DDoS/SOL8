@@ -123,6 +123,37 @@ a {
   &[class] {
     text-decoration: none;
   }
+  
+  &[data-title] {
+      position: relative;
+  }
+
+  &[data-title]::after {
+    content: attr(data-title);
+    background-color: var(--color-main);
+    color: var(--bg-sub);
+    font-size: 12px;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -24px;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px var(--bg-sub);
+    opacity: 0;
+    border: var(--border);
+    z-index: 99999;
+    visibility: hidden;
+    text-transform:capitalize;
+    font-family: var(--font-family-lora);
+  }
+
+  @include hover {
+    &[data-title]::after {      
+      opacity: 1;
+      transition: all 0.1s ease 0.5s;
+      visibility: visible;
+    }
+  }
 }
 
 :focus-visible {

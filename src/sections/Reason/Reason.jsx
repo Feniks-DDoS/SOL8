@@ -18,7 +18,7 @@ export default () => {
                     </ul>
                 </div>
                 <div className="reason__extra">
-                    <Button href="./salon" className="reason__link">詳しく見る</Button>
+                    <Button href="./salon" className="button--light reason__link">詳しく見る</Button>
                 </div>
             </div>
         </div>

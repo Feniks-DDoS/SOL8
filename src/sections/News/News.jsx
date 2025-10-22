@@ -37,7 +37,7 @@ export default () => {
           </ul>
         </div>
         <div className="news__extra">
-          <Button className="news__link" href="/news">一覧を見る</Button>
+          <Button className="button--light news__link" href="/news">一覧を見る</Button>
         </div>
        </div>
      </section>

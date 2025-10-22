@@ -75,7 +75,13 @@
     &-button-next{        
         background: transparent;
         border-radius: 50%;
+        background: rgba($color: #a0a0a0, $alpha: 0.3);
         border: none;
+        padding: 10px;
+
+        @include hover {
+            background: rgba($color: #a0a0a0, $alpha: 0.5);
+        }
 
         @include tablet {        
             display: none;
