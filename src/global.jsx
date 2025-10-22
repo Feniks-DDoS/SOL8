@@ -4,7 +4,7 @@ import Header from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
 import manifest from '/public/favicons/site.webmanifest'
-import favicon from '/public/favicons/favicon.svg'
+import favicon from '/public/favicons/favicon.png'
 import icon512 from '/public/favicons/android-chrome-512x512.png'
 import icon192 from '/public/favicons/android-chrome-192x192.png'
 import AsideActions from './components/AsideActions'
@@ -40,7 +40,7 @@ export default (props) => {
         <meta name="twitter:title" content="SOL8 — 名古屋のマッサージサロン"/>
         <meta name="twitter:description" content="名古屋にいながら、まるで海外リトリートに訪れたような、深い癒しと静けさに包まれる時間を。”Touch”は、 言葉を超えたコミュニケーション。ひとつのタッチに、安心・解放・癒しの想いを込めて。肌に触れた瞬間、心と体の境界がほどけていく。"/>
         <meta name="twitter:image" content={PreviewImage}/>
-       {/* Google Analytics */}
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-K56CWYZWKZ"></script>
         <script
           dangerouslySetInnerHTML={{
