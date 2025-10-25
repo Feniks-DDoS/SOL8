@@ -54,7 +54,8 @@ class HeroSlider {
       effect: 'fade',
       fadeEffect: { crossFade: true },
       loop: true,
-      speed: 800,
+      speed: 1000,
+      freeMode: true,      
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
