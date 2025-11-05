@@ -1,0 +1,22 @@
+.preloader {    
+    position: fixed;
+    z-index: 99999999;
+    inset: 0;
+    background-color: #ffe7d8;
+    transition: 0.5s;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
