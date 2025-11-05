@@ -1,5 +1,5 @@
 import "./Preloader.scss"
-import PreloaderImage from "./public/images/logoAnimation.gif"
+import PreloaderImage from "@/assets/icons/logoAnimation.gif"
 
 export default () => {
   return (
