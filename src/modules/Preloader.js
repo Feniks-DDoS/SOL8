@@ -10,14 +10,12 @@ class Preloader {
     constructor(rootElement) {
         this.rootElement = rootElement
         this.bindEvents()
+        document.documentElement.classList.add(this.stateClasses.isLock)
     }
 
     init() {        
-        document.documentElement.classList.add(this.stateClasses.isLock)
+        document.documentElement.classList.remove(this.stateClasses.isLock)
         this.rootElement.classList.add(this.stateClasses.isHide);
-        setTimeout(() => {
-            document.documentElement.classList.remove(this.stateClasses.isLock)
-        }, 600);
     }
 
 

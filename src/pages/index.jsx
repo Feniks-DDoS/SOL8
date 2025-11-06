@@ -5,7 +5,6 @@ import Menu from '@/sections/Menu'
 import Hero from '@/sections/Hero'
 import Access from '@/sections/Access'
 import News from '@/sections/News'
-import Preloader from '@/components/Preloader'
 
 export const metadata = {
   title: 'Home',
@@ -30,7 +29,6 @@ export default () => {
 
   return (
     <>
-      <Preloader/>
       <Hero/>
       <About titleAbout='About' info={infoSection}/>
       <Reason/>
