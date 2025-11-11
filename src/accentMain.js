@@ -1,3 +1,4 @@
-import PreloaderCollection from "./modules/Preloader.js"
+import "./styles/preloader.scss"
+import Preloader from "./modules/Preloader.js"
 
-new PreloaderCollection()
+new Preloader()

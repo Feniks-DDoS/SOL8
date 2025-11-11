@@ -10,7 +10,6 @@ import icon192 from '/public/favicons/android-chrome-192x192.png'
 import AsideActions from './components/AsideActions'
 import FormMessage from './components/FormMeassge'
 import PreviewImage from "/public/images/preview.png"
-import Preloader from './components/Preloader'
 
 export default (props) => {
   const { children, title, url } = props
@@ -55,7 +54,6 @@ export default (props) => {
         <script src="/src/accentMain.js" type="module"></script>
         <script src="/src/main.js" type="module"></script>
       </Head>
-      <Preloader/>
       <Header url={url} />
       <AsideActions/>
       <Content>{children}</Content>

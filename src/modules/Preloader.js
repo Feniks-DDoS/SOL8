@@ -1,8 +1,5 @@
 import lottie from 'lottie-web';
 import animationData from '@/data/PreloaderImage.json';
-import '@/styles/preloader.scss';
-
-const rootSelector = `[data-js-preloader]`
 
 class Preloader {
 
@@ -11,13 +8,29 @@ class Preloader {
     }
 
     stateClasses = {
-        isHide: 'hide',
         isLock: 'is-lock'
     }
 
-    constructor(rootElement) {
-        this.rootElement = rootElement
-        this.preloaderInnerElement = this.rootElement.querySelector(this.selectors.preloaderInner)
+    constructor() {
+        this.render()
+        this.animation()
+        this.bindEvents()
+        document.documentElement.classList.add(this.stateClasses.isLock)
+    }
+
+    render() {
+        this.preloaderElement = document.createElement('div')
+        this.preloaderElement.classList.add('preloader')
+        this.preloaderElement.innerHTML = 
+        `
+        <div class="preloader__inner" data-js-preloader-inner="">
+        </div>
+        `
+        document.body.appendChild(this.preloaderElement);
+        this.preloaderInnerElement = this.preloaderElement.querySelector(this.selectors.preloaderInner)
+    }
+
+    animation() {
         lottie.loadAnimation({
         container: this.preloaderInnerElement,
         renderer: 'svg',
@@ -25,13 +38,11 @@ class Preloader {
         autoplay: true,
         animationData: animationData,
         });
-        this.bindEvents()
-        document.documentElement.classList.add(this.stateClasses.isLock)
     }
 
     init() {       
         document.documentElement.classList.remove(this.stateClasses.isLock)
-        this.rootElement.classList.add(this.stateClasses.isHide);
+        this.preloaderElement.remove()
     }
 
 
@@ -40,16 +51,4 @@ class Preloader {
     }
 } 
 
-class PreloaderCollection { 
-    constructor() {
-        this.init()
-    }
-
-    init() {
-        document.querySelectorAll(rootSelector).forEach((element) => {
-            new Preloader(element)
-        })
-    }
-}
-
-export default PreloaderCollection
+export default Preloader
