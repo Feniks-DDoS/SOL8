@@ -5,6 +5,7 @@ import './utils.scss'
 import './globals.scss'
 import './slider.scss'
 import './acordion.scss'
+import './preloader.scss'
 import 'swiper/css'
 import "swiper/css/effect-fade"
 import 'swiper/css/navigation'
