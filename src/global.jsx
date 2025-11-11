@@ -11,7 +11,6 @@ import AsideActions from './components/AsideActions'
 import FormMessage from './components/FormMeassge'
 import PreviewImage from "/public/images/preview.png"
 import Preloader from './components/Preloader'
-import PreloaderImage from "@/assets/icons/logoAnimation.gif"
 
 export default (props) => {
   const { children, title, url } = props
@@ -25,7 +24,6 @@ export default (props) => {
         <link rel="icon" sizes='192x192' href={icon192} />
         <link rel="icon" sizes='512x512' href={icon512} />
         <link rel="manifest" href={manifest} />
-        <link rel="preload" href={PreloaderImage} />
         
         <meta name="title" content="SOL8 — 名古屋のマッサージサロン"/>
         <meta name="description" content="名古屋にいながら、まるで海外リトリートに訪れたような、深い癒しと静けさに包まれる時間を。”Touch”は、 言葉を超えたコミュニケーション。ひとつのタッチに、安心・解放・癒しの想いを込めて。肌に触れた瞬間、心と体の境界がほどけていく。"/>
@@ -53,10 +51,11 @@ export default (props) => {
               gtag('config', 'G-K56CWYZWKZ');
             `,
           }}
-        />        
-        <script src="/src/main.js" type="module" />
+        ></script>        
+        <script src="/src/accentMain.js" type="module"></script>
+        <script src="/src/main.js" type="module"></script>
       </Head>
-      <Preloader src={PreloaderImage}/>
+      <Preloader/>
       <Header url={url} />
       <AsideActions/>
       <Content>{children}</Content>
