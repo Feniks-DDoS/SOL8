@@ -50,7 +50,7 @@ export default (props) => {
               gtag('config', 'G-K56CWYZWKZ');
             `,
           }}
-        ></script>        
+        />       
         <script src="/src/accentMain.js" type="module"></script>
         <script src="/src/main.js" type="module"></script>
       </Head>
